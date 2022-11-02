@@ -4,13 +4,14 @@ import { useNavigate } from 'react-router-dom'
 import ThemeButton from '../../common/ThemeButton'
 import axios from 'axios'
 const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
+    const url = 'https://infinite-caverns-77320.herokuapp.com'
     const navigate = useNavigate()
     const [state, setState] = useState({ loading: false, error: false, success: false })
     const handleSubmit = async (e) => {
         e.preventDefault()
         setState({ ...state, loading: true })
         if (data.fname && data.email) {
-            const res = await axios.post('/api/users', data)
+            const res = await axios.post(url + `/api/users`, data)
             if (res.status === 201) {
                 setState({ error: false, loading: false, success: true })
                 navigate('/success')

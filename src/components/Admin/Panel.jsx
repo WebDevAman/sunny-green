@@ -6,22 +6,25 @@ import Layout from '../Layout'
 
 const Panel = () => {
     const [rightData, setRightData] = useState({})
+
+    const url = 'https://infinite-caverns-77320.herokuapp.com'
     const [data, setData] = useState([])
     React.useEffect(() => {
         (async () => {
-            const { data } = await axios.get('/api/users')
+            const { data } = await axios.get(url + `/api/users`)
             setData(data.data)
             console.log(data)
         })()
     }, [])
+
     React.useEffect(() => {
-        setRightData(data[0])
+        data && setRightData(data[0])
 
     }, [data])
 
     return (
         <Layout>
-            {data.length > 0 ?
+            {data?.length > 0 ?
                 <div className='container my-6  grid grid-cols-2 gap-6  !px-0 rounded-2xl border shadow-xl'>
                     <div className="flex bg-gray-50 h-[90vh] overflow-y-scroll flex-col gap-6 p-6 border-r">
                         <h2 className="text-xl lg:text-2xl">Total Requests ({data?.length})</h2>

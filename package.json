@@ -2,7 +2,6 @@
   "name": "jarma",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://infinite-caverns-77320.herokuapp.com",
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@testing-library/jest-dom": "^5.14.1",
