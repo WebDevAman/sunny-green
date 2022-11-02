@@ -115,12 +115,15 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                                     <p className="text-sm font-light">
                                         We process your personal data in accordance with our privacy statement . By continuing, you agree to this.
                                     </p>
-                                    <div className="flex gap-8">
-                                        <button type='button' onClick={() => setShow(2)}>Opnieuw beginnen</button>
-                                        <button type='submit'>
-
-                                            <ThemeButton text=' VOLGENDE STAP' />
+                                    <div className="flex gap-4 md:gap-8 flex-col sm:flex-row">
+                                        <button onClick={() => setShow(2)} className='whitespace-nowrap hidden text-center items-center underline justify-center sm:flex'>Opnieuw beginnen</button>
+                                        <button type='submit' className='w-full md:hidden flex lg:mr-auto'>
+                                            <ThemeButton full text='VOLGENDE STAP' />
                                         </button>
+                                        <button type='submit' className='w-full md:flex hidden lg:mr-auto'>
+                                            <ThemeButton text='VOLGENDE STAP' />
+                                        </button>
+                                        <button onClick={() => setShow(2)} className='whitespace-nowrap  sm:hidden text-center w-full items-center underline justify-center flex'>Opnieuw beginnen</button>
                                     </div>
                                 </form>
                             </>
