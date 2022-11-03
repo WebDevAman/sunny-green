@@ -37,7 +37,7 @@ const FormAndImage = () => {
     }, [show]);
     return (
         <Layout noNav>
-            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className='grid  md:max-w-2xl lg:max-w-[1550px] my-6 shadow-lg border mx-2 rounded-3xl overflow-hidden sm:mx-auto lg:pl-4 grid-cols-1 lg:grid-cols-9 gap-6'>
+            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className='grid  md:max-w-2xl lg:max-w-[1550px] my-6 shadow-lg border mx-3 rounded-3xl overflow-hidden sm:mx-auto lg:pl-4 grid-cols-1 lg:grid-cols-9 gap-6'>
 
                 <div className="lg:hidden flex justify-center gap-1 py-3">
                     {[1, 2, 3].map(num => (
@@ -79,12 +79,12 @@ const FormAndImage = () => {
                         </div>
 
                         :
-                        <div className="bg-gray-100 mt-4 lg:mt-0 min-h-[13rem] w-full">
-                            <img src={leftSideImage.img || 'https://media.tenor.com/64UaxgnTfx0AAAAC/memes-loading.gif'} alt='img' className='aspect-[1.7] object-cover object-center md:aspect-1.8 lg:min-h-[85vh]' />
+                        <div className="bg-gray-100 mt-4 lg:h-[80vh] lg:mt-0 h-[13rem] w-full">
+                            <img src={leftSideImage.img || 'https://media.tenor.com/64UaxgnTfx0AAAAC/memes-loading.gif'} alt='img' className='w-full object-cover max-h-[13rem] lg:max-h-[85vh] object-center md:aspect-1.8 lg:min-h-[85vh]' />
                         </div>
                     }
                     {show === 1 ?
-                        <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className="absolute group max-w-[15rem] p-1 left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-16 -top-5 border-t shadow-xl lg:top-4 gap-4 flex rounded-[35px] bg-white w-full">
+                        <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className="absolute group max-w-[15rem] left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-16 -top-5 border-t shadow-xl lg:top-4 gap-4 flex rounded-[35px] bg-white w-full">
                             <ButtonIcon setShowLeft={setShowLeft} showLeft={showLeft} />
 
                             <div className="flex justify-center flex-col">
@@ -99,7 +99,7 @@ const FormAndImage = () => {
                         </div>
                         :
                         show === 2 ?
-                            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className={`absolute group p-1 left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-20 -top-5 border-t shadow-xl lg:top-8 gap-4 flex rounded-[45px] bg-white w-full ${showLeft ? 'max-w-[90%] md:max-w-md' : 'max-w-[90%] md:max-w-[80%]  '}`}>
+                            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className={`absolute group left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-20 -top-5 border-t shadow-xl lg:top-8 gap-4 flex rounded-[45px] bg-white w-full ${showLeft ? 'max-w-[90%] md:max-w-md' : 'max-w-[90%] md:max-w-[80%]  '}`}>
                                 <ButtonIcon setShowLeft={setShowLeft} showLeft={showLeft} />
                                 <div className={`${showLeft ? 'pb-4' : 'pb-0'} flex pr-6 justify-center w-full flex-col`}>
                                     <div className="flex justify-between items-center ">
@@ -170,13 +170,13 @@ const FormAndImage = () => {
                                             <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
                                                 <div className="flex flex-col gap-2">
                                                     <div className='flex items-center gap-2'>
-                                                        <span className='text-xs opacity-90'>Total Incl. VAT</span>
+                                                        <span className='text-xs opacity-90'>Totaal incl. btw</span>
                                                     </div>
                                                     <div className='flex items-center gap-2'>
-                                                        <span className='text-xs opacity-90'>VAT Refund: </span>
+                                                        <span className='text-xs opacity-90'>Btw-teruggave </span>
                                                     </div>
                                                     <div className='flex items-center gap-2'>
-                                                        <span className='text-xs font-medium opacity-90'>Total after VAT Refund: </span>
+                                                        <span className='text-xs font-medium opacity-90'>Totaal na btw-teruggave </span>
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-col text-right gap-2">
@@ -277,13 +277,13 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                         <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
                             <div className="flex flex-col gap-3">
                                 <div className='flex items-center gap-2'>
-                                    <span className='text-sm opacity-90'>Total Incl. VAT</span>
+                                    <span className='text-sm opacity-90'>Totaal incl. btw</span>
                                 </div>
                                 <div className='flex items-center gap-2'>
-                                    <span className='text-sm opacity-90'>VAT Refund: </span>
+                                    <span className='text-sm opacity-90'>Btw-teruggave </span>
                                 </div>
                                 <div className='flex items-center gap-2'>
-                                    <span className='text-xs font-medium opacity-90'>Total after VAT Refund: </span>
+                                    <span className='text-xs font-medium opacity-90'>Totaal na btw-teruggave </span>
                                 </div>
                             </div>
                             <div className="flex flex-col text-right gap-2">
@@ -354,13 +354,13 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                         <div className={`${mobSum ? 'h-fit py-2 mt-2 pt-2 border-t' : 'h-0 py-0 overflow-hidden'} grid grid-cols-2 transition-all duration-300 w-full`}>
                             <div className="flex flex-col gap-3">
                                 <div className='flex items-center gap-2'>
-                                    <span className='text-sm opacity-90'>Total Incl. VAT</span>
+                                    <span className='text-sm opacity-90'>Totaal incl. btw</span>
                                 </div>
                                 <div className='flex items-center gap-2'>
-                                    <span className='text-sm opacity-90'>VAT Refund: </span>
+                                    <span className='text-sm opacity-90'>Btw-teruggave </span>
                                 </div>
                                 <div className='flex items-center gap-2'>
-                                    <span className='text-xs font-medium opacity-90'>Total after VAT Refund: </span>
+                                    <span className='text-xs font-medium opacity-90'>Totaal na btw-teruggave </span>
                                 </div>
                             </div>
                             <div className="flex flex-col text-right gap-2">

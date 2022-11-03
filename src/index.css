@@ -6,11 +6,17 @@
 
 html {
   color: #222;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Rubik', sans-serif !important;
 }
 
 @layer components {
   .container {
     @apply max-w-[80rem] overflow-hidden w-full px-4 mx-auto
   }
+
+}
+
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  height: 15px !important;
+  font-family: 'Rubik', sans-serif !important;
 }

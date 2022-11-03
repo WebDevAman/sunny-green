@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { FormControl, InputLabel, MenuItem, Select, TextField } from '@material-ui/core'
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import TextField from '@mui/material/TextField';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 import { AiOutlineCheck, AiFillStar } from 'react-icons/ai'
 import { Button } from '@material-ui/core'
 import { useRecoilState } from 'recoil'
@@ -8,6 +12,7 @@ import { atomImageFromGoogle } from '../../atoms'
 
 const Hero = () => {
     const [data, setData] = useState({})
+    const [requested, setRequested] = useState(false)
     const [img, setImg] = useState('')
     const [imageFromGoogle, setImageFromGoogle] = useRecoilState(atomImageFromGoogle)
     const [error, setError] = useState(false)
@@ -18,7 +23,8 @@ const Hero = () => {
         setData({ ...data, [e.target.id]: e.target.value })
     }
     const handleSubmit = () => {
-        if (data.post_code) {
+        setRequested(true)
+        if (data.post_code.length > 1) {
             if (data.huisnummer) {
                 setImageFromGoogle({
                     img: `https://true-ortho.int.enie.dev/api/readar/map?zipcode=${data.post_code.toUpperCase()}&house_number=${data.huisnummer}`,
@@ -39,7 +45,18 @@ const Hero = () => {
 
     useEffect(() => {
         console.log(data, '-------------> data')
-    }, [data])
+        if (requested) {
+            if (data.post_code?.length > 1) {
+                setInputError({ ...inputError, post_code: false })
+            } else if (data.huisnummer?.length > 1) {
+                setInputError({ ...inputError, huisnummer: false })
+            } else if (data.huisnummer?.length === 0 || undefined) {
+                setInputError({ ...inputError, huisnummer: true })
+            } else {
+                setInputError({ ...inputError, post_code: true })
+            }
+        }
+    }, [data, requested])
     return (
         <div
             className="flex px-3 flex-col items-center  pt-32 lg:pt-2 min-h-[40rem] justify-center z-10 relative gap-10">
@@ -50,19 +67,13 @@ const Hero = () => {
                     Bereken direct hoeveel zonnepanelen je nodig hebt, hoeveel stroom ze opwekken én wat je daarmee bespaart.
                 </p>
                 <div className="p-5 mt-6 shadow-md border rounded-2xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    <TextField onChange={handleChange} error={inputError.post_code} id='post_code' variant="outlined" label="Post Code" />
-                    <TextField onChange={handleChange} error={inputError.huisnummer} id='huisnummer' variant="outlined" label="Huisnummer" />
-                    <FormControl sx={{ m: 1, minWidth: 120 }}>
-                        <Select
-                            labelId="demo-simple-select-helper-label"
-                            id="demo-simple-select-helper"
-                            variant='outlined'
-                            defaultValue={'Toev'}
-                            onChange={handleChange}
-                        >
-
-                        </Select>
-                    </FormControl>
+                    <input autoFocus={error.post_code} value={data.post_code} onChange={handleChange} type='text' id='post_code' className={`px-2.5 outline-none border rounded-md py-[8px] focus:border-gray-500  ${inputError.post_code ? 'border-red-500 placeholder-red-500' : 'border-gray-400'}`} placeholder='Postcode' />
+                    <input onChange={handleChange} error={inputError.huisnummer} id='huisnummer' className={`px-2.5 outline-none border rounded-md py-[8px] focus:border-gray-500  ${inputError.huisnummer ? 'border-red-500 placeholder-red-500' : 'border-gray-400'}`} placeholder='Huisnummer' />
+                    <div className='  border-gray-400 border rounded-md px-2 '>
+                        <select id='toev' onChange={handleChange} className='opacity-80 h-full px-2.5 py-[8px] focus:border-gray-500  rounded-md w-full outline-none' defaultValue={'Toev. (opt)'} placeholder='Toev. (opt)'>
+                            <option value='toev'>Toev. (opt)</option>
+                        </select>
+                    </div>
                     <Button disabled={error} onClick={handleSubmit} variant='outlined' className={'!text-white !border-none whitespace-nowrap !text-base !bg-gradient-to-r !py-2.5  !from-themeYellow !to-themeOrange !font-semibold !rounded-full'} >
                         BEREKEN PRIJS
                     </Button>
