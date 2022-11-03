@@ -121,23 +121,23 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                                 </div>
                                 <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
                                     <div className="grid grid-cols-2 gap-4">
-                                        <TextField id="fname" required label="First Name" onChange={handleChange} variant="outlined" />
-                                        <TextField id="lname" required label="Last Name" onChange={handleChange} variant="outlined" />
+                                        <TextField id="fname" required label="Voornaam" onChange={handleChange} variant="outlined" />
+                                        <TextField id="lname" required label="Achternaam" onChange={handleChange} variant="outlined" />
                                     </div>
-                                    <TextField id="email" required label="Email Address" type={'email'} onChange={handleChange} variant="outlined" />
-                                    <TextField id="phone" required label="Mobile Number" type={'number'} onChange={handleChange} variant="outlined" />
+                                    <TextField id="email" required label="E-mailadres" type={'email'} onChange={handleChange} variant="outlined" />
+                                    <TextField id="phone" required label="Telefoonnummer" type={'number'} onChange={handleChange} variant="outlined" />
                                     <div className="grid grid-cols-3 gap-4">
                                         <TextField id="post_code" required label="Post Code" defaultValue={data.post_code} onChange={handleChange} variant="outlined" />
                                         <TextField id="huisnummer" required label="Huisnummer" type={'text'} defaultValue={data.huisnummer} onChange={handleChange} variant="outlined" />
                                         <TextField id="toev" required label="toev" type={'text'} defaultValue={data.toev} onChange={handleChange} variant="outlined" />
                                     </div>
-                                    <textarea name="comments" id="comments" className='border p-3 rounded-lg outline-none focus:border-[#999] border-[#c4c4c4]' cols="30" rows="4" placeholder='Comments'></textarea>
+                                    <textarea name="comments" id="comments" className='border p-3 rounded-lg outline-none focus:border-[#999] border-[#c4c4c4]' cols="30" rows="4" placeholder='Opmerkingen'></textarea>
                                     <div className="flex gap-2 items-center">
                                         <input type="checkbox" name="own_the_house" id="own_the_house" onChange={() => setData({ ...data, own_the_house: !data.own_the_house })} />
-                                        <p className="text-base">I own the house.</p>
+                                        <p className="text-base">Ik ben eigenaar van de woning.</p>
                                     </div>
                                     <p className="text-sm font-light">
-                                        We process your personal data in accordance with our privacy statement . By continuing, you agree to this.
+                                        We verwerken je persoonsgegevens volgens ons privacy statement. Door verder te gaan, ga je hiermee akkoord.
                                     </p>
                                     <div className="flex gap-4 md:gap-8 flex-col sm:flex-row">
                                         <button onClick={() => setShow(2)} className='whitespace-nowrap hidden text-center items-center underline justify-center sm:flex'>Opnieuw beginnen</button>
@@ -205,24 +205,24 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                     :
                     <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
                         <div className="grid grid-cols-2 gap-4">
-                            <TextField id="fname" required label="First Name" onChange={handleChange} variant="outlined" />
-                            <TextField id="lname" required label="Last Name" onChange={handleChange} variant="outlined" />
+                            <TextField id="fname" required label="Voornaam" onChange={handleChange} variant="outlined" />
+                            <TextField id="lname" required label="Achternaam" onChange={handleChange} variant="outlined" />
                         </div>
 
-                        <TextField id="email" required label="Email Address" type={'email'} onChange={handleChange} variant="outlined" />
-                        <TextField id="phone" required label="Mobile Number" type={'number'} onChange={handleChange} variant="outlined" />
+                        <TextField id="email" required label="E-mailadres" type={'email'} onChange={handleChange} variant="outlined" />
+                        <TextField id="phone" required label="Telefoonnummer" type={'number'} onChange={handleChange} variant="outlined" />
                         <div className="grid grid-cols-3 gap-4">
                             <TextField id="post_code" required label="Post Code" defaultValue={data.post_code} onChange={handleChange} variant="outlined" />
                             <TextField id="huisnummer" required label="Huisnummer" type={'text'} defaultValue={data.huisnummer} onChange={handleChange} variant="outlined" />
                             <TextField id="toev" required label="toev" type={'text'} defaultValue={data.toev} onChange={handleChange} variant="outlined" />
                         </div>
-                        <textarea name="comments" id="comments" className='border p-3 rounded-lg outline-none focus:border-[#999] border-[#c4c4c4]' cols="30" rows="4" placeholder='Comments'></textarea>
+                        <textarea name="comments" id="comments" className='border p-3 rounded-lg outline-none focus:border-[#999] border-[#c4c4c4]' cols="30" rows="4" placeholder='Opmerkingen'></textarea>
                         <div className="flex gap-2 items-center">
                             <input type="checkbox" name="own_the_house" id="own_the_house" onChange={() => setData({ ...data, own_the_house: !data.own_the_house })} />
-                            <p className="text-base">I own the house.</p>
+                            <p className="text-base">Ik ben eigenaar van de woning.</p>
                         </div>
                         <p className="text-sm font-light">
-                            We process your personal data in accordance with our privacy statement . By continuing, you agree to this.
+                            We verwerken je persoonsgegevens volgens ons privacy statement. Door verder te gaan, ga je hiermee akkoord.
                         </p>
 
                         <div className="flex gap-4 md:gap-8 flex-col sm:flex-row">

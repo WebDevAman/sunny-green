@@ -26,7 +26,7 @@ const StepOne = ({ data, setData, handleNext }) => {
         else if (showSelector === 4) {
             setData({ ...data, usage: 5000 })
         } else {
-            setData({ ...data, usage: 0 })
+            setData({ ...data, usage: null })
         }
     }, [showSelector])
 
@@ -51,24 +51,27 @@ const StepOne = ({ data, setData, handleNext }) => {
             </div>
 
             <div className={`${showSelector ? 'max-w-lg' : 'max-w-md'} rounded-3xl shadow-xl border p-5 md:p-8 flex flex-col gap-3`}>
-                <div className="flex flex-col gap-3">
-                    <p className="text-base">Personen in huishouden</p>
-                </div>
+
                 {showSelector > 0 &&
-                    <div className="flex gap-2 rounded-full p-1.5 bg-gray-200 shadow-inner">
-                        {[1, 2, 3, 4].map(num => (
-                            <div onClick={() => setShowSelector(num)} className={`p-1.5 aspect-square md:aspect-[1.7] lg:gap-3 overflow-hidden gap-1.5 flex cursor-pointer justify-center items-center w-full rounded-full ${showSelector === num ? 'bg-white' : 'bg-transparent'}`}>
-                                <FaRegUser className='text-sm lg:text-lg' /><p className='mt-[2px] text-sm'> {num === 1 ? 1 : num === 2 ? '2-3' : num === 3 ? '4-5' : '6+'}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <>
+                        <div className="flex flex-col gap-3">
+                            <p className="text-base">Personen in huishouden</p>
+                        </div>
+                        <div className="flex gap-2 rounded-full p-1.5 bg-gray-200 shadow-inner">
+                            {[1, 2, 3, 4].map(num => (
+                                <div onClick={() => setShowSelector(num)} className={`p-1.5 aspect-square md:aspect-[1.7] lg:gap-3 overflow-hidden gap-1.5 flex cursor-pointer justify-center items-center w-full rounded-full ${showSelector === num ? 'bg-white' : 'bg-transparent'}`}>
+                                    <FaRegUser className='text-sm lg:text-lg' /><p className='mt-[2px] text-sm'> {num === 1 ? 1 : num === 2 ? '2-3' : num === 3 ? '4-5' : '6+'}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </>
                 }
                 <p className="text-base lg:text-lg">
                     Stroomverbruik
                 </p>
 
                 <div className={`${error ? 'border-red-600' : 'border-themeYellow'} flex items-center w-full overflow-hidden border-2 rounded-lg border-gray-500 focus-within:border-themeYellow`}>
-                    <input value={data.usage} onChange={handleChange} type="number" name="usage" className='p-3  rounded-lg outline-none w-full' required placeholder='On a annual basis' />
+                    <input value={data.usage} onChange={handleChange} type="number" name="usage" className='p-3  rounded-lg outline-none w-full' required placeholder='Op jaarbasis' />
                     <p className="text-lg pr-3 lg:text-xl">kWh</p>
                 </div>
 
