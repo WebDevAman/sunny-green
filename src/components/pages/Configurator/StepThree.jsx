@@ -35,7 +35,7 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
         <div className='lg:max-h-[90vh] lg:overflow-y-scroll w-full'>
             <div className='flex flex-col justify-center relative py-12 gap-8 px-5 lg:px-8 w-full'>
                 {state.loading ?
-                    <div className="absolute flex flex-col w-full h-scree inset-0 bg-white items-center justify-center z-10">
+                    <div className="fixed top-0 lg:absolute flex flex-col w-full h-scree inset-0 bg-white items-center justify-center z-10">
                         <>
                             <img src='https://i.pinimg.com/originals/72/66/03/7266036c9f3383d21730484150602f01.gif' alt='processing' />
                             <h3 className="text-xl -mt-12 lg:text-2xl font-medium">Processing...</h3>
@@ -43,7 +43,7 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                     </div>
                     :
                     state.error ?
-                        <div className="absolute flex flex-col w-full h-scree inset-0 bg-white items-center justify-center z-10">
+                        <div className="fixed top-0 lg:absolute flex flex-col w-full h-scree inset-0 bg-white items-center justify-center z-10">
                             <img width={200} src='http://www.setra.com/hubfs/Sajni/crc_error.jpg' alt='processing' />
                             <h3 className="text-xl lg:text-2xl font-medium">Something went wrong...</h3>
                         </div>
