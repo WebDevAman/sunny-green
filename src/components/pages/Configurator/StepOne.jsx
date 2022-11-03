@@ -4,7 +4,7 @@ import ThemeButton from '../../common/ThemeButton'
 
 const StepOne = ({ data, setData, handleNext }) => {
     const [error, setError] = React.useState(false)
-    const [showSelector, setShowSelector] = React.useState(1)
+    const [showSelector, setShowSelector] = React.useState(0)
     const handleChange = (e) => {
         setData({ ...data, [e.target.name]: e.target.value })
     }
@@ -46,7 +46,7 @@ const StepOne = ({ data, setData, handleNext }) => {
                     Wat is je stroomverbruik?
                 </p>
                 <p onClick={() => setShowSelector(showSelector > 0 ? 0 : 1)} className="text-sm cursor-pointer underline opacity-80">
-                    {showSelector ? 'Ik weet mijn stroomverbruik' : 'Ik weet mijn stroomverbruik niet'}
+                    {showSelector > 0 ? 'Ik weet mijn stroomverbruik' : 'Ik weet mijn stroomverbruik niet'}
                 </p>
             </div>
 
