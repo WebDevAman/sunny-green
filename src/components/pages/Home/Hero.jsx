@@ -15,7 +15,7 @@ const Hero = () => {
     const [data, setData] = useState({})
     const [requested, setRequested] = useState(false)
     const [drop, setDrop] = useState(false)
-    const [dropVal, setDropVal] = useState('Toev. (Opt)')
+    const [dropVal, setDropVal] = useState('Toev. ')
     const [img, setImg] = useState('')
     const [imageFromGoogle, setImageFromGoogle] = useRecoilState(atomImageFromGoogle)
     const [error, setError] = useState(false)
@@ -73,8 +73,8 @@ const Hero = () => {
                     <input autoFocus={error.post_code} value={data.post_code} onChange={handleChange} type='text' id='post_code' className={`px-2.5 outline-none border rounded-md py-[8px] focus:border-gray-500  ${inputError.post_code ? 'border-red-500 placeholder-red-500' : 'border-gray-400'}`} placeholder='Postcode' />
                     <input onChange={handleChange} error={inputError.huisnummer} id='huisnummer' className={`px-2.5 outline-none border rounded-md py-[8px] focus:border-gray-500  ${inputError.huisnummer ? 'border-red-500 placeholder-red-500' : 'border-gray-400'}`} placeholder='Huisnummer' />
                     {/* <div className='  border-gray-400 border bg-white rounded-md px-2  focus-within:border-gray-500'>
-                        <select id='toev' onChange={handleChange} className='opacity-80 bg-white h-full px-2.5 py-[10px] rounded-md w-full outline-none' defaultValue={'Toev. (opt)'} placeholder='Toev. (opt)'>
-                            <option className='w-full bg-white' value='toev'>Toev. (opt)</option>
+                        <select id='toev' onChange={handleChange} className='opacity-80 bg-white h-full px-2.5 py-[10px] rounded-md w-full outline-none' defaultValue={'Toev. '} placeholder='Toev. '>
+                            <option className='w-full bg-white' value='toev'>Toev. </option>
                         </select>
                     </div> */}
                     <div onClick={() => setDrop(!drop)} className="w-full cursor-pointer flex relative p-[9px] justify-between bg-white rounded-md border  border-gray-400 items-center focus-within:border-gray-500">
