@@ -79,7 +79,7 @@ const FormAndImage = () => {
                         </div>
 
                         :
-                        <div className="bg-gray-100 mt-4 lg:mt-0 min-h-[14rem] w-full">
+                        <div className="bg-gray-100 mt-4 lg:mt-0 min-h-[13rem] w-full">
                             <img src={leftSideImage.img || 'https://media.tenor.com/64UaxgnTfx0AAAAC/memes-loading.gif'} alt='img' className='aspect-[1.7] object-cover object-center md:aspect-1.8 lg:min-h-[85vh]' />
                         </div>
                     }

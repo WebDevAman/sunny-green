@@ -1,6 +1,6 @@
 import { IconButton, TextField } from '@material-ui/core'
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import ThemeButton from '../../common/ThemeButton'
 import axios from 'axios'
 const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
@@ -44,8 +44,11 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                     :
                     state.error ?
                         <div className="fixed top-0 lg:absolute flex flex-col w-full h-scree inset-0 bg-white items-center justify-center z-10">
-                            <img width={200} src='http://www.setra.com/hubfs/Sajni/crc_error.jpg' alt='processing' />
-                            <h3 className="text-xl lg:text-2xl font-medium">Something went wrong...</h3>
+                            <img width={150} src='http://www.setra.com/hubfs/Sajni/crc_error.jpg' alt='processing' />
+                            <h3 className="text-xl my-4 lg:text-2xl font-medium">Something went wrong...</h3>
+                            <Link to='/'>
+                                <ThemeButton text='Try again' />
+                            </Link>
                         </div>
                         :
                         ''
