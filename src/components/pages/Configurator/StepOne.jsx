@@ -70,8 +70,8 @@ const StepOne = ({ data, setData, handleNext }) => {
                     Stroomverbruik
                 </p>
 
-                <div className={`${error ? 'border-red-600' : 'border-themeYellow'} flex items-center w-full overflow-hidden border-2 rounded-lg border-gray-500 focus-within:border-themeYellow`}>
-                    <input value={data.usage} onChange={handleChange} type="number" name="usage" className='p-3  rounded-lg outline-none w-full' required placeholder='Op jaarbasis' />
+                <div className={`${error ? 'border-red-600' : 'border-themeYellow'} border flex items-center w-full overflow-hidden rounded-lg border-gray-300 focus-within:border-themeYellow`}>
+                    <input value={data.usage} onChange={handleChange} type="number" name="usage" className='p-3 rounded-lg outline-none w-full' required placeholder='Op jaarbasis' />
                     <p className="text-lg pr-3 lg:text-xl">kWh</p>
                 </div>
 
