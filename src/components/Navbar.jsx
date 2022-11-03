@@ -11,7 +11,7 @@ const Navbar = ({ isImg }) => {
     React.useEffect(() => {
         if (isImg) {
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 100 && isImg) {
+                if (window.scrollY > 10 && isImg) {
                     setScrolled(true)
                 } else {
                     setScrolled(false)
@@ -22,7 +22,7 @@ const Navbar = ({ isImg }) => {
         }
     }, [])
     return (
-        <div className={`${scrolled ? 'bg-white shadow-lg text-[#222]' : 'bg-transparent  text-white shadow-none'} transition-all duration-500 z-50 sticky inset-0 w-full `}>
+        <div className={`${scrolled ? 'bg-white shadow-lg text-[#222]' : 'bg-transparent  text-white shadow-none'} transition-all duration-500 z-50 lg:sticky inset-0 w-full `}>
             <div className="max-w-[100rem] px-4 mx-auto py-2 flex items-center h-16 md:h-20 justify-between lg:justify-start space-x-10 w-full">
                 <Logo dark={scrolled} />
                 <nav className='hidden md:flex'>

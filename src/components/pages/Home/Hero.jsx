@@ -42,14 +42,14 @@ const Hero = () => {
     }, [data])
     return (
         <div
-            className="flex flex-col items-center min-h-[40rem] justify-center z-10 relative gap-10">
+            className="flex px-3 flex-col items-center  pt-32 lg:pt-2 min-h-[40rem] justify-center z-10 relative gap-10">
             <h1 className=' text-white text-3xl lg:text-[50px] text-center max-w-md'>Zonnepanelen prijs <spam className='leading-normal'>berekenen</spam></h1>
-            <div className="rounded-3xl text-center  bg-white p-8 w-full max-w-[60rem]">
-                <h2 className='text-xl lg:text-2xl '>Hoeveel leveren zonnepanelen jou op?</h2>
-                <p className="text-base lg:text-lg pt-4">
+            <div className="rounded-3xl text-center bg-white p-5 lg:p-8 w-full max-w-[60rem]">
+                <h2 className='font-medium text-2xl '>Hoeveel leveren zonnepanelen jou op?</h2>
+                <p className="text-base hidden md:flex lg:text-lg pt-4">
                     Bereken direct hoeveel zonnepanelen je nodig hebt, hoeveel stroom ze opwekken én wat je daarmee bespaart.
                 </p>
-                <div className="p-5 shadow-md border rounded-2xl mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <div className="p-5 mt-6 shadow-md border rounded-2xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <TextField onChange={handleChange} error={inputError.post_code} id='post_code' variant="outlined" label="Post Code" />
                     <TextField onChange={handleChange} error={inputError.huisnummer} id='huisnummer' variant="outlined" label="Huisnummer" />
                     <FormControl sx={{ m: 1, minWidth: 120 }}>

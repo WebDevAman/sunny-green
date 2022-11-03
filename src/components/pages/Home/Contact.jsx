@@ -7,7 +7,7 @@ const Contact = () => {
         <div className='max-w-[60rem] pt-12 lg:pt-20 mx-auto flex flex-col gap-12 lg:gap-20'>
             <div className="w-full grid grid-cols-1 gap-6 lg:gap-0 lg:grid-cols-2 relative">
                 <img className='ml-auto my-auto aspect-[1.4]  lg:hidden flex lg:rounded-l-none object-center rounded-3xl w-full object-cover select-none max-w-[45rem]' src='https://www.enie.nl/wp-content/uploads/2021/10/achtergrond-oog2-600x850.png' alt='img' />
-                <div className="h-fit bg-white rounded-3xl shadow-2xl p-12 flex flex-col gap-6 ">
+                <div className="h-fit bg-white rounded-3xl shadow-2xl p-6 lg:p-12 flex flex-col gap-6 ">
                     <h2 className='text-2xl lg:text-4xl'>
                         Zie het licht.
                     </h2>

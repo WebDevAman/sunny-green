@@ -33,7 +33,7 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
 
     return (
         <div className='lg:max-h-[90vh] lg:overflow-y-scroll w-full'>
-            <div className='flex flex-col justify-center relative py-12 gap-8 px-4 lg:px-8 w-full'>
+            <div className='flex flex-col justify-center relative py-12 gap-8 px-5 lg:px-8 w-full'>
                 {state.loading ?
                     <div className="absolute flex flex-col w-full h-scree inset-0 bg-white items-center justify-center z-10">
                         <>
@@ -79,7 +79,7 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                 <p className="text-lg">
                     Type afspraak
                 </p>
-                <div className="rounded-full w-full p-1 lg:p-2 grid grid-cols-2 bg-gray-200 max-w-sm shadow-inset">
+                <div className="rounded-full w-full p-1 lg:p-2 grid grid-cols-2 shadow-inner bg-gray-100 max-w-sm shadow-inset">
                     <div onClick={() => setData({ ...data, appointment_type: 'Videogesprek' })} className={`cursor-pointer select-none  rounded-full w-full p-4 ${data.appointment_type === 'Videogesprek' ? 'bg-white shadow-lg' : 'bg-transparent'} max-w-sm shadow-inset flex justify-center`}>Videogesprek</div>
                     <div onClick={() => setData({ ...data, appointment_type: 'Bel Mij Terug' })} className={`cursor-pointer select-none rounded-full w-full p-4 ${data.appointment_type === 'Bel Mij Terug' ? 'bg-white  shadow-lg' : 'bg-transparent'} bg-white max-w-sm shadow-inset flex justify-center`}>Bel Mij Terug</div>
                 </div>
@@ -87,13 +87,34 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                     <>
                         {data?.date?.length > 1 && data?.time?.length > 1 ?
                             <>
-                                <div className="grid grid-cols-7 gap-2 md:gap-4">
-                                    <div className="col-span-4 md:col-span-5">
-                                        <input type='date' id='date' value={data.date} onChange={handleChange} className='outline-none border-2 pr-4 w-full border-themeOrange p-2.5 rounded-xl ' />
-                                    </div>
-                                    <div className="col-span-3 md:col-span-2 ">
-                                        <input type='time' id='time' value={data.time} onChange={handleChange} className='border-2 pr-4 w-full border-themeOrange outline-none p-2.5 rounded-xl ' />
-                                    </div>
+                                <div className="grid grid-cols-2 gap-4">
+                                    <TextField
+                                        id="date"
+                                        label="Datum invoeren"
+                                        variant='outlined'
+                                        onChange={handleChange}
+                                        defaultValue={data.date}
+                                        type="date"
+                                        sx={{ width: 220 }}
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                    />
+                                    <TextField
+                                        id="time"
+                                        label="Voer tijd in"
+                                        variant='outlined'
+                                        onChange={handleChange}
+                                        defaultValue={data.time}
+                                        type="time"
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                        inputProps={{
+                                            step: 300, // 5 min
+                                        }}
+                                        sx={{ width: 150 }}
+                                    />
                                 </div>
                                 <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
                                     <div className="grid grid-cols-2 gap-4">
@@ -102,7 +123,7 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                                     </div>
                                     <TextField id="email" required label="Email Address" type={'email'} onChange={handleChange} variant="outlined" />
                                     <TextField id="phone" required label="Mobile Number" type={'number'} onChange={handleChange} variant="outlined" />
-                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                    <div className="grid grid-cols-3 gap-4">
                                         <TextField id="post_code" required label="Post Code" defaultValue={data.post_code} onChange={handleChange} variant="outlined" />
                                         <TextField id="huisnummer" required label="Huisnummer" type={'text'} defaultValue={data.huisnummer} onChange={handleChange} variant="outlined" />
                                         <TextField id="toev" required label="toev" type={'text'} defaultValue={data.toev} onChange={handleChange} variant="outlined" />
@@ -129,13 +150,35 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                             </>
                             :
                             <>
-                                <div className="grid grid-cols-7 gap-2 md:gap-4">
-                                    <div className="col-span-4 md:col-span-5">
-                                        <input type='date' id='date' value={data.date} onChange={handleChange} className='outline-none border-2 pr-4 w-full border-themeOrange p-2.5 rounded-xl ' />
-                                    </div>
-                                    <div className="col-span-3 md:col-span-2 ">
-                                        <input type='time' id='time' value={data.time} onChange={handleChange} className='border-2 pr-4 w-full border-themeOrange outline-none p-2.5 rounded-xl ' />
-                                    </div>
+
+                                <div className="grid grid-cols-2 gap-4">
+                                    <TextField
+                                        id="date"
+                                        label="Datum invoeren"
+                                        variant='outlined'
+                                        onChange={handleChange}
+                                        defaultValue={data.date}
+                                        type="date"
+                                        sx={{ width: 220 }}
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                    />
+                                    <TextField
+                                        id="time"
+                                        label="Voer tijd in"
+                                        variant='outlined'
+                                        onChange={handleChange}
+                                        defaultValue={data.time}
+                                        type="time"
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                        inputProps={{
+                                            step: 300, // 5 min
+                                        }}
+                                        sx={{ width: 150 }}
+                                    />
                                 </div>
                                 <p className="text-base -mt-4">
                                     Selecteer Datum en tijd om door te gaan
@@ -162,9 +205,10 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                             <TextField id="fname" required label="First Name" onChange={handleChange} variant="outlined" />
                             <TextField id="lname" required label="Last Name" onChange={handleChange} variant="outlined" />
                         </div>
+
                         <TextField id="email" required label="Email Address" type={'email'} onChange={handleChange} variant="outlined" />
                         <TextField id="phone" required label="Mobile Number" type={'number'} onChange={handleChange} variant="outlined" />
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="grid grid-cols-3 gap-4">
                             <TextField id="post_code" required label="Post Code" defaultValue={data.post_code} onChange={handleChange} variant="outlined" />
                             <TextField id="huisnummer" required label="Huisnummer" type={'text'} defaultValue={data.huisnummer} onChange={handleChange} variant="outlined" />
                             <TextField id="toev" required label="toev" type={'text'} defaultValue={data.toev} onChange={handleChange} variant="outlined" />

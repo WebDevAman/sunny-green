@@ -2,7 +2,7 @@ import React from 'react'
 
 const HowItWorks = () => {
     return (
-        <div className='flex max-w-[70rem] mx-auto py-12 flex-col gap-12'>
+        <div className='flex max-w-[70rem] mx-auto mt-12 lg:mt-0 py-12 flex-col gap-12'>
             <div className="flex gap-2 md:gap-10">
                 <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeYellow to-themeOrange"></div>
                 <div className="flex flex-col gap-4 py-6">

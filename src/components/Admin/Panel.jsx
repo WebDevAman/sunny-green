@@ -2,6 +2,7 @@ import { Card, CardActionArea, CardContent, CardMedia, List, ListItem, Typograph
 import axios from 'axios'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { format } from 'timeago.js'
 import Layout from '../Layout'
 
 const Panel = () => {
@@ -28,14 +29,14 @@ const Panel = () => {
                 <div className='container my-6  grid grid-cols-2 gap-6  !px-0 rounded-2xl border shadow-xl'>
                     <div className="flex bg-gray-50 h-[90vh] overflow-y-scroll flex-col gap-6 p-6 border-r">
                         <h2 className="text-xl lg:text-2xl">Total Requests ({data?.length})</h2>
-                        {data?.map((item, i) => (
+                        {[].concat(data).reverse().map((item, i) => (
                             <div key={i} className="h-32">
                                 <Card onClick={() => setRightData(item)} variant='outlined' sx={{ maxWidth: 345 }}>
                                     <CardActionArea>
                                         <div className="p-4 flex flex-col min-h-32">
                                             <div className="flex items-center justify-between">
                                                 <p className='capitalize'>{item?.fname} {item?.lname}</p>
-                                                <p>ID: {item?._id}</p>
+                                                <p className='px-3 py-1 rounded-full border bg-gray-100 text-sm'>{format(item.createdAt)}</p>
                                             </div>
                                             <div className="grid pt-3 grid-cols-2">
                                                 <div className="flex text-xs flex-col gap-2">

@@ -31,7 +31,7 @@ const index = () => {
 
             </div>
             <div className="border-t container flex justify-between items-center w-full py-6">
-                <p className="text-sm">Copyright &copy; 2022 LOGO</p>
+                <p className="text-sm">Copyright &copy; 2022 Sunny Green</p>
             </div>
         </div>
     )

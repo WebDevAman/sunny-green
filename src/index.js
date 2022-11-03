@@ -12,12 +12,14 @@ import {
 import FormAndImage from './components/pages/Configurator/FormAndImage';
 import Success from './components/pages/Configurator/Success';
 import Panel from './components/Admin/Panel';
+import ScrollToTop from './components/common/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <RecoilRoot>
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<App />}></Route>
           <Route path="/configurator" element={<FormAndImage />}></Route>

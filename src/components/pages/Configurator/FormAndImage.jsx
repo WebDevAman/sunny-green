@@ -32,9 +32,12 @@ const FormAndImage = () => {
             navigate('/')
         }
     }, [leftSideImage])
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [show]);
     return (
         <Layout noNav>
-            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className='grid max-w-lg lg:max-w-[1550px] my-6 shadow-lg border mx-2 rounded-3xl overflow-hidden sm:mx-auto lg:pl-4 grid-cols-1 lg:grid-cols-9 gap-6'>
+            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className='grid  md:max-w-2xl lg:max-w-[1550px] my-6 shadow-lg border mx-2 rounded-3xl overflow-hidden sm:mx-auto lg:pl-4 grid-cols-1 lg:grid-cols-9 gap-6'>
 
                 <div className="lg:hidden flex justify-center gap-1 py-3">
                     {[1, 2, 3].map(num => (
@@ -46,7 +49,7 @@ const FormAndImage = () => {
                 <div className="flex col-span-1 lg:col-span-5 relative lg:overflow-hidden">
                     <div className="hidden lg:flex flex-col justify-center gap-3 pr-4">
                         {[1, 2, 3].map(num => (
-                            <div key={num} className={`${show === num ? 'to-themeOrange from-themeYellow text-white ' : 'bg-white text-black'} bg-gradient-to-r w-9 h-9 flex items-center cursor-pointer justify-center rounded-full`}>
+                            <div key={num} onClick={() => setShow(num)} className={`${show === num ? 'to-themeOrange from-themeYellow text-white ' : 'bg-white text-black'} bg-gradient-to-r w-9 h-9 flex items-center cursor-pointer justify-center rounded-full`}>
                                 {num}
                             </div>
                         ))}
@@ -67,90 +70,18 @@ const FormAndImage = () => {
                                 <p className="text-lg font-medium">
                                     Onze adviseurs helpen je graag verder
                                 </p>
-                                <p className="text-base font-light pt-2 max-w-[70%]">
+                                <p className="text-base font-light pt-2 max-w-[95%]">
                                     Het voorstel is uiteraard vrijblijvend en nog niet definitief. Om een definitief voorstel te maken nemen we graag contact met je op.
                                 </p>
-                                <div className="absolute right-0 bottom-0">
-                                    <img src='https://configurator.enie.nl/assets/images/advisors.png' className='w-40 md:w-52' alt='img' />
-                                </div>
+
                             </div>
-                            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className=" group w-full max-w-xl rounded-3xl p-5 lg:p-8  lg:mt-0 gap-4 flex sm:rounded-[35px] bg-white">
-
-                                <div className="flex pr-6 gap-3 w-full flex-col">
-                                    <h3 className="text-xl lg:text-2xl">
-                                        Alles op een rijtje
-                                    </h3>
-                                    <p>{leftSideImage.post_code}</p>
-                                    <p>Huisnummer: {leftSideImage.huisnummer}</p>
-                                    <>
-                                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
-                                        <p className="text-medium">
-                                            ZonneKopen
-                                        </p>
-
-                                        <div className="grid py-2 grid-cols-2 w-full">
-                                            <div className="flex flex-col gap-3">
-                                                <div className='flex items-center gap-2'>
-                                                    <FaSolarPanel />
-                                                    <span className='text-sm opacity-90'>Zonnepanelen</span>
-                                                </div>
-                                                <div className='flex items-center gap-2'>
-                                                    <SiConvertio />
-                                                    <span className='text-sm opacity-90'>Omvormer</span>
-                                                </div>
-                                                <div className='flex items-center gap-2'>
-                                                    <AiOutlineMobile />
-                                                    <span className='text-sm opacity-90'>Monitoring via app</span>
-                                                </div>
-                                                <div className='flex items-center gap-2'>
-                                                    <GrUserWorker />
-                                                    <span className='text-sm opacity-90'>Installatie</span>
-                                                </div>
-                                            </div>
-                                            <div className="flex flex-col text-right gap-3">
-                                                <span className='text-sm opacity-90'>{data.no_of_panels}x</span>
-                                                <span className='text-sm opacity-90'>Serieel</span>
-                                                <span className='text-sm opacity-90'>Inclusief</span>
-                                                <span className='text-sm opacity-90'>Inclusief</span>
-                                            </div>
-                                        </div>
-                                        <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
-                                            <div className="flex flex-col gap-3">
-                                                <div className='flex items-center gap-2'>
-                                                    <span className='text-sm opacity-90'>Subtotaal</span>
-                                                </div>
-
-                                            </div>
-                                            <div className="flex flex-col text-right gap-2">
-                                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * data.no_of_panels).toFixed(2)}</span>
-                                            </div>
-                                        </div>
-                                        <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
-                                            <div className="flex flex-col gap-3">
-                                                <div className='flex items-center gap-2'>
-                                                    <span className='text-sm opacity-90'>Total Incl. VAT</span>
-                                                </div>
-                                                <div className='flex items-center gap-2'>
-                                                    <span className='text-sm opacity-90'>VAT Refund: </span>
-                                                </div>
-                                                <div className='flex items-center gap-2'>
-                                                    <span className='text-xs font-medium opacity-90'>Total after VAT Refund: </span>
-                                                </div>
-                                            </div>
-                                            <div className="flex flex-col text-right gap-2">
-                                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * data.no_of_panels).toFixed(2)}</span>
-                                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * 0.061).toFixed(2)}</span>
-                                                <span className='text-sm font-medium opacity-90'>€ {(((data.usage * 1.15).toFixed(2) - ((data.usage * 1.15) * 0.061)) * data.no_of_panels).toFixed(2)}</span>
-                                            </div>
-                                        </div>
-                                    </>
-                                </div>
-                            </div>
+                            <ThirdPageTotalChart leftSideImage={leftSideImage} data={data} />
                         </div>
 
                         :
-                        <img src={leftSideImage.img} alt='img' className='aspect-[1.7] object-cover object-center mt-4 lg:mt-0 md:aspect-1.8 lg:min-h-[85vh]' />
-
+                        <div className="bg-gray-100 mt-4 lg:mt-0 min-h-[14rem] w-full">
+                            <img src={leftSideImage.img || 'https://media.tenor.com/64UaxgnTfx0AAAAC/memes-loading.gif'} alt='img' className='aspect-[1.7] object-cover object-center md:aspect-1.8 lg:min-h-[85vh]' />
+                        </div>
                     }
                     {show === 1 ?
                         <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className="absolute group max-w-[15rem] p-1 left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-16 -top-5 border-t shadow-xl lg:top-4 gap-4 flex rounded-[35px] bg-white w-full">
@@ -168,9 +99,9 @@ const FormAndImage = () => {
                         </div>
                         :
                         show === 2 ?
-                            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className={`absolute group p-1 left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-20 -top-5 border-t shadow-xl lg:top-8 gap-4 flex rounded-[35px] bg-white w-full ${showLeft ? 'max-w-[90%] md:max-w-md' : 'max-w-[90%] md:max-w-[80%]  '}`}>
+                            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className={`absolute group p-1 left-1/2 -translate-x-1/2 lg:-translate-x-0 lg:left-20 -top-5 border-t shadow-xl lg:top-8 gap-4 flex rounded-[45px] bg-white w-full ${showLeft ? 'max-w-[90%] md:max-w-md' : 'max-w-[90%] md:max-w-[80%]  '}`}>
                                 <ButtonIcon setShowLeft={setShowLeft} showLeft={showLeft} />
-                                <div className="flex pr-6 justify-center w-full flex-col">
+                                <div className={`${showLeft ? 'pb-4' : 'pb-0'} flex pr-6 justify-center w-full flex-col`}>
                                     <div className="flex justify-between items-center ">
                                         <div className={`${showLeft ? 'flex flex-col gap-1 -ml-5 pt-6' : 'flex flex-col gap-1 '}`}>
                                             <p className='text-sm md:text-base'>{leftSideImage.post_code}</p>
@@ -234,6 +165,8 @@ const FormAndImage = () => {
                                                     <span className='text-xs opacity-90'>€ {((data.usage * 1.15) * data.no_of_panels).toFixed(2)}</span>
                                                 </div>
                                             </div>
+                                            <PayBackTime data={data} />
+
                                             <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
                                                 <div className="flex flex-col gap-2">
                                                     <div className='flex items-center gap-2'>
@@ -279,8 +212,188 @@ const FormAndImage = () => {
 
 const ButtonIcon = ({ showLeft, setShowLeft }) => {
     return (
-        <div onClick={() => setShowLeft(!showLeft)} className={`${showLeft ? 'rotate-180 w-12 h-12 -ml-5 -mt-5' : 'rotate-0 h-16 w-16 '} transition-all duration-300 aspect-square border-4 border-white cursor-pointer rounded-full from-themeYellow flex items-center justify-center text-white text-3xl to-themeOrange bg-gradient-to-r`}>
+        <div onClick={() => setShowLeft(!showLeft)} className={`${showLeft ? 'rotate-180 w-14 h-14 -ml-5 -mt-5' : 'rotate-0 h-[70px] w-[70px] aspect-square '} transition-all duration-300 aspect-square shadow-md border-4 border-white cursor-pointer rounded-full from-themeYellow flex items-center justify-center text-white text-3xl to-themeOrange bg-gradient-to-r`}>
             <BsChevronDown />
+        </div>
+    )
+}
+const ThirdPageTotalChart = ({ leftSideImage, data }) => {
+    const [mobSum, setMobSum] = React.useState(false)
+    return (
+        <>
+            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className="lg:flex hidden group w-full max-w-xl rounded-3xl p-5 lg:p-8 lg:mt-0 gap-4 sm:rounded-[35px] bg-white">
+
+                <div className="flex gap-3 w-full flex-col">
+                    <h3 className="text-xl lg:text-2xl">
+                        Alles op een rijtje
+                    </h3>
+                    <p>{leftSideImage.post_code}</p>
+                    <p>Huisnummer: {leftSideImage.huisnummer}</p>
+                    <>
+                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                        <p className="text-medium">
+                            ZonneKopen
+                        </p>
+
+                        <div className="grid py-2 grid-cols-2 w-full">
+                            <div className="flex flex-col gap-3">
+                                <div className='flex items-center gap-2'>
+                                    <FaSolarPanel />
+                                    <span className='text-sm opacity-90'>Zonnepanelen</span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <SiConvertio />
+                                    <span className='text-sm opacity-90'>Omvormer</span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <AiOutlineMobile />
+                                    <span className='text-sm opacity-90'>Monitoring via app</span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <GrUserWorker />
+                                    <span className='text-sm opacity-90'>Installatie</span>
+                                </div>
+                            </div>
+                            <div className="flex flex-col text-right gap-3">
+                                <span className='text-sm opacity-90'>{data.no_of_panels}x</span>
+                                <span className='text-sm opacity-90'>Serieel</span>
+                                <span className='text-sm opacity-90'>Inclusief</span>
+                                <span className='text-sm opacity-90'>Inclusief</span>
+                            </div>
+                        </div>
+                        <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
+                            <div className="flex flex-col gap-3">
+                                <div className='flex items-center gap-2'>
+                                    <span className='text-sm opacity-90'>Subtotaal</span>
+                                </div>
+
+                            </div>
+                            <div className="flex flex-col text-right gap-2">
+                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * data.no_of_panels).toFixed(2)}</span>
+                            </div>
+                        </div>
+                        <PayBackTime data={data} />
+
+                        <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
+                            <div className="flex flex-col gap-3">
+                                <div className='flex items-center gap-2'>
+                                    <span className='text-sm opacity-90'>Total Incl. VAT</span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <span className='text-sm opacity-90'>VAT Refund: </span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <span className='text-xs font-medium opacity-90'>Total after VAT Refund: </span>
+                                </div>
+                            </div>
+                            <div className="flex flex-col text-right gap-2">
+                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * data.no_of_panels).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * 0.061).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.usage * 1.15).toFixed(2) - ((data.usage * 1.15) * 0.061)) * data.no_of_panels).toFixed(2)}</span>
+                            </div>
+                        </div>
+                    </>
+                </div>
+            </div>
+
+
+
+            <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className="lg:hidden flex group w-full max-w-xl rounded-3xl p-5 lg:p-8 lg:mt-0 gap-4 sm:rounded-[35px] bg-white">
+
+                <div className="flex  gap-2 w-full flex-col">
+                    <h3 className="text-xl lg:text-2xl">
+                        Alles op een rijtje
+                    </h3>
+                    <p>{leftSideImage.post_code}</p>
+                    <p>Huisnummer: {leftSideImage.huisnummer}</p>
+                    <>
+                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                        <p className={`${mobSum ? 'h-fit py-2  text-base' : 'h-0 py-0 overflow-hidden  text-[1px]'} transition-all duration-300`}>
+                            ZonneKopen
+                        </p>
+
+                        <div className={`${mobSum ? 'h-fit py-2 ' : 'h-0 py-0 overflow-hidden'} grid grid-cols-2 w-full transition-all duration-300`}>
+                            <div className="flex flex-col gap-3">
+                                <div className='flex items-center gap-2'>
+                                    <FaSolarPanel />
+                                    <span className='text-sm opacity-90'>Zonnepanelen</span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <SiConvertio />
+                                    <span className='text-sm opacity-90'>Omvormer</span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <AiOutlineMobile />
+                                    <span className='text-sm opacity-90'>Monitoring via app</span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <GrUserWorker />
+                                    <span className='text-sm opacity-90'>Installatie</span>
+                                </div>
+                            </div>
+                            <div className="flex flex-col text-right gap-3">
+                                <span className='text-sm opacity-90'>{data.no_of_panels}x</span>
+                                <span className='text-sm opacity-90'>Serieel</span>
+                                <span className='text-sm opacity-90'>Inclusief</span>
+                                <span className='text-sm opacity-90'>Inclusief</span>
+                            </div>
+                        </div>
+
+                        <PayBackTime data={data} />
+                        <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
+                            <div className="flex flex-col gap-3">
+                                <div className='flex items-center gap-2'>
+                                    <span className='text-sm opacity-90'>Subtotaal</span>
+                                </div>
+
+                            </div>
+                            <div className="flex flex-col text-right gap-2">
+                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * data.no_of_panels).toFixed(2)}</span>
+                            </div>
+                        </div>
+                        <div className={`${mobSum ? 'h-fit py-2 mt-2 pt-2 border-t' : 'h-0 py-0 overflow-hidden'} grid grid-cols-2 transition-all duration-300 w-full`}>
+                            <div className="flex flex-col gap-3">
+                                <div className='flex items-center gap-2'>
+                                    <span className='text-sm opacity-90'>Total Incl. VAT</span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <span className='text-sm opacity-90'>VAT Refund: </span>
+                                </div>
+                                <div className='flex items-center gap-2'>
+                                    <span className='text-xs font-medium opacity-90'>Total after VAT Refund: </span>
+                                </div>
+                            </div>
+                            <div className="flex flex-col text-right gap-2">
+                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * data.no_of_panels).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {((data.usage * 1.15) * 0.061).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.usage * 1.15).toFixed(2) - ((data.usage * 1.15) * 0.061)) * data.no_of_panels).toFixed(2)}</span>
+                            </div>
+                        </div>
+                        <div className="flex w-full justify-center">
+                            <div onClick={() => setMobSum(!mobSum)} className={`${mobSum ? 'rotate-180' : 'rotate-0'} h-[70px] w-[70px] aspect-square transition-all duration-300 -mb-16 shadow-md aspect-square border-4 border-white cursor-pointer rounded-full from-themeYellow flex items-center justify-center text-white text-3xl to-themeOrange bg-gradient-to-r`}>
+                                <BsChevronDown />
+                            </div>
+                        </div>
+                    </>
+                </div>
+            </div>
+        </>
+    )
+}
+
+const PayBackTime = ({ data }) => {
+    return (
+        <div className="rounded-xl grid grid-cols-2 border border-themeYellow p-2.5">
+            <div className="flex flex-col gap-2">
+                <p className='text-sm'>Terugverdientijd</p>
+                <p className='text-sm'>Jaarlijkse besparing</p>
+            </div>
+            <div className="flex text-right flex-col gap-2">
+                <p className='text-sm'>
+                    {(((((data.usage * 1.15).toFixed(2) - ((data.usage * 1.15) * 0.061)) * data.no_of_panels).toFixed(2) / ((((((data.usage * 1.15).toFixed(2) - ((data.usage * 1.15) * 0.061)) * data.no_of_panels).toFixed(2) / ((data.usage * 1.15) * 0.061)).toFixed(2)) * 2).toFixed(2)) / 2).toFixed(1)} jaar
+                </p>
+                <p className='text-sm'>€ {((((((data.usage * 1.15).toFixed(2) - ((data.usage * 1.15) * 0.061)) * data.no_of_panels).toFixed(2) / ((data.usage * 1.15) * 0.061)).toFixed(2)) / 2).toFixed(2)}</p>
+            </div>
         </div>
     )
 }
