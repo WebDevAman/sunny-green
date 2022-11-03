@@ -69,9 +69,9 @@ const Hero = () => {
                 <div className="p-5 mt-6 shadow-md border rounded-2xl  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     <input autoFocus={error.post_code} value={data.post_code} onChange={handleChange} type='text' id='post_code' className={`px-2.5 outline-none border rounded-md py-[8px] focus:border-gray-500  ${inputError.post_code ? 'border-red-500 placeholder-red-500' : 'border-gray-400'}`} placeholder='Postcode' />
                     <input onChange={handleChange} error={inputError.huisnummer} id='huisnummer' className={`px-2.5 outline-none border rounded-md py-[8px] focus:border-gray-500  ${inputError.huisnummer ? 'border-red-500 placeholder-red-500' : 'border-gray-400'}`} placeholder='Huisnummer' />
-                    <div className='  border-gray-400 border rounded-md px-2 '>
-                        <select id='toev' onChange={handleChange} className='opacity-80 h-full px-2.5 py-[8px] focus:border-gray-500  rounded-md w-full outline-none' defaultValue={'Toev. (opt)'} placeholder='Toev. (opt)'>
-                            <option value='toev'>Toev. (opt)</option>
+                    <div className='  border-gray-400 border bg-white rounded-md px-2  focus-within:border-gray-500'>
+                        <select id='toev' onChange={handleChange} className='opacity-80 bg-white h-full px-2.5 py-[10px] rounded-md w-full outline-none' defaultValue={'Toev. (opt)'} placeholder='Toev. (opt)'>
+                            <option className='w-full bg-white' value='toev'>Toev. (opt)</option>
                         </select>
                     </div>
                     <Button disabled={error} onClick={handleSubmit} variant='outlined' className={'!text-white !border-none whitespace-nowrap !text-base !bg-gradient-to-r !py-2.5  !from-themeYellow !to-themeOrange !font-semibold !rounded-full'} >
