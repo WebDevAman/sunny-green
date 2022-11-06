@@ -11,7 +11,10 @@ import { useRecoilState } from 'recoil'
 import { useNavigate } from 'react-router-dom'
 import { atomImageFromGoogle } from '../../atoms'
 
-const Hero = () => {
+const Hero = ({
+    content = {
+        bigTitle: 'Zonnepanelen prijs berekenen'
+    } }) => {
     const [data, setData] = useState({})
     const [requested, setRequested] = useState(false)
     const [drop, setDrop] = useState(false)
@@ -63,9 +66,15 @@ const Hero = () => {
     return (
         <div
             className="flex px-3 flex-col items-center  pt-32 lg:pt-2 min-h-[40rem] justify-center z-10 relative gap-10">
-            <h1 className=' text-white text-3xl lg:text-[50px] text-center max-w-md'>Zonnepanelen prijs <spam className='leading-normal'>berekenen</spam></h1>
-            <div className="rounded-3xl text-center bg-white p-5 lg:p-8 w-full max-w-[60rem]">
-                <h2 className='font-medium text-2xl '>Hoeveel leveren zonnepanelen jou op?</h2>
+            <h1 className=' text-white text-3xl lg:text-[50px] leading-tight text-center max-w-lg'>{content.bigTitle ? content.bigTitle : 'Zonnepanelen prijs berekenen'}</h1>
+            {content.smallTitle ?
+                <h1 className=' text-white text-xl !-mt-8 lg:text-[30px] leading-tight text-center max-w-lg'>{content.smallTitle}</h1>
+                :
+                ''
+            }
+
+            <div className="rounded-3xl text-center lg:text-left bg-white p-5 lg:p-8 w-full max-w-[60rem]">
+                <h2 className='font-medium text-2xl '>{'Hoeveel leveren zonnepanelen jou op?'}</h2>
                 <p className="text-base hidden md:flex lg:text-lg pt-4">
                     Bereken direct hoeveel zonnepanelen je nodig hebt, hoeveel stroom ze opwekken én wat je daarmee bespaart.
                 </p>

@@ -18,7 +18,7 @@ const index = ({ children, noNav, img }) => {
 
                 </div>
             }
-            <main className='flex-1'>
+            <main className='flex-1 min-h-screen'>
                 {children}
             </main>
             <Footer />

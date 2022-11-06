@@ -12,6 +12,7 @@ import {
 import FormAndImage from './components/pages/Configurator/FormAndImage';
 import Success from './components/pages/Configurator/Success';
 import Panel from './components/Admin/Panel';
+import ZonnepanelenHuren from './components/pages/particulier/ZonnepanelenHuren';
 import ScrollToTop from './components/common/ScrollToTop';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -25,6 +26,7 @@ root.render(
           <Route path="/configurator" element={<FormAndImage />}></Route>
           <Route path="/success" element={<Success />}></Route>
           <Route path="/Admin/Panel" element={<Panel />}></Route>
+          <Route path="/particulier/zonnepanelen-huren" element={<ZonnepanelenHuren />}></Route>
         </Routes>
       </BrowserRouter>
     </RecoilRoot>

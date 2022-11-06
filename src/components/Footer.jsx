@@ -14,13 +14,13 @@ const index = () => {
                     </p>
                     <img src="https://www.enie.nl/wp-content/uploads/2021/01/2018-b-corp-logo-black-s-137x200.png" alt="icon" className='-ml-2 w-20' />
                 </div>
-                {data.map(({ title, content }, i) => (
+                {data.map(({ title, content, slugs }, i) => (
                     <div className="flex flex-col gap-3">
                         <h3 className='text-lg font-medium'>{title}</h3>
                         <ul className='flex flex-col gap-2'>
-                            {content.map(item => (
-                                <li key={item}>
-                                    <Link className='text-sm font-light hover:underline hover:text-themeOrange' to={'/'}>
+                            {content.map((item, i) => (
+                                <li key={i}>
+                                    <Link className='text-sm font-light hover:underline hover:text-themeOrange' to={slugs[i] || '/'}>
                                         {item}
                                     </Link>
                                 </li>
@@ -45,6 +45,12 @@ const data = [
             `ZonneKopen`,
             `ZonneSparen`,
             `Laadpaal thuis`,
+        ],
+        slugs: [
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
         ]
     },
     {
@@ -55,6 +61,13 @@ const data = [
             `Dakhuur`,
             `ZonneKopen Zakelijk`,
             `De Groene WKR`,
+        ],
+        slugs: [
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
         ]
     },
     {
@@ -66,6 +79,13 @@ const data = [
             `Contact`,
             `Algemene voorwaarden`,
             `Onze producten`,
+        ],
+        slugs: [
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
         ]
     },
     {
@@ -78,6 +98,15 @@ const data = [
             `Werken bij enie.nl`,
             `Word Installatiepartner`,
             `Nieuws`,
+        ],
+        slugs: [
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-huren`,
         ]
     },
 ]
