@@ -6,11 +6,13 @@ const index = () => {
         <div className='border-t bg-gray-50 pt-8'>
             <div className="container py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12">
                 <div className="flex flex-col gap-6">
-                    <Logo dark />
+                    <div className="-ml-4 -mt-4">
+                        <Logo dark />
+                    </div>
                     <p>
-                        Eemsgolaan 5<br />
-                        9727 DW Groningen<br />
-                        Bel ons: 085 401 7000<br />
+                        Diepenhorstlaan 2Z006<br />
+                        2288ew Rijswijk<br />
+                        Bel ons: 0642237360<br />
                     </p>
                     <img src="https://www.enie.nl/wp-content/uploads/2021/01/2018-b-corp-logo-black-s-137x200.png" alt="icon" className='-ml-2 w-20' />
                 </div>
@@ -48,9 +50,9 @@ const data = [
         ],
         slugs: [
             `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
+            `/particulier/zonnepanelen-kopen`,
+            `/particulier/zonnesparen`,
+            `/particulier/laadpaal-thuis`,
         ]
     },
     {
@@ -63,11 +65,11 @@ const data = [
             `De Groene WKR`,
         ],
         slugs: [
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
+            `/zakelijk/zonnepanelen-leasen`,
+            `/zakelijk/carport-zonnepanelen`,
+            `/zakelijk/zonnepanelen-huren`,
+            `/zakelijk/zonnepanelen-huren`,
+            `/zakelijk/zonnepanelen-huren`,
         ]
     },
     {

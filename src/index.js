@@ -13,7 +13,12 @@ import FormAndImage from './components/pages/Configurator/FormAndImage';
 import Success from './components/pages/Configurator/Success';
 import Panel from './components/Admin/Panel';
 import ZonnepanelenHuren from './components/pages/particulier/ZonnepanelenHuren';
+import ZonnepanelenKopen from './components/pages/particulier/ZonnepanelenKopen';
+import Zonnesparen from './components/pages/particulier/Zonnesparen';
+import Laadpaal from './components/pages/particulier/Laadpaal';
 import ScrollToTop from './components/common/ScrollToTop';
+import ZonnepanelenLeasen from './components/pages/zakelijk/ZonnepanelenLeasen';
+import CarportZonnepanelen from './components/pages/zakelijk/CarportZonnepanelen';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,6 +32,11 @@ root.render(
           <Route path="/success" element={<Success />}></Route>
           <Route path="/Admin/Panel" element={<Panel />}></Route>
           <Route path="/particulier/zonnepanelen-huren" element={<ZonnepanelenHuren />}></Route>
+          <Route path="/particulier/zonnepanelen-kopen" element={<ZonnepanelenKopen />}></Route>
+          <Route path="/particulier/zonnesparen" element={<Zonnesparen />}></Route>
+          <Route path="/particulier/laadpaal-thuis" element={<Laadpaal />}></Route>
+          <Route path="/zakelijk/zonnepanelen-leasen" element={<ZonnepanelenLeasen />}></Route>
+          <Route path="/zakelijk/carport-zonnepanelen" element={<CarportZonnepanelen />}></Route>
         </Routes>
       </BrowserRouter>
     </RecoilRoot>

@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import ThemeButton from '../../common/ThemeButton'
 
 
-const Contact = ({ onlyContact }) => {
+const Contact = ({ onlyContact, form, content }) => {
     return (
         <div className='max-w-[60rem] pt-12 lg:pt-20 mx-auto flex flex-col gap-12 lg:gap-20'>
             {!onlyContact &&
@@ -24,6 +25,30 @@ const Contact = ({ onlyContact }) => {
                         </p>
                     </div>
                     <img className='ml-auto my-auto aspect-[1.1] hidden lg:flex lg:rounded-l-none object-center rounded-3xl w-full object-cover select-none max-w-[45rem]' src='https://www.enie.nl/wp-content/uploads/2021/10/achtergrond-oog2-600x850.png' alt='img' />
+                </div>
+            }
+            {form &&
+                <div className="flex flex-col gap-6">
+                    <div className="text-center flex flex-col gap-4">
+                        <h2 className='text-2xl lg:text-4xl'>{content.title}</h2>
+                        <div className="max-w-[50rem] w-full mx-auto text-center text-lg">{content.text}</div>
+                    </div>
+                    <form className='max-w-[50rem] w-full mx-auto flex flex-col gap-4'>
+                        <div className="grid grid-cols-2 gap-4">
+                            <input type='text' placeholder='Voornaam' className='p-3 rounded-md focus:border-blue-600 border outline-none bg-gray-100' />
+                            <input type='text' placeholder='Achternaam' className='p-3 rounded-md focus:border-blue-600 border outline-none bg-gray-100' />
+                        </div>
+                        <input type='email' placeholder='E-mailadres' className='p-3 rounded-md focus:border-blue-600 border outline-none bg-gray-100' />
+                        <input type='number' placeholder='Telefoonnummer' className='p-3 rounded-md focus:border-blue-600 border outline-none bg-gray-100' />
+                        <div className="grid grid-cols-2 gap-4">
+                            <input type='number' placeholder='Postcode*' className='p-3 rounded-md focus:border-blue-600 border outline-none bg-gray-100' />
+                            <input type='number' placeholder='Huisnummer + toevoeging*' className='p-3 rounded-md focus:border-blue-600 border outline-none bg-gray-100' />
+                        </div>
+                        <textarea placeholder='Opmerkingen' className='p-3 rounded-md focus:border-blue-600 border outline-none bg-gray-100 min-h-[120px]' cols="30" rows="7"></textarea>
+                        <button className="ml-auto">
+                            <ThemeButton text='Verzenden' />
+                        </button>
+                    </form>
                 </div>
             }
             <div className="md:grid flex grid-cols-2 md:gap-8">

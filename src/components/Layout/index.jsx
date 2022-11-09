@@ -3,7 +3,7 @@ import Navbar from '../Navbar'
 import Footer from '../Footer'
 import Logo from '../common/Logo'
 
-const index = ({ children, noNav, img }) => {
+const index = ({ children, noHero, noNav, img }) => {
     return (
         <div className='flex flex-col'>
             {noNav ?
@@ -13,8 +13,13 @@ const index = ({ children, noNav, img }) => {
                 :
                 <Navbar isImg={img?.length > 0 ? true : false} />
             }
-            {img &&
-                <div style={{ background: `linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(${img})` }} className='w-full absolute inset-0 !bg-norepeat !bg-cover min-h-[50rem] sm:min-h-[40rem] lg:min-h-[40rem] !bg-center max-h-[70vh]' alt='img' >
+            {img && !noHero &&
+                <div style={{ background: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(${img})` }} className='w-full absolute inset-0 !bg-norepeat !bg-cover min-h-[50rem] sm:min-h-[40rem] lg:min-h-[40rem] !bg-center max-h-[70vh]' alt='img' >
+
+                </div>
+            }
+            {img && noHero &&
+                <div style={{ background: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(${img})` }} className='w-full absolute inset-0 !bg-norepeat !bg-cover aspect-video min-h-[30rem] lg:min-h-[40rem] !bg-center max-h-[70vh]' alt='img' >
 
                 </div>
             }

@@ -133,12 +133,14 @@ const ConnepanelenHuren = () => {
                             `Omdat wij gedurende de huurperiode schriftelijk eigenaar zijn, dragen we zelf alle risico’s. Je bent dus verzekerd van een persoonlijk advies en de beste materialen, fabrikanten en installatiepartners.`
                         ],
                         btns: [
-                            <ThemeButton text='Bereken je maandbedrag' />
+                            <Link to='/'>
+                                <ThemeButton text='Bereken je maandbedrag' />
+                            </Link>
                         ],
                         img: `https://www.enie.nl/wp-content/uploads/2020/09/200904_5_portret_werkveld_enie_web.jpg`,
                     },
                     {
-                        title: `Hoeveel tijd kost het installeren van zonnepanelen ?`,
+                        title: `Garantie, onderhoud en verzekering`,
                         content: [
                             `Is je dak geschikt voor zonnepanelen? Super. Dan is alles van jouw kant al geregeld. Wij doen de rest. Zo hoef jij je minimaal in te spannen en bent altijd verzekerd van de maximale opbrengst. Wij zijn tijdens de huurperiode volledig verantwoordelijk voor:`,
                             {
@@ -151,6 +153,12 @@ const ConnepanelenHuren = () => {
                             },
                             `Na de huurperiode laten we je natuurlijk niet zitten. Onze zonnepanelen hebben de langste garanties op de markt. Als de huurperiode is afgelopen, geniet jij nog zeker 20 jaar van zonne-energie van eigen dak.`
                         ],
+                        btns: [
+                            <Link to='/'>
+                                <ThemeButton grayBtn text='Bereken je maandbedrag' />
+                            </Link>
+                        ],
+
                         img: `https://www.enie.nl/wp-content/uploads/2021/01/190820-9-portret-noorderplantsoen-enie-1200x799-1.jpg`,
                     },
                 ].map((x, y) => (

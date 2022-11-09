@@ -9,7 +9,7 @@ import Contact from './components/pages/Home/Contact';
 
 function App() {
   return (
-    <Layout img='https://www.enie.nl/wp-content/uploads/2021/12/foto-1600x1065-1.png'>
+    <Layout img='https://www.zonnepanelen.net/wp-content/uploads/zonnepanelen-installateur.jpg'>
       <Hero />
       <div className="container">
         <HowItWorks />
