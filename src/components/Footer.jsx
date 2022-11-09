@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const index = () => {
     return (
         <div className='border-t bg-gray-50 pt-8'>
-            <div className="container py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-12">
+            <div className="container py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-12">
                 <div className="flex flex-col gap-6">
                     <div className="-ml-4 -mt-4">
                         <Logo dark />
@@ -17,7 +17,7 @@ const index = () => {
                     <img src="https://www.enie.nl/wp-content/uploads/2021/01/2018-b-corp-logo-black-s-137x200.png" alt="icon" className='-ml-2 w-20' />
                 </div>
                 {data.map(({ title, content, slugs }, i) => (
-                    <div className="flex flex-col gap-3">
+                    <div className="flex flex-col gap-3 ml-auto">
                         <h3 className='text-lg font-medium'>{title}</h3>
                         <ul className='flex flex-col gap-2'>
                             {content.map((item, i) => (
@@ -90,27 +90,7 @@ const data = [
             `/particulier/zonnepanelen-huren`,
         ]
     },
-    {
-        title: 'Over ons',
-        content: [
-            `B Corp`,
-            `Ons team`,
-            `Kennisbank`,
-            `Vriendenactie`,
-            `Werken bij enie.nl`,
-            `Word Installatiepartner`,
-            `Nieuws`,
-        ],
-        slugs: [
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-        ]
-    },
+
 ]
 
 export default index
