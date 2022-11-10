@@ -390,7 +390,7 @@ const PayBackTime = ({ data }) => {
             </div>
             <div className="flex text-right flex-col gap-2">
                 <p className='text-sm'>
-                    {(data.no_of_panels * 1.1).toFixed(1)} jaar
+                    {((data.no_of_panels * 440) / 1000).toFixed(1)} jaar
                 </p>
                 <p className='text-sm'>€ {((data.no_of_panels * 440) * .104533).toFixed(2)}</p>
             </div>
