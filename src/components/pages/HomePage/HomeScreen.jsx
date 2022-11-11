@@ -68,8 +68,8 @@ const HomeScreen = () => {
             <Navbar isImg={true} />
 
             <div
-                style={{ background: `url(https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Website_VideoHomepageBeeld.png)` }}
-                className="w-full -mt-16 md:-mt-20 flex items-center inset-0 !bg-cover !bg-center py-20 min-h-screen bg-red-500">
+                style={{ background: `linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://insolationenergy.in/wp-content/uploads/2021/10/Solar-Panels-in-India-Cost-Installation-Requirements-1-scaled.jpg)` }}
+                className="w-full -mt-16 md:-mt-20 flex items-center inset-0 !bg-cover !bg-center py-20 min-h-screen bg-black">
                 <div className="container items-center grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
                     <div className="flex flex-col gap-3">
                         <h1 className='text-4xl lg:text-6xl font-light'>Zonne-energie <br /> <span className='leading-normal'>voor iedereen.</span></h1>
@@ -99,8 +99,8 @@ const HomeScreen = () => {
                         </p>
 
                         <div className="grid grid-cols-3 gap-4">
-                            <input autoFocus={error.post_code} value={data.post_code} onChange={handleChange} type='text' id='post_code' className={`p-3 bg-transparent text-white outline-none border rounded-md focus:border-gray-100  ${inputError.post_code ? 'border-red-500 ' : 'border-white'}`} placeholder='Postcode' />
-                            <input onChange={handleChange} error={inputError.huisnummer} id='huisnummer' className={`p-3 bg-transparent text-white outline-none border rounded-md focus:border-gray-100  ${inputError.huisnummer ? 'border-red-500 ' : 'border-white'}`} placeholder='Huisnummer' />
+                            <input autoFocus={error.post_code} value={data.post_code} onChange={handleChange} type='text' id='post_code' className={`p-3 bg-transparent text-white placeholder:text-white outline-none border rounded-md focus:border-gray-100  ${inputError.post_code ? 'border-red-500 ' : 'border-white'}`} placeholder='Postcode' />
+                            <input onChange={handleChange} error={inputError.huisnummer} id='huisnummer' className={`p-3 bg-transparent text-white outline-none border rounded-md placeholder:text-white focus:border-gray-100  ${inputError.huisnummer ? 'border-red-500 ' : 'border-white'}`} placeholder='Huisnummer' />
 
                             <div onClick={() => setDrop(!drop)} className="w-full cursor-pointer flex relative p-[9px] justify-between bg-transparent text-white rounded-md border  border-white items-center focus-within:border-gray-500">
                                 <p>{dropVal}</p>
@@ -202,7 +202,7 @@ const HomeScreen = () => {
                             REVIEWS
                         </h2>
                         <h2 className='text-2xl md:text-3xl lg:text-4xl font-medium'>
-                            Onze enieanen aan het woord
+                            Onze klanten aan het woord
                         </h2>
                         <div className="py-[3px] max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
 

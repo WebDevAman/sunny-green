@@ -60,16 +60,14 @@ const data = [
         content: [
             `ZonneLeasen MKB`,
             `ZonneCarport`,
-            `Dakhuur`,
             `ZonneKopen Zakelijk`,
             `De Groene WKR`,
         ],
         slugs: [
             `/zakelijk/zonnepanelen-leasen`,
             `/zakelijk/carport-zonnepanelen`,
-            `/zakelijk/zonnepanelen-huren`,
-            `/zakelijk/zonnepanelen-huren`,
-            `/zakelijk/zonnepanelen-huren`,
+            `/zakelijk/zonnepanelen-kopen`,
+            `/zakelijk/de-groene-wkr-werkgever`,
         ]
     },
     {
@@ -83,11 +81,12 @@ const data = [
             `Onze producten`,
         ],
         slugs: [
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
-            `/particulier/zonnepanelen-huren`,
+            `/veelgestelde-vragen-over-zonnepanelen`,
+            `/privacy-statement`,
+            `/cookie-statement`,
+            `/contact`,
+            `/algemene-voorwaarden`,
+            `/over-sunnygreen-nl/onze-producten`,
         ]
     },
 

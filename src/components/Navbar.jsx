@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 import { Drawer } from "@material-ui/core";
 import { MdOutlineMenu, MdOutlineClose } from "react-icons/md";
 import { navData } from './dummy';
-import { BsHeadset } from 'react-icons/bs';
+import { BsChevronDown, BsHeadset } from 'react-icons/bs';
 
 const Navbar = ({ isImg }) => {
     const [scrolled, setScrolled] = React.useState(isImg ? false : true)
+    const [showSubmenu, setShowSubmenu] = React.useState('')
     const [open, setOpen] = React.useState(false)
     React.useEffect(() => {
         if (isImg) {
@@ -30,11 +31,27 @@ const Navbar = ({ isImg }) => {
                 </div>
                 <nav className='hidden md:flex'>
                     <ul className='flex items-center space-x-10 justify-start '>
-                        {navData.map(({ title, slug }, i) => (
-                            <li className='hover:underline'>
+                        {navData.map(({ title, slug, submenu }, i) => (
+                            <li className='hover:underline flex items-center group relative'>
                                 <Link to={slug}>
                                     {title}
                                 </Link>
+                                {submenu &&
+                                    <div className="ml-2">
+                                        <BsChevronDown />
+                                    </div>
+                                }
+                                {submenu &&
+                                    <div className="absolute group-hover:visible invisible pt-6 whitespace-nowrap top-full w-fit min-w-[12rem] left-1/2 -translate-x-1/2 p-5">
+                                        <div className="w-full flex flex-col bg-white whitespace-nowrap min-w-[12rem] rounded-sm shadow-md py-4" >
+                                            {submenu.map((item, i) => (
+                                                <Link className='px-4 py-2 hover:underline hover:bg-gray-50 !text-black' to={item.slug}>
+                                                    {item.title}
+                                                </Link>
+                                            ))}
+                                        </div>
+                                    </div>
+                                }
                             </li>
                         ))}
                     </ul>
@@ -63,11 +80,29 @@ const Navbar = ({ isImg }) => {
                         </div>
                         <nav >
                             <ul className='flex flex-col pt-2'>
-                                {navData.map(({ title, slug }, i) => (
-                                    <li className='hover:bg-gray-50 py-2 px-4 w-60'>
-                                        <Link to={slug}>
-                                            {title}
-                                        </Link>
+                                {navData.map(({ title, submenu, slug }, i) => (
+                                    <li className='hover:bg-gray-50 flex flex-col py-2 px-4 w-60'>
+                                        <div className="flex items-center justify-between w-full">
+                                            <Link to={slug}>
+                                                {title}
+                                            </Link>
+                                            {submenu &&
+                                                <div onClick={() => setShowSubmenu(showSubmenu === title ? '' : title)} className="ml-2">
+                                                    <BsChevronDown className={showSubmenu === title ? 'rotate-180' : 'rotate-0'} />
+                                                </div>
+                                            }
+                                        </div>
+                                        {submenu && showSubmenu === title &&
+                                            <div className="whitespace-nowrap top-full w-fit min-w-[12rem] pl-4">
+                                                <div className="w-full flex flex-col whitespace-nowrap min-w-[12rem] py-1" >
+                                                    {submenu.map((item, i) => (
+                                                        <Link className='px-4 py-2 hover:underline hover:bg-gray-50 !text-black' to={item.slug}>
+                                                            {item.title}
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        }
                                     </li>
                                 ))}
                             </ul>
