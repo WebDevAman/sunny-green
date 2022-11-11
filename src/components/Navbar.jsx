@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Drawer } from "@material-ui/core";
 import { MdOutlineMenu, MdOutlineClose } from "react-icons/md";
 import { navData } from './dummy';
+import { BsHeadset } from 'react-icons/bs';
 
 const Navbar = ({ isImg }) => {
     const [scrolled, setScrolled] = React.useState(isImg ? false : true)
@@ -23,7 +24,7 @@ const Navbar = ({ isImg }) => {
     }, [])
     return (
         <div className={`${scrolled ? 'bg-white shadow-lg text-[#222]' : 'bg-transparent  text-white shadow-none'} transition-all duration-500 z-50 lg:sticky inset-0 w-full `}>
-            <div className="max-w-[100rem] px-4 mx-auto py-2 flex items-center h-16 md:h-20 justify-between lg:justify-start space-x-10 w-full">
+            <div className="max-w-[100rem]  px-4 mx-auto py-2 flex items-center h-16 md:h-20 justify-between lg:justify-start lg:space-x-10 w-full">
                 <div className="-ml-4">
                     <Logo dark={scrolled} />
                 </div>
@@ -38,8 +39,16 @@ const Navbar = ({ isImg }) => {
                         ))}
                     </ul>
                 </nav>
-                <div onClick={() => setOpen(true)} className="ml-auto">
-                    <MdOutlineMenu className='text-2xl flex md:hidden' />
+                <div className="!ml-auto flex items-center gap-2 ">
+                    <button className={`px-3 md:px-5 h-10 md:h-14 text-sm md:text-base font-medium text-white whitespace-nowrap border-2 hover:bg-themeGreen rounded-full ${scrolled ? 'text-black' : 'text-white'} border-themeGreen`}>
+                        Bereken voordeel
+                    </button>
+                    <button className={`h-14 hidden lg:flex items-center justify-center aspect-square text-3xl font-medium ${scrolled ? 'text-black' : 'text-white'} whitespace-nowrap border-2 hover:bg-themeGreen rounded-full border-themeGreen`}>
+                        <BsHeadset />
+                    </button>
+                    <div onClick={() => setOpen(true)} >
+                        <MdOutlineMenu className='text-2xl flex md:hidden' />
+                    </div>
                 </div>
                 <Drawer
                     anchor='right'

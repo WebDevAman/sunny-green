@@ -70,14 +70,14 @@ const HomeScreen = () => {
             <div
                 style={{ background: `url(https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Website_VideoHomepageBeeld.png)` }}
                 className="w-full -mt-16 md:-mt-20 flex items-center inset-0 !bg-cover !bg-center py-20 min-h-screen bg-red-500">
-                <div className="container items-center grid grid-cols-1 lg:grid-cols-2 gap-10 text-white">
+                <div className="container items-center grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
                     <div className="flex flex-col gap-3">
                         <h1 className='text-2xl md:text-3xl lg:text-6xl font-light'>Zonne-energie <br /> <span className='leading-normal'>voor iedereen.</span></h1>
-                        <h3 className="text-2xl pb-1 lg:pb-8 md:text-3xl lg:text-6xl font-medium">
+                        <h3 className="text-3xl pb-1 lg:pb-8 md:text-3xl lg:text-6xl font-medium">
                             Het kan.
                         </h3>
                         <div className="py-[3px] max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
-                        <div className="flex max-w-lg 2xl:pr-12 flex-col gap-4">
+                        <div className="hidden md:flex max-w-lg 2xl:pr-12 flex-col gap-4">
                             <p className="text-base">
                                 Binnen tien jaar kunnen we de zon als energiebron weer op 1 hebben. Een sprong vooruit voor onze aarde, met de slimste, mooiste, sterkste energiebron die er is.
                             </p>
