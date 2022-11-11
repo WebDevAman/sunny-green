@@ -207,7 +207,7 @@ const Index = () => {
                     </h2>
 
                     <p className='text-base lg:text-lg'>
-                        Investeren in duurzaamheid levert jou op de korte én lange termijn voordelen op. Naast zonnepanelen huren of kopen beschikken we over tal van unieke concepten die de markt voor zonne-energie ontzettend leuk maken. Welkom bij enie.nl.
+                        Investeren in duurzaamheid levert jou op de korte én lange termijn voordelen op. Naast zonnepanelen huren of kopen beschikken we over tal van unieke concepten die de markt voor zonne-energie ontzettend leuk maken. Welkom bijsunnygreen.nl.
                     </p>
                 </div>
                 <div className="flex flex-col py-12 w-full max-w-[55rem] gap-6 mx-auto">

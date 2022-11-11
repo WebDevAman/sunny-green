@@ -151,7 +151,7 @@ const Index = () => {
                     {
                         title: `Áltijd verzekerd van duurzame zonne-energie`,
                         content: [
-                            `Zelf zonnepanelen thuis of op het werk? Goed bezig. Dan laad je elke dag met een goed gevoel je accu duurzaam op. Heb je ze (nog) niet? Ook dan ben je bij enie.nl verzekerd van een duurzame laadbeurt. Met de ZonneLaden-pas tank je gegarandeerd 100% Nederlandse zonne-energie, die we opwekken op grote zonnedaken door het hele land.`,
+                            `Zelf zonnepanelen thuis of op het werk? Goed bezig. Dan laad je elke dag met een goed gevoel je accu duurzaam op. Heb je ze (nog) niet? Ook dan ben je bijsunnygreen.nl verzekerd van een duurzame laadbeurt. Met de ZonneLaden-pas tank je gegarandeerd 100% Nederlandse zonne-energie, die we opwekken op grote zonnedaken door het hele land.`,
                         ],
                         btns: [
                         ],

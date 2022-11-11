@@ -42,7 +42,7 @@ const Index = () => {
                         </p>
 
                         <p className="text-base lg:text-lg">
-                            De mooiste en meest praktische manier om dit te doen: een carport met zonnepanelen. Parkeren, laden, opwekken en besparen. Alles onder één dak. En met de unieke verplaatsbare constructie van de ZonneCarport van enie.nl geniet je van de degelijkheid van een huis met de flexibiliteit van een tent.
+                            De mooiste en meest praktische manier om dit te doen: een carport met zonnepanelen. Parkeren, laden, opwekken en besparen. Alles onder één dak. En met de unieke verplaatsbare constructie van de ZonneCarport vansunnygreen.nl geniet je van de degelijkheid van een huis met de flexibiliteit van een tent.
                         </p>
 
                     </div>

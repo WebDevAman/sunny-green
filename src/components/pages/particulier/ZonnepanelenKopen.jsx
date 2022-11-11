@@ -31,7 +31,7 @@ const Index = () => {
                             Waarom zonnepanelen kopen?
                         </h2>
                         <p className='text-base lg:text-lg'>
-                            Verduurzamen is de laatste jaren een hot topic. De hoge energieprijzen en nadrukkelijke aandacht voor de energietransitie brengen dit in een stroomversnelling. Steeds meer mensen stappen over op zonne-energie of isoleren de woning. Wist je dat al meer dan 1.500.000 Nederlanders zonnepanelen op hun dak hebben laten plaatsen? Zij besparen elke maand veel geld, wonen duurzamer en zijn helemaal klaar voor een zonnige toekomst. Wacht niet langer en stap net als duizenden Nederlanders over op zonne-energie van enie.nl!
+                            Verduurzamen is de laatste jaren een hot topic. De hoge energieprijzen en nadrukkelijke aandacht voor de energietransitie brengen dit in een stroomversnelling. Steeds meer mensen stappen over op zonne-energie of isoleren de woning. Wist je dat al meer dan 1.500.000 Nederlanders zonnepanelen op hun dak hebben laten plaatsen? Zij besparen elke maand veel geld, wonen duurzamer en zijn helemaal klaar voor een zonnige toekomst. Wacht niet langer en stap net als duizenden Nederlanders over op zonne-energie vansunnygreen.nl!
                         </p>
                     </div>
                 </div>

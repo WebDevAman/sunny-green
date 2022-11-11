@@ -14,7 +14,7 @@ const Section3 = () => {
                     </h2>
 
                     <p className='text-base lg:text-lg'>
-                        De aanschafprijs en het rendement op zonnepanelen zijn uiteindelijk bepalend voor de terugverdientijd, afgekort als tvt. Zoals bij alle andere investeringen in duurzaamheid, wil je ook bij zonnepanelen graag de terugverdientijd laag houden. Gelukkig worden onze zonnepanelen kwalitatief steeds beter, neemt het aanbod toe en daalt daarmee de prijs, waardoor de terugverdientijd evenredig afneemt. Bij enie.nl streven we naar een terugverdientijd op zonnepanelen tussen de 3,9 en 5,4 jaar.
+                        De aanschafprijs en het rendement op zonnepanelen zijn uiteindelijk bepalend voor de terugverdientijd, afgekort als tvt. Zoals bij alle andere investeringen in duurzaamheid, wil je ook bij zonnepanelen graag de terugverdientijd laag houden. Gelukkig worden onze zonnepanelen kwalitatief steeds beter, neemt het aanbod toe en daalt daarmee de prijs, waardoor de terugverdientijd evenredig afneemt. Bijsunnygreen.nl streven we naar een terugverdientijd op zonnepanelen tussen de 3,9 en 5,4 jaar.
                     </p>
                     <p className='text-base lg:text-lg'>
                         Wil je direct de prijs van zonnepanelen laten berekenen, zonder ergens aan vast te zitten? Het kan.

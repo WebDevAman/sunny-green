@@ -131,7 +131,7 @@ const Index = () => {
                         title: `Slim en onafhankelijk`,
                         content: [
                             `Heb je een wagenpark met elektrische auto’s en wil je graag iets extra’s bieden aan je werknemers? Met zonne-energie van eigen dak ben je 100% in-control. Zakelijk zonnepanelen leasen betekent op een reguliere werkdag energie opwekken én efficiënt inzetten. Is er meer opgewekt dan je hebt verbruikt? Dan sla je de energie op in accu’s – de thuisbatterij- om het te gebruiken wanneer de zon niet schijnt.`,
-                            `Daarnaast geniet je van alle voordelen van lease: enie.nl blijft gedurende de lease overeenkomst verantwoordelijk voor reparaties, onderhoud en garanties. Wel zo prettig.`
+                            `Daarnaast geniet je van alle voordelen van lease:sunnygreen.nl blijft gedurende de lease overeenkomst verantwoordelijk voor reparaties, onderhoud en garanties. Wel zo prettig.`
                         ],
                         btns: [
                             <Link to='/'>
@@ -147,7 +147,7 @@ const Index = () => {
                         title: `Interzorg Assen`,
                         content: [
                             `100% focus op eigen bedrijfsprocessen`,
-                            `Zorginstelling Interzorg wil al hun middelen inzetten om zich te richten op de eigen processen. Het bedrijf besloot de financiering en alle andere zaken rond de zonnepanelen aan enie.nl over te laten. Dankzij de 550 geleasete zonnepanelen is het bedrijfspand ‘Nul op de meter’ en klaar voor de toekomst.`
+                            `Zorginstelling Interzorg wil al hun middelen inzetten om zich te richten op de eigen processen. Het bedrijf besloot de financiering en alle andere zaken rond de zonnepanelen aansunnygreen.nl over te laten. Dankzij de 550 geleasete zonnepanelen is het bedrijfspand ‘Nul op de meter’ en klaar voor de toekomst.`
                         ],
                         btns: [
                             <Link to='/'>
@@ -191,7 +191,7 @@ const Index = () => {
                                 `Betaal een vast bedrag per maand met een vaste looptijd. Zonnepanelen leasen zonder verrassingen.`,
                             ]} />
                         <p className="text-base lg:text-lg">
-                            In een tijd waarin ondernemers financieel de vinger aan de pols moeten houden, is een duurzame leaseconstructie voor zonnepanelen buitengewoon interessant. We noemen dat ‘zonnepanelen zonder zorgen’. Ontdek de aantrekkelijke financiële mogelijkheden van zonnepanelen leasen bij enie.nl.
+                            In een tijd waarin ondernemers financieel de vinger aan de pols moeten houden, is een duurzame leaseconstructie voor zonnepanelen buitengewoon interessant. We noemen dat ‘zonnepanelen zonder zorgen’. Ontdek de aantrekkelijke financiële mogelijkheden van zonnepanelen leasen bijsunnygreen.nl.
                         </p>
 
                     </div>

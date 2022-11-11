@@ -27,7 +27,7 @@ const ConnepanelenHuren = () => {
                     <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                     <div className="flex flex-col gap-4 lg:gap-8 py-2">
                         <p className='text-base lg:text-lg'>
-                            Is het mogelijk om gratis zonnepanelen te laten installeren? Ja hoor, dat kan. Zonnepanelen huren geeft je alle voordelen van zonnepanelen, zonder een cent te investeren. Zo houd je je spaargeld over voor leuke dingen of andere manieren om je huis te verduurzamen. Door zonnepanelen te huren heb je dus eigenlijk een abonnement op de zon. Slim, gemakkelijk en zorgeloos. Dat doen we bij enie.nl op deze manier:
+                            Is het mogelijk om gratis zonnepanelen te laten installeren? Ja hoor, dat kan. Zonnepanelen huren geeft je alle voordelen van zonnepanelen, zonder een cent te investeren. Zo houd je je spaargeld over voor leuke dingen of andere manieren om je huis te verduurzamen. Door zonnepanelen te huren heb je dus eigenlijk een abonnement op de zon. Slim, gemakkelijk en zorgeloos. Dat doen we bijsunnygreen.nl op deze manier:
                         </p>
                         <List
                             data={[
@@ -126,7 +126,7 @@ const ConnepanelenHuren = () => {
                 </div>
                 {[
                     {
-                        title: `Zonnepanelen huren bij enie.nl`,
+                        title: `Zonnepanelen huren bijsunnygreen.nl`,
                         content: [
                             `Zonnepanelen huren is dé oplossing als je wil genieten van alle voordelen van zonnepanelen, maar je spaargeld liever anders besteedt. Het mooiste? Alsnog dalen je energiekosten direct. Je houdt dus niet alleen je spaargeld op zak, maar vult het elke maand aan. Lees meer over de kosten van zonnepanelen.`,
 

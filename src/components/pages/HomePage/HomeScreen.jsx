@@ -72,11 +72,11 @@ const HomeScreen = () => {
                 className="w-full -mt-16 md:-mt-20 flex items-center inset-0 !bg-cover !bg-center py-20 min-h-screen bg-red-500">
                 <div className="container items-center grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
                     <div className="flex flex-col gap-3">
-                        <h1 className='text-3xl lg:text-6xl font-light'>Zonne-energie <br /> <span className='leading-normal'>voor iedereen.</span></h1>
-                        <h3 className="text-3xl pb-1 lg:pb-8 md:text-3xl lg:text-6xl font-medium">
+                        <h1 className='text-4xl lg:text-6xl font-light'>Zonne-energie <br /> <span className='leading-normal'>voor iedereen.</span></h1>
+                        <h3 className="text-4xl pb-1 lg:pb-8 lg:text-6xl font-medium">
                             Het kan.
                         </h3>
-                        <div className="py-[3px] max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                        <div className="py-[3px] max-w-[6rem] md:max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                         <div className="hidden md:flex max-w-lg 2xl:pr-12 flex-col gap-4">
                             <p className="text-base">
                                 Binnen tien jaar kunnen we de zon als energiebron weer op 1 hebben. Een sprong vooruit voor onze aarde, met de slimste, mooiste, sterkste energiebron die er is.
@@ -88,7 +88,7 @@ const HomeScreen = () => {
                     </div>
 
 
-                    <div style={{ background: 'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3))' }} className="flex border-2 border-white ml-auto flex-col max-w-[400px] gap-4 p-8 rounded-3xl backdrop-blur-md">
+                    <div style={{ background: 'linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2))' }} className="flex border-2 border-white ml-auto flex-col max-w-[400px] gap-4 p-8 rounded-3xl">
                         <h3 className="text-2xl lg:text-3xl font-medium">
                             Bereken binnen 1 minuut jouw <br /> voordeel.
                         </h3>
@@ -159,7 +159,7 @@ const HomeScreen = () => {
                         <div className="flex flex-col gap-3 text-left items-start">
                             <p className='text-themeGreen font-medium'>ONS VERHAAL</p>
                             <h3 className="text-2xl pb-1 lg:pb-3 md:text-4xl font-medium">
-                                Waarom al meer dan 20.000 <span className='leading-normal'>huishoudens</span> en bedrijven voor enie.nl kozen.
+                                Waarom al meer dan 20.000 <span className='leading-normal'>huishoudens</span> en bedrijven voorsunnygreen.nl kozen.
                             </h3>
                             <p>Wij maken zonne-energie toegankelijk voor iedereen die vandaag wil besparen en mee wil bouwen aan de duurzame wereld van morgen. Daarom geven wij je advies dat helemaal afgestemd is op jouw situatie én leveren we duurzame zonnepanelen met het hoogste rendement. En ook nog eens heel betaalbaar!</p>
                             <div className="py-[3px] w-full max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
@@ -282,7 +282,7 @@ const HomeScreen = () => {
                 </div>
                 <div className="pt-6 justify-center w-full flex">
                     <button className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
-                        Meer ervaringen over enie.nl lezen
+                        Meer ervaringen oversunnygreen.nl lezen
 
                     </button>
 
@@ -363,7 +363,7 @@ const HomeScreen = () => {
                     <div className="!bg-cover !bg-center !p-4 lg:!p-12" style={{ background: `url(https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Afbeelding_Zon1.jpg)` }}>
                         <div style={{ background: 'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3))' }} className="flex border-2 border-white ml-auto flex-col max-w-[400px] gap-4 p-8 lg:p-12 rounded-3xl">
                             <h3 className="text-2xl lg:text-4xl font-medium text-white">
-                                enie.nl zet de zon weer op 1
+                                sunnygreen.nl zet de zon weer op 1
 
                             </h3>
                             <p className='text-base lg:text-lg text-white'>
@@ -550,7 +550,7 @@ const thirdData = [
     {
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_Prijs.svg`,
         title: `De scherpste prijzen.`,
-        text: `Dat we zo open zijn met onze prijzen heeft een reden. Bij enie.nl kies je voor kwaliteit én een scherpe prijs.`
+        text: `Dat we zo open zijn met onze prijzen heeft een reden. Bijsunnygreen.nl kies je voor kwaliteit én een scherpe prijs.`
     },
 ]
 
@@ -604,7 +604,7 @@ const reviews = [
         type: 'full',
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Afbeelding_Klantcase.jpg`,
         title: `Volledig het roer om`,
-        text: `“In de samenwerking was enie.nl zeer flexibel en behulpzaam. Speciale wensen waren geen probleem en ook over kleine details werd meegedacht.”`
+        text: `“In de samenwerking wassunnygreen.nl zeer flexibel en behulpzaam. Speciale wensen waren geen probleem en ook over kleine details werd meegedacht.”`
     },
     {
         title: `Het ziet er goed uit`,

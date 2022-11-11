@@ -15,7 +15,7 @@ const HowItWorks = () => {
                         Met de ZonneConfigurator
                     </h3>
                     <p className='text-base lg:text-lg'>
-                        Zonne-energie voor iedereen beschikbaar maken. Dat is onze missie. Om dat voor elkaar te krijgen, maken we zonnepanelen kopen of huren voor iedereen zo makkelijk mogelijk. Een heel adviestraject door om je prijs te weten te komen? Niet bij enie.nl. Met onze ZonneConfigurator weet je binnen één minuut wat het jou gaat kosten. Ga naar de ZonneConfigurator!
+                        Zonne-energie voor iedereen beschikbaar maken. Dat is onze missie. Om dat voor elkaar te krijgen, maken we zonnepanelen kopen of huren voor iedereen zo makkelijk mogelijk. Een heel adviestraject door om je prijs te weten te komen? Niet bijsunnygreen.nl. Met onze ZonneConfigurator weet je binnen één minuut wat het jou gaat kosten. Ga naar de ZonneConfigurator!
                     </p>
 
                 </div>
@@ -39,12 +39,12 @@ const HowItWorks = () => {
                     Hoe wordt de prijs voor zonnepanelen opgebouwd?
                 </h2>
                 <p className='text-base  mx-auto lg:text-lg'>
-                    Een inschatting van de prijs voor zonnepanelen wordt gebaseerd op de kale prijs voor het paneel, dan wel een totaalprijs van alle zonnepanelen die in zijn totaliteit op het dak passen.Dit kan per aanbieder verschillen.Bij enie.nl kiezen we er bewust voor een totaalprijs aan te bieden, zodat je precies weet waar je aan toe bent en niet voor verrassingen komt te staan.Ook zijn binnen de prijs voor zonnepanelen materiaalkosten en arbeidsuren inbegrepen.
+                    Een inschatting van de prijs voor zonnepanelen wordt gebaseerd op de kale prijs voor het paneel, dan wel een totaalprijs van alle zonnepanelen die in zijn totaliteit op het dak passen.Dit kan per aanbieder verschillen.Bijsunnygreen.nl kiezen we er bewust voor een totaalprijs aan te bieden, zodat je precies weet waar je aan toe bent en niet voor verrassingen komt te staan.Ook zijn binnen de prijs voor zonnepanelen materiaalkosten en arbeidsuren inbegrepen.
                 </p>
                 <div className="flex gap-2 lg:gap-6">
                     <div className="px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                     <p className="text-lg py-4 lg:text-xl italic">
-                        ”Wist je dat je bij enie.nl heel eenvoudig de prijs voor zonnepanelen kunt berekenen? Het enige dat jij hoeft te doen is je postcode en huisnummer invullen binnen onze ZonneConfigurator, en wij berekenen direct de mogelijkheden. Geheel vrijblijvend natuurlijk!”
+                        ”Wist je dat je bijsunnygreen.nl heel eenvoudig de prijs voor zonnepanelen kunt berekenen? Het enige dat jij hoeft te doen is je postcode en huisnummer invullen binnen onze ZonneConfigurator, en wij berekenen direct de mogelijkheden. Geheel vrijblijvend natuurlijk!”
                     </p>
                 </div>
             </div>

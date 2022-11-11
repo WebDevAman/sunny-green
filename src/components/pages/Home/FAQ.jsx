@@ -75,7 +75,7 @@ const accordionData = [
         content: [
             {
                 type: 'p',
-                text: `Voordat een zonnepaneel op je dak terechtkomt, moet het geproduceerd en vervoerd worden. Bij de productie komt tot op heden nog CO₂ vrij. Door verbetering van zowel de productieprocessen van de fabrikant als de kwaliteit van de zonnepanelen, is een zonne-installatie steeds sneller CO₂-neutraal. Enie.nl is kritisch op het kiezen van leveranciers op het gebied van duurzaamheid in het productieproces. De CO₂ die vrijkomt bij de productie en het vervoer van deze panelen wordt al binnen een jaar gecompenseerd door de opwekking van groene stroom.`
+                text: `Voordat een zonnepaneel op je dak terechtkomt, moet het geproduceerd en vervoerd worden. Bij de productie komt tot op heden nog CO₂ vrij. Door verbetering van zowel de productieprocessen van de fabrikant als de kwaliteit van de zonnepanelen, is een zonne-installatie steeds sneller CO₂-neutraal.sunnygreen.nl is kritisch op het kiezen van leveranciers op het gebied van duurzaamheid in het productieproces. De CO₂ die vrijkomt bij de productie en het vervoer van deze panelen wordt al binnen een jaar gecompenseerd door de opwekking van groene stroom.`
 
             },
             {
@@ -122,7 +122,7 @@ const accordionData = [
             },
             {
                 type: 'p',
-                text: `Bij enie.nl komen na een huurperiode van 10 jaar de panelen volledig in jouw bezit.Omdat zonnepanelen ruim 30 jaar meegaan, betekent dit dat je daarna ruim 20 jaar kunt genieten van je eigen zonne - energie.`
+                text: `Bijsunnygreen.nl komen na een huurperiode van 10 jaar de panelen volledig in jouw bezit.Omdat zonnepanelen ruim 30 jaar meegaan, betekent dit dat je daarna ruim 20 jaar kunt genieten van je eigen zonne - energie.`
             },
         ]
     },
