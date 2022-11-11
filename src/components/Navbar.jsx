@@ -40,9 +40,11 @@ const Navbar = ({ isImg }) => {
                     </ul>
                 </nav>
                 <div className="!ml-auto flex items-center gap-2 ">
-                    <button className={`px-3 md:px-5 h-10 md:h-14 text-sm md:text-base font-medium text-white whitespace-nowrap border-2 hover:bg-themeGreen rounded-full ${scrolled ? 'text-black' : 'text-white'} border-themeGreen`}>
-                        Bereken voordeel
-                    </button>
+                    <Link to='/prijs-berekenen-zonnepanelen'>
+                        <button className={`px-3 md:px-5 h-10 md:h-14 text-sm md:text-base font-medium text-white whitespace-nowrap border-2 hover:bg-themeGreen rounded-full ${scrolled ? 'text-black' : 'text-white'} border-themeGreen`}>
+                            Bereken voordeel
+                        </button>
+                    </Link>
                     <button className={`h-14 hidden lg:flex items-center justify-center aspect-square text-3xl font-medium ${scrolled ? 'text-black' : 'text-white'} whitespace-nowrap border-2 hover:bg-themeGreen rounded-full border-themeGreen`}>
                         <BsHeadset />
                     </button>
