@@ -732,7 +732,7 @@ const BigSection = () => {
 
                 </div>
             </div>
-            <div className="flex flex-col gap-8">
+            <div className="flex lg:hidden flex-col gap-8">
                 <div className="flex items-center gap-4">
                     <button onClick={() => setInitial(1)} className={`${initial === 1 ? 'bg-white text-black' : 'text-white'} px-5 py-2.5 rounded-full`}>
                         Particulier
