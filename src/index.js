@@ -19,6 +19,7 @@ import Laadpaal from './components/pages/particulier/Laadpaal';
 import ScrollToTop from './components/common/ScrollToTop';
 import ZonnepanelenLeasen from './components/pages/zakelijk/ZonnepanelenLeasen';
 import CarportZonnepanelen from './components/pages/zakelijk/CarportZonnepanelen';
+import HomeScreen from './components/pages/HomePage/HomeScreen';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -27,7 +28,8 @@ root.render(
       <BrowserRouter>
         <ScrollToTop />
         <Routes>
-          <Route path="/" element={<App />}></Route>
+          <Route path="/" element={<HomeScreen />}></Route>
+          <Route path="/prijs-berekenen-zonnepanelen" element={<App />}></Route>
           <Route path="/configurator" element={<FormAndImage />}></Route>
           <Route path="/success" element={<Success />}></Route>
           <Route path="/Admin/Panel" element={<Panel />}></Route>

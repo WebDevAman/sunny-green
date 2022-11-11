@@ -13,7 +13,7 @@ const BigImgCard = ({ data, i }) => {
                         <h2 className='text-2xl lg:text-[40px] leading-[50px]'>
                             {data.title}
                         </h2>
-                        <div className="h-[4px] max-w-[10rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                        <div className="h-[4px] max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                         {data.content?.map((item, i) => (
                             item?.type === 'list' ?
                                 <List data={item.content} />
@@ -38,7 +38,7 @@ const BigImgCard = ({ data, i }) => {
                     <h2 className='text-2xl lg:text-4xl'>
                         {data.title}
                     </h2>
-                    <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                    <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                     {data.content?.map((item, i) => (
                         item?.type === 'list' ?
                             <List data={item.content} />

@@ -62,9 +62,9 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                     <h2 className="text-2xl lg:text-3xl font-semibold">
                         Hoe kunnen we je bereiken?
                     </h2>
-                    <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                    <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                 </div>
-                <div className="border lg:flex hidden p-6 relative flex-col rounded-3xl border-themeOrange">
+                <div className="border lg:flex hidden p-6 relative flex-col rounded-3xl border-themeGreen">
                     <p className="text-lg font-medium">
                         Onze adviseurs helpen je graag verder
                     </p>

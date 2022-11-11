@@ -4,7 +4,7 @@ const HowItWorks = () => {
     return (
         <div className='flex max-w-[70rem] mx-auto mt-12 lg:mt-0 py-12 flex-col gap-12'>
             <div className="flex gap-2 md:gap-10">
-                <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeYellow to-themeOrange"></div>
+                <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                 <div className="flex flex-col gap-4 py-6">
                     <h2 className='text-2xl lg:text-4xl '>
                         Snel inzicht in jouw kosten én besparing
@@ -42,7 +42,7 @@ const HowItWorks = () => {
                     Een inschatting van de prijs voor zonnepanelen wordt gebaseerd op de kale prijs voor het paneel, dan wel een totaalprijs van alle zonnepanelen die in zijn totaliteit op het dak passen.Dit kan per aanbieder verschillen.Bij enie.nl kiezen we er bewust voor een totaalprijs aan te bieden, zodat je precies weet waar je aan toe bent en niet voor verrassingen komt te staan.Ook zijn binnen de prijs voor zonnepanelen materiaalkosten en arbeidsuren inbegrepen.
                 </p>
                 <div className="flex gap-2 lg:gap-6">
-                    <div className="px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeYellow to-themeOrange"></div>
+                    <div className="px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                     <p className="text-lg py-4 lg:text-xl italic">
                         ”Wist je dat je bij enie.nl heel eenvoudig de prijs voor zonnepanelen kunt berekenen? Het enige dat jij hoeft te doen is je postcode en huisnummer invullen binnen onze ZonneConfigurator, en wij berekenen direct de mogelijkheden. Geheel vrijblijvend natuurlijk!”
                     </p>

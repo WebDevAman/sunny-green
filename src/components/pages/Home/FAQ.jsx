@@ -26,11 +26,11 @@ const AccordionItem = ({ data, setShow, show }) => {
     const { ques, content, isLast } = data
     return (
         <div className={`py-5 text-lg ${isLast ? 'border-none' : 'border-b'} border-gray-300`}>
-            <div onClick={() => setShow(show === data.ques ? '' : data.ques)} className={`flex hover:text-themeOrange ${show === data.ques ? 'text-themeOrange' : 'text-gray-700'} font-medium cursor-pointer items-center w-full justify-between`}>
+            <div onClick={() => setShow(show === data.ques ? '' : data.ques)} className={`flex hover:text-themeGreen ${show === data.ques ? 'text-themeGreen' : 'text-gray-700'} font-medium cursor-pointer items-center w-full justify-between`}>
                 <span className="max-w-[80%] text-xl">
                     {ques}
                 </span>
-                <FiChevronDown className='w-5 text-themeOrange cursor-pointer h-5' />
+                <FiChevronDown className='w-5 text-themeGreen cursor-pointer h-5' />
             </div>
             <div className={`transition-all duration-500 ${show === data.ques ? 'pt-4 text-lg' : 'pt-0 text-lg h-0 overflow-hidden'}`}>
                 {content.map((item, i) => (
@@ -40,7 +40,7 @@ const AccordionItem = ({ data, setShow, show }) => {
                             <ul className='flex flex-col py-4 gap-2'>
                                 {item.items.map(dt => (
                                     <li className='flex items-center gap-3 '>
-                                        <AiOutlineCheck className='text-themeOrange' /> <span>{dt}</span>
+                                        <AiOutlineCheck className='text-themeGreen' /> <span>{dt}</span>
                                     </li>
                                 ))}
                             </ul>

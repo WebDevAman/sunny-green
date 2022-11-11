@@ -39,7 +39,7 @@ const StepOne = ({ data, setData, handleNext }) => {
                 <h2 className="text-2xl lg:text-3xl font-semibold">
                     Jouw stroombehoefte
                 </h2>
-                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
             </div>
             <div className="flex flex-col gap-2">
                 <p className="text-lg font-medium">
@@ -70,7 +70,7 @@ const StepOne = ({ data, setData, handleNext }) => {
                     Stroomverbruik
                 </p>
 
-                <div className={`${error ? 'border-red-600' : 'border-themeYellow'} border flex items-center w-full overflow-hidden rounded-lg border-gray-300 focus-within:border-themeYellow`}>
+                <div className={`${error ? 'border-red-600' : 'border-themeDarkGreen'} border flex items-center w-full overflow-hidden rounded-lg border-gray-300 focus-within:border-themeDarkGreen`}>
                     <input value={data.usage} onChange={handleChange} type="number" name="usage" className='p-3 rounded-lg outline-none w-full' required placeholder='Op jaarbasis' />
                     <p className="text-lg pr-3 lg:text-xl">kWh</p>
                 </div>

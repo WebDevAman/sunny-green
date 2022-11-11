@@ -31,7 +31,7 @@ const Index = () => {
 
             <div className="container lg:pt-40 flex flex-col gap-6 lg:gap-12">
                 <div className="flex gap-4 lg:gap-10">
-                    <div className="min-h-full w-4 bg-gradient-to-b from-themeYellow to-themeOrange"></div>
+                    <div className="min-h-full w-4 bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                     <div className="py-4 flex flex-col gap-5">
                         <h2 className='text-2xl lg:text-4xl'>ZonneCarport</h2>
                         <p className="text-base lg:text-lg">

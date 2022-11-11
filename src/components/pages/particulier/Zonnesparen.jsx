@@ -31,7 +31,7 @@ const Index = () => {
 
             <div className="container lg:pt-40 flex flex-col gap-6 lg:gap-12">
                 <div className="flex gap-2 md:gap-10">
-                    <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeYellow to-themeOrange"></div>
+                    <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                     <div className="flex flex-col gap-4 lg:gap-8 py-2">
                         <p className='text-base lg:text-lg'>
                             Zonnepanelen huren via je loonstrook, daarmee stap je over van grijze stroom op groene stroom. En tegelijkertijd bespaar je direct fors op je stroomkosten. Win-win.
@@ -171,12 +171,12 @@ const Index = () => {
                                 Een duurzamer bedrijf én gelukkige werknemers
 
                             </h2>
-                            <div className="h-[4px] max-w-[10rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                            <div className="h-[4px] max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                             <p className="text-base lg:text-lg font-light">
                                 Benieuwd hoe ZonneSparen in de praktijk wordt ervaren? Bij logistiek dienstverlener GD-iTS besparen werknemers al honderden euro’s per jaar door zonnepanelen te huren via hun loonstrook.
                             </p>
                             <div className="flex gap-4">
-                                <div className="h-full w-1 bg-themeYellow">
+                                <div className="h-full w-1 bg-themeDarkGreen">
 
                                 </div>
                                 <div className="py-6">
@@ -212,7 +212,7 @@ const Index = () => {
                 </div>
                 <div className="flex flex-col py-12 w-full max-w-[55rem] gap-6 mx-auto">
                     <div className="flex mr-auto gap-6">
-                        <div className="min-h-full w-1 bg-themeYellow"></div>
+                        <div className="min-h-full w-1 bg-themeDarkGreen"></div>
                         <h2 className='text-2xl py-4 lg:text-4xl '>
                             Alles over ZonneSparen
                         </h2>

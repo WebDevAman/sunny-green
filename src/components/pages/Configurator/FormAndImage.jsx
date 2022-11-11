@@ -41,7 +41,7 @@ const FormAndImage = () => {
 
                 <div className="lg:hidden flex justify-center gap-1 py-3">
                     {[1, 2, 3].map(num => (
-                        <div key={num} className={`${show === num ? 'to-themeOrange from-themeYellow text-white ' : 'bg-white text-black'} bg-gradient-to-r w-7 h-7 flex text-xs items-center cursor-pointer justify-center rounded-full`}>
+                        <div key={num} className={`${show === num ? 'to-themeGreen from-themeDarkGreen text-white ' : 'bg-white text-black'} bg-gradient-to-r w-7 h-7 flex text-xs items-center cursor-pointer justify-center rounded-full`}>
                             {num}
                         </div>
                     ))}
@@ -49,7 +49,7 @@ const FormAndImage = () => {
                 <div className="flex col-span-1 lg:col-span-5 relative lg:overflow-hidden">
                     <div className="hidden lg:flex flex-col justify-center gap-3 pr-4">
                         {[1, 2, 3].map(num => (
-                            <div key={num} onClick={() => setShow(num)} className={`${show === num ? 'to-themeOrange from-themeYellow text-white ' : 'bg-white text-black'} bg-gradient-to-r w-9 h-9 flex items-center cursor-pointer justify-center rounded-full`}>
+                            <div key={num} onClick={() => setShow(num)} className={`${show === num ? 'to-themeGreen from-themeDarkGreen text-white ' : 'bg-white text-black'} bg-gradient-to-r w-9 h-9 flex items-center cursor-pointer justify-center rounded-full`}>
                                 {num}
                             </div>
                         ))}
@@ -64,9 +64,9 @@ const FormAndImage = () => {
                                 <h2 className="text-2xl lg:text-3xl font-semibold">
                                     Hoe kunnen we je bereiken?
                                 </h2>
-                                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                             </div>
-                            <div className="border lg:hidden flex flex-col p-6 relative rounded-3xl border-themeOrange">
+                            <div className="border lg:hidden flex flex-col p-6 relative rounded-3xl border-themeGreen">
                                 <p className="text-lg font-medium">
                                     Onze adviseurs helpen je graag verder
                                 </p>
@@ -123,7 +123,7 @@ const FormAndImage = () => {
                                     </div>
                                     {showLeft &&
                                         <div className='-ml-5'>
-                                            <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                                            <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                                             <p className="text-medium">
                                                 ZonneKopen
                                             </p>
@@ -212,7 +212,7 @@ const FormAndImage = () => {
 
 const ButtonIcon = ({ showLeft, setShowLeft }) => {
     return (
-        <div onClick={() => setShowLeft(!showLeft)} className={`${showLeft ? 'rotate-180 w-14 h-14 -ml-5 -mt-5' : 'rotate-0 h-[70px] w-[70px] aspect-square '} transition-all duration-300 aspect-square shadow-md border-4 border-white cursor-pointer rounded-full from-themeYellow flex items-center justify-center text-white text-3xl to-themeOrange bg-gradient-to-r`}>
+        <div onClick={() => setShowLeft(!showLeft)} className={`${showLeft ? 'rotate-180 w-14 h-14 -ml-5 -mt-5' : 'rotate-0 h-[70px] w-[70px] aspect-square '} transition-all duration-300 aspect-square shadow-md border-4 border-white cursor-pointer rounded-full from-themeDarkGreen flex items-center justify-center text-white text-3xl to-themeGreen bg-gradient-to-r`}>
             <BsChevronDown />
         </div>
     )
@@ -230,7 +230,7 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                     <p>{leftSideImage.post_code}</p>
                     <p>Huisnummer: {leftSideImage.huisnummer}</p>
                     <>
-                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                         <p className="text-medium">
                             ZonneKopen
                         </p>
@@ -307,7 +307,7 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                     <p>{leftSideImage.post_code}</p>
                     <p>Huisnummer: {leftSideImage.huisnummer}</p>
                     <>
-                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                         <p className={`${mobSum ? 'h-fit py-2  text-base' : 'h-0 py-0 overflow-hidden  text-[1px]'} transition-all duration-300`}>
                             ZonneKopen
                         </p>
@@ -370,7 +370,7 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                             </div>
                         </div>
                         <div className="flex w-full justify-center">
-                            <div onClick={() => setMobSum(!mobSum)} className={`${mobSum ? 'rotate-180' : 'rotate-0'} h-[70px] w-[70px] aspect-square transition-all duration-300 -mb-16 shadow-md aspect-square border-4 border-white cursor-pointer rounded-full from-themeYellow flex items-center justify-center text-white text-3xl to-themeOrange bg-gradient-to-r`}>
+                            <div onClick={() => setMobSum(!mobSum)} className={`${mobSum ? 'rotate-180' : 'rotate-0'} h-[70px] w-[70px] aspect-square transition-all duration-300 -mb-16 shadow-md aspect-square border-4 border-white cursor-pointer rounded-full from-themeDarkGreen flex items-center justify-center text-white text-3xl to-themeGreen bg-gradient-to-r`}>
                                 <BsChevronDown />
                             </div>
                         </div>
@@ -383,7 +383,7 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
 
 const PayBackTime = ({ data }) => {
     return (
-        <div className="rounded-xl grid grid-cols-2 border border-themeYellow p-2.5">
+        <div className="rounded-xl grid grid-cols-2 border border-themeDarkGreen p-2.5">
             <div className="flex flex-col gap-2">
                 <p className='text-sm'>Terugverdientijd</p>
                 <p className='text-sm'>Jaarlijkse besparing</p>

@@ -25,7 +25,7 @@ const Index = () => {
             } />
             <div className="container flex flex-col gap-6 lg:gap-12">
                 <div className="flex gap-2 md:gap-10">
-                    <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeYellow to-themeOrange"></div>
+                    <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                     <div className="flex flex-col gap-4 lg:gap-8 py-2">
                         <h2 className="text-2xl lg:text-4xl font-medium">
                             Waarom zonnepanelen kopen?

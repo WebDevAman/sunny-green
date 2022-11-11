@@ -95,7 +95,7 @@ const Hero = ({
                             </div>
                         }
                     </div>
-                    <Button disabled={error} onClick={handleSubmit} variant='outlined' className={'!text-white !border-none whitespace-nowrap !text-base !bg-gradient-to-r !py-2.5  !from-themeYellow !to-themeOrange !font-semibold !rounded-full'} >
+                    <Button disabled={error} onClick={handleSubmit} variant='outlined' className={'!text-white !border-none whitespace-nowrap !text-base !bg-gradient-to-r !py-2.5  !from-themeDarkGreen !to-themeGreen !font-semibold !rounded-full'} >
                         BEREKEN PRIJS
                     </Button>
                 </div>

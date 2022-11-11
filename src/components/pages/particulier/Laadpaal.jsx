@@ -33,7 +33,7 @@ const Index = () => {
 
             <div className="container lg:pt-40 flex flex-col gap-6 lg:gap-12">
                 {/* <div className="flex gap-2 md:gap-10">
-                    <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeYellow to-themeOrange"></div>
+                    <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                     <div className="flex flex-col gap-4 lg:gap-8 py-2">
                         <h2 className="text-2xl lg:text-5xl font-light">
                             Je eigen laadpaal thuis of op je werk met ZonneLaden
@@ -176,7 +176,7 @@ const Index = () => {
                             ],
                             btns: [
                                 <Link to='/'>
-                                    <button className='rounded-full border-4 border-themeYellow uppercase hover:bg-themeYellow w-full hover:text-white py-2.5'>
+                                    <button className='rounded-full border-4 border-themeDarkGreen uppercase hover:bg-themeDarkGreen w-full hover:text-white py-2.5'>
                                         Meer Info
                                     </button>
                                 </Link>
@@ -193,7 +193,7 @@ const Index = () => {
                             ],
                             btns: [
                                 <Link to='/'>
-                                    <button className='rounded-full border-4 border-themeYellow uppercase hover:bg-themeYellow w-full hover:text-white py-2.5'>
+                                    <button className='rounded-full border-4 border-themeDarkGreen uppercase hover:bg-themeDarkGreen w-full hover:text-white py-2.5'>
                                         Meer Info
                                     </button>
                                 </Link>

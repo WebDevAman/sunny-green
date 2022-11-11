@@ -15,9 +15,54 @@ html {
     @apply max-w-[80rem] overflow-hidden w-full px-4 mx-auto
   }
 
+
+  .carousel_themeButton .swiper-button-prev,
+  .carousel_themeButton .swiper-button-next {
+    top: 94% !important;
+  }
+
+  .carousel_themeButton .swiper-button-prev {
+    left: 80% !important;
+  }
+
+  .carousel_themeButton .swiper-button-prev::after,
+  .carousel_themeButton .swiper-button-next::after {
+    color: #333 !important;
+    padding: 0 5px !important;
+    font-size: 25px !important;
+    font-weight: 800;
+  }
+
+  .carousel_themePagination {
+    padding-bottom: 40px !important;
+  }
+
+  .carousel_themePagination .swiper-pagination {
+    width: fit-content !important;
+    bottom: 32px !important;
+    right: 0 !important;
+    margin: 0 auto;
+    height: 3px !important;
+    padding-top: 4px !important;
+  }
+
+  .carousel_themePagination .swiper-pagination .swiper-pagination-bullet {
+    width: 13px !important;
+    border: 2px solid #A6CB52 !important;
+    background: white !important;
+    height: 13px !important;
+    opacity: 100 !important;
+    aspect-ratio: 3;
+    margin-left: auto !important;
+  }
+
+  .carousel_themePagination .swiper-pagination .swiper-pagination-bullet-active {
+    background: #A6CB52 !important;
+  }
 }
 
 .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  opacity: 100 !important;
   height: 15px !important;
   font-family: 'Rubik', sans-serif !important;
 }

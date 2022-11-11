@@ -7,7 +7,7 @@ const Section3 = () => {
                 <Component key={i} i={i} data={item} />
             ))}
             <div className="flex gap-2 md:gap-16">
-                <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeYellow to-themeOrange"></div>
+                <div className="w-0 px-[3px] min-h-full rounded-sm bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>
                 <div className="flex flex-col gap-4 py-6">
                     <h2 className='text-2xl lg:text-4xl'>
                         Terugverdientijd zonnepanelen
@@ -38,7 +38,7 @@ const Component = ({ data, i }) => {
                         <h2 className='text-2xl lg:text-4xl'>
                             {data.title}
                         </h2>
-                        <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                        <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                         <p className="text-base lg:text-lg font-light">
                             {data.text}
                         </p>
@@ -51,7 +51,7 @@ const Component = ({ data, i }) => {
                     <h2 className='text-2xl lg:text-4xl'>
                         {data.title}
                     </h2>
-                    <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                    <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                     <p className="text-base lg:text-lg font-light">
                         {data.text}
                     </p>

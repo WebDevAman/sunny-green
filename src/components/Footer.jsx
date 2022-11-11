@@ -22,7 +22,7 @@ const index = () => {
                         <ul className='flex flex-col gap-2'>
                             {content.map((item, i) => (
                                 <li key={i}>
-                                    <Link className='text-sm font-light hover:underline hover:text-themeOrange' to={slugs[i] || '/'}>
+                                    <Link className='text-sm font-light hover:underline hover:text-themeGreen' to={slugs[i] || '/'}>
                                         {item}
                                     </Link>
                                 </li>

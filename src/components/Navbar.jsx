@@ -24,7 +24,9 @@ const Navbar = ({ isImg }) => {
     return (
         <div className={`${scrolled ? 'bg-white shadow-lg text-[#222]' : 'bg-transparent  text-white shadow-none'} transition-all duration-500 z-50 lg:sticky inset-0 w-full `}>
             <div className="max-w-[100rem] px-4 mx-auto py-2 flex items-center h-16 md:h-20 justify-between lg:justify-start space-x-10 w-full">
-                <Logo dark={scrolled} />
+                <div className="-ml-4">
+                    <Logo dark={scrolled} />
+                </div>
                 <nav className='hidden md:flex'>
                     <ul className='flex items-center space-x-10 justify-start '>
                         {navData.map(({ title, slug }, i) => (

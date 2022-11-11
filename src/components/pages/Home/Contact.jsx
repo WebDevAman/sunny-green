@@ -13,7 +13,7 @@ const Contact = ({ onlyContact, form, content }) => {
                         <h2 className='text-2xl lg:text-4xl'>
                             Zie het licht.
                         </h2>
-                        <div className="h-1 py-[3px] min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                        <div className="h-1 py-[3px] min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                         <p className="text-base lg:text-lg font-light">
                             Fossiele brandstoffen hebben ons veel gebracht, maar tegen een prijs. Ze hebben hun tijd gehad.
                         </p>
@@ -57,12 +57,12 @@ const Contact = ({ onlyContact, form, content }) => {
                     <h2 className='text-2xl lg:text-4xl'>
                         Bereken direct je prijs
                     </h2>
-                    <div className="h-1 py-[3px] min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                    <div className="h-1 py-[3px] min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                     <p className="text-xl lg:text-2xl">
                         Binnen drie minuten weten wat jij met zonnepanelen verdient?
                     </p>
                     <p className="text-xl lg:text-2xl">
-                        Ga naar de <Link to='/' className='text-themeOrange'>ZonneConfigurator</Link>.
+                        Ga naar de <Link to='/' className='text-themeGreen'>ZonneConfigurator</Link>.
                     </p>
                 </div>
                 <img src='https://www.enie.nl/wp-content/uploads/2022/02/03-portret-enie2021-niek-min-568x853.png' className='md:hidden flex  max-w-[15rem]' alt='img' />

@@ -31,7 +31,7 @@ const StepTwo = ({ data, handleNext, setShow, energy, setData }) => {
                 <h2 className="text-xl md:text-2xl lg:text-3xl font-medium md:font-semibold">
                     Stel je pakket samen
                 </h2>
-                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeYellow to-themeOrange"></div>
+                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
             </div>
             <p className="text-lg font-medium">
                 Wat past het beste bij jou?

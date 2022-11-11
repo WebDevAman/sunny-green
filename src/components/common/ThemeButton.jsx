@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core'
 const ThemeButton = ({ text, grayBtn, full }) => {
     return (
         full ?
-            <Button variant='outlined' className={'!text-white !border-none whitespace-nowrap !text-base !bg-gradient-to-r !px-8 !py-2.5  !from-themeYellow !to-themeOrange !min-w-full !font-semibold !rounded-full'} >
+            <Button variant='outlined' className={'!text-white !border-none whitespace-nowrap !text-base !bg-gradient-to-r !px-8 !py-2.5  !from-themeDarkGreen !to-themeGreen !min-w-full !font-semibold !rounded-full'} >
                 {text}
             </Button>
             : grayBtn ?
@@ -11,7 +11,7 @@ const ThemeButton = ({ text, grayBtn, full }) => {
                     {text}
                 </Button>
                 :
-                <Button variant='outlined' className={'!text-white !border-none whitespace-nowrap !text-base !bg-gradient-to-r !px-8 !py-2.5  !from-themeYellow !to-themeOrange !font-medium !rounded-full'} >
+                <Button variant='outlined' className={'!text-white !border-none whitespace-nowrap !text-base !bg-gradient-to-r !px-8 !py-2.5  !from-themeDarkGreen !to-themeGreen !font-medium !rounded-full'} >
                     {text}
                 </Button>
     )

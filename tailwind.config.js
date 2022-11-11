@@ -6,8 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'themeYellow': '#297154',
-        'themeOrange': '#A6CB52',
+        'themeDarkGreen': '#297154',
+        'themeGreen': '#A6CB52',
+      },
+      boxShadow: {
+        'card': '0 0 30px #d9d9d9'
       }
     },
   },
