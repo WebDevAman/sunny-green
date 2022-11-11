@@ -79,7 +79,7 @@ const Navbar = ({ isImg }) => {
                             <MdOutlineClose onClick={() => setOpen(false)} className='!text-black text-2xl' />
                         </div>
                         <nav >
-                            <ul className='flex flex-col pt-2'>
+                            <ul className='flex flex-col pt-2 gap-2'>
                                 {navData.map(({ title, submenu, slug }, i) => (
                                     <li className='hover:bg-gray-50 flex flex-col py-2 px-4 w-60'>
                                         <div className="flex items-center justify-between w-full">
@@ -105,6 +105,16 @@ const Navbar = ({ isImg }) => {
                                         }
                                     </li>
                                 ))}
+                                <li className='uppercase hover:underline pl-4 py-2'>
+                                    <Link to={'/'}>
+                                        Veel gestelde vragen
+                                    </Link>
+                                </li>
+                                <li className='uppercase hover:underline pl-4 py-2'>
+                                    <Link to={'/contact'}>
+                                        Contact
+                                    </Link>
+                                </li>
                             </ul>
                         </nav>
                     </div>

@@ -42,6 +42,10 @@ export const navData = [
                 title: `De Groene WKR`,
                 slug: `/zakelijk/de-groene-wkr-werkgever`,
             },
+
+
+
+
         ]
     },
     {
@@ -74,4 +78,5 @@ export const navData = [
             },
         ]
     },
+
 ]
