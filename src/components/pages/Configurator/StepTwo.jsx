@@ -17,9 +17,9 @@ const StepTwo = ({ data, handleNext, setShow, energy, setData }) => {
             usage: totalPanelsRequired * 330,
             no_of_panels: totalPanelsRequired,
             total_price: (data.no_of_panels * 440).toFixed(2),
-            vat_refund: ((data.no_of_panels * 440) * 0.061).toFixed(2),
+            vat_refund: ((data.no_of_panels * 440) * 0.21).toFixed(2),
             subTotal: (data.no_of_panels * 440).toFixed(2),
-            price_with_vat_refund: (((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.061))).toFixed(2),
+            price_with_vat_refund: (((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2),
         })
     }, [totalPanelsRequired])
     return (

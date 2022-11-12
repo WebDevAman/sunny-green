@@ -108,7 +108,7 @@ const FormAndImage = () => {
                                             <p className='text-sm md:text-base'>Huisnummer: {leftSideImage.huisnummer}</p>
                                             {!showLeft &&
                                                 <span className='text-xs flex md:hidden opacity-90'>
-                                                    € {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.061)) * data.no_of_panels).toFixed(2)}</span>
+                                                    € {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21)) * data.no_of_panels).toFixed(2)}</span>
                                             }
                                         </div>
                                         {!showLeft &&
@@ -117,7 +117,7 @@ const FormAndImage = () => {
                                                     Koopbedrag na btw-teruggave:
                                                 </span>
                                                 <span className='text-base font-medium opacity-90'>
-                                                    € {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.061))).toFixed(2)}</span>
+                                                    € {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2)}</span>
                                             </div>
                                         }
                                     </div>
@@ -181,8 +181,8 @@ const FormAndImage = () => {
                                                 </div>
                                                 <div className="flex flex-col text-right gap-2">
                                                     <span className='text-xs opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
-                                                    <span className='text-xs opacity-90'>€ {((data.no_of_panels * 440) * 0.061).toFixed(2)}</span>
-                                                    <span className='text-xs font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.061))).toFixed(2)}</span>
+                                                    <span className='text-xs opacity-90'>€ {((data.no_of_panels * 440) * 0.21).toFixed(2)}</span>
+                                                    <span className='text-xs font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2)}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -288,8 +288,8 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                             </div>
                             <div className="flex flex-col text-right gap-2">
                                 <span className='text-sm opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
-                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 440) * 0.061).toFixed(2)}</span>
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.061))).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 440) * 0.21).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2)}</span>
                             </div>
                         </div>
                     </>
@@ -365,8 +365,8 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                             </div>
                             <div className="flex flex-col text-right gap-2">
                                 <span className='text-sm opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
-                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 440) * 0.061).toFixed(2)}</span>
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.061)) * data.no_of_panels).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 440) * 0.21).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21)) * data.no_of_panels).toFixed(2)}</span>
                             </div>
                         </div>
                         <div className="flex w-full justify-center">
