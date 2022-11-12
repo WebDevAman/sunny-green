@@ -114,7 +114,7 @@ const FormAndImage = () => {
                                                     Koopbedrag na btw-teruggave:
                                                 </span>
                                                 <span className='text-base font-medium opacity-90'>
-                                                    € {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2)}</span>
+                                                    € {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) * 0.21))).toFixed(2)}</span>
                                             </div>
                                         }
                                     </div>
@@ -159,7 +159,7 @@ const FormAndImage = () => {
 
                                                 </div>
                                                 <div className="flex flex-col text-right gap-2">
-                                                    <span className='text-xs opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
+                                                    <span className='text-xs opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
                                                 </div>
                                             </div>
                                             <PayBackTime data={data} />
@@ -177,9 +177,9 @@ const FormAndImage = () => {
                                                     </div>
                                                 </div>
                                                 <div className="flex flex-col text-right gap-2">
-                                                    <span className='text-xs opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
-                                                    <span className='text-xs opacity-90'>€ {((data.no_of_panels * 440) * 0.21).toFixed(2)}</span>
-                                                    <span className='text-xs font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2)}</span>
+                                                    <span className='text-xs opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
+                                                    <span className='text-xs opacity-90'>€ {((data.no_of_panels * 549) * 0.21).toFixed(2)}</span>
+                                                    <span className='text-xs font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) * 0.21))).toFixed(2)}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -215,7 +215,7 @@ const ButtonIcon = ({ showLeft, setShowLeft }) => {
     )
 }
 const ThirdPageTotalChart = ({ leftSideImage, data }) => {
-    const [mobSum, setMobSum] = React.useState(false)
+    const [mobSum, setMobSum] = React.useState(true)
     return (
         <>
             <div style={{ boxShadow: '1px -1px 21px -7px #999' }} className="lg:flex hidden group w-full max-w-xl rounded-3xl p-5 lg:p-8 lg:mt-0 gap-4 sm:rounded-[35px] bg-white">
@@ -266,7 +266,7 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
 
                             </div>
                             <div className="flex flex-col text-right gap-2">
-                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
                             </div>
                         </div>
                         <PayBackTime data={data} />
@@ -284,9 +284,9 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                                 </div>
                             </div>
                             <div className="flex flex-col text-right gap-2">
-                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
-                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 440) * 0.21).toFixed(2)}</span>
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) * 0.21).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) * 0.21))).toFixed(2)}</span>
                             </div>
                         </div>
                     </>
@@ -345,7 +345,7 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
 
                             </div>
                             <div className="flex flex-col text-right gap-2">
-                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
                             </div>
                         </div>
                         <div className={`${mobSum ? 'h-fit py-2 mt-2 pt-2 border-t' : 'h-0 py-0 overflow-hidden'} grid grid-cols-2 transition-all duration-300 w-full`}>
@@ -361,9 +361,9 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                                 </div>
                             </div>
                             <div className="flex flex-col text-right gap-2">
-                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
-                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 440) * 0.21).toFixed(2)}</span>
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) * 0.21).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) * 0.21))).toFixed(2)}</span>
                             </div>
                         </div>
                         <div className="flex w-full justify-center">
@@ -387,9 +387,9 @@ const PayBackTime = ({ data }) => {
             </div>
             <div className="flex text-right flex-col gap-2">
                 <p className='text-sm'>
-                    {((data.no_of_panels * 440) / 1000).toFixed(1)} jaar
+                    {((data.no_of_panels * 549) / 1600).toFixed(1)} jaar
                 </p>
-                <p className='text-sm'>€ {((data.no_of_panels * 440) * .104533).toFixed(2)}</p>
+                <p className='text-sm'>€ {((data.no_of_panels * 549) * .104533).toFixed(2)}</p>
             </div>
         </div>
     )
