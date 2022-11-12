@@ -35,7 +35,7 @@ const Bcorp = () => {
                                     Duizenden nieuwe enieanen stappen jaarlijks met ons over op zonne-energie. Daarmee is niet alleen onze duurzame impact groot, maar hebben we ook een keten die grote impact heeft op de aarde en talloze (direct of indirecte) betrokkenen. Als B Corp doen we alles om te zorgen dat deze impact voor onze klanten, medewerkers, fabrieksarbeiders, het milieu en alles waar we verder invloed op hebben, positief is.
                                 </p>
                                 <p className="text-base lg:text-lg font-light">
-                                    B Corp zijn is hard werken, maar zorgt ervoor dat we altijd kritisch zijn op onszelf en het beste in enie.nl naar boven halen. Wij stellen hoge eisen aan onszelf, zoals je bijvoorbeeld op deze pagina leest in ons nieuwe Sustainability Report. Maar juist van die uitdagingen krijgen wij energie.
+                                    B Corp zijn is hard werken, maar zorgt ervoor dat we altijd kritisch zijn op onszelf en het beste in sunnygreen.nl naar boven halen. Wij stellen hoge eisen aan onszelf, zoals je bijvoorbeeld op deze pagina leest in ons nieuwe Sustainability Report. Maar juist van die uitdagingen krijgen wij energie.
                                 </p>
                             </div>
                             <img src="https://www.enie.nl/wp-content/uploads/2021/10/b-corp-score-website-568x408.png" alt="img" />
@@ -157,7 +157,7 @@ Grondstoffen van over de hele wereld worden in verschillende fabrieken in het oo
                             Beleidsdocumenten
                         </h2>
                         <p className="text-base lg:text-lg font-light">
-                            Binnen enie.nl vinden we het belangrijk onze cultuur en waarden goed onder alle enieanen te waarborgen. Daarom hebben we een aantal documenten waarin staat opgeschreven wat we van onszelf en onze collega’s verwachten.
+                            Binnen sunnygreen.nl vinden we het belangrijk onze cultuur en waarden goed onder alle enieanen te waarborgen. Daarom hebben we een aantal documenten waarin staat opgeschreven wat we van onszelf en onze collega’s verwachten.
 
 
                         </p>

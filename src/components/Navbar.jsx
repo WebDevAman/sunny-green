@@ -108,7 +108,7 @@ const Navbar = ({ isImg }) => {
                                     </li>
                                 ))}
                                 <li className='uppercase hover:underline pl-4 py-2'>
-                                    <Link to={'/'}>
+                                    <Link to={'/veelgestelde-vragen-over-zonnepanelen'}>
                                         Veel gestelde vragen
                                     </Link>
                                 </li>

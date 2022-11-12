@@ -27,7 +27,7 @@ const Reasons = () => {
                 </div>
                 <div className="w-full flex flex-col gap-4 bg-white min-h-full pt-5 overflow-hidden rounded-lg shadow-card">
                     <h3 className="text-2xl px-5 lg:text-3xl">Het beste voorstel</h3>
-                    <p className='text-base font-light px-5'>Er zijn veel aanbieders van zonnepanelen. Wat maakt enie.nl zo uniek?</p>
+                    <p className='text-base font-light px-5'>Er zijn veel aanbieders van zonnepanelen. Wat maakt sunnygreen.nl zo uniek?</p>
 
                     <ul className='flex text-base lg:text-lg pl-5 flex-col gap-2'>
                         {[

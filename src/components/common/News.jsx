@@ -57,7 +57,7 @@ const News = () => {
 const newsData = [
     {
         img: `https://www.enie.nl/wp-content/uploads/2022/08/post26-social-daviddal-website-568x352.png`,
-        text: `David Dalderup nieuwe COO zonne-energieleverancier enie.nl`,
+        text: `David Dalderup nieuwe COO zonne-energieleverancier sunnygreen.nl`,
         btn: {
             text: `Lees meer`,
             link: '/'

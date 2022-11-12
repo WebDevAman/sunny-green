@@ -20,7 +20,7 @@ const Contact = () => {
                         Direct antwoord op je vraag?
                     </h2>
                     <p className='text-base lg:text-lg tracking-wide font-light'>
-                        Kom je ergens niet uit of werkt iets volgens jou niet helemaal naar behoren? Geen wolkje aan de lucht, we zoeken het voor je uit. We kunnen je het snelst helpen via onze directe chat (rechtsonder op deze pagina), Facebook Messenger of via WhatsApp op ons algemene telefoonnummer +31 (0)854017000.
+                        Kom je ergens niet uit of werkt iets volgens jou niet helemaal naar behoren?Geen wolkje aan de lucht, we zoeken het voor je uit.We kunnen je het snelst helpen via onze directe chat (rechtsonder op deze pagina), Facebook Messenger of via WhatsApp op ons algemene telefoonnummer +31 (0)642237360.
                     </p>
                     <button className='flex  text-white bg-green-500 px-5 rounded-md max-w-[14rem] justify-center hover:opacity-90 p-3 items-center gap-3'>
                         <BsWhatsapp className='text-2xl' />
@@ -48,16 +48,16 @@ const Contact = () => {
                                     Bezoekadres:
                                 </p>
                                 <p className="text-base lg:text-lg tracking-normal font-light">
-                                    Eemsgolaan 5 <br />
-                                    9727 DW Groningen
+                                    Diepenhorstlaan 2Z006<br />
+                                    2288ew Rijswijk
                                 </p>
 
                                 <p className="text-base lg:text-lg tracking-normal">
                                     Postadres:
                                 </p>
                                 <p className="text-base lg:text-lg tracking-normal font-light">
-                                    Postbus 1222<br />
-                                    9701 BE Groningen
+                                    Diepenhorstlaan 2Z006<br />
+                                    2288ew Rijswijk
                                 </p>
                             </div>
                             <div className="flex flex-col gap-6">
@@ -72,7 +72,8 @@ const Contact = () => {
 
 
                                 <p className="text-base lg:text-lg tracking-normal font-light">
-                                    Bel ons: 085 401 7000<br />
+                                    Bel ons: 0642237360<br />
+
                                     Of mail onze klantenservice: klantenservice@sunnygreen.nl<br />
                                     Voor het snelste antwoord kies je hier rechts voor chat of stuur je ons een berichtje op WhatsApp of Facebook Messenger.<br />
                                 </p>

@@ -21,7 +21,8 @@ const StepTwo = ({ data, handleNext, setShow, energy, setData }) => {
             subTotal: (data.no_of_panels * 440).toFixed(2),
             price_with_vat_refund: (((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2),
         })
-    }, [totalPanelsRequired])
+        console.log(data, 'data')
+    }, [totalPanelsRequired, data.usage, data.no_of_panels])
     return (
         <div className='flex flex-col justify-center gap-5 md:gap-8 w-full lg:pl-8 p-4'>
             <div className="flex flex-col gap-3">

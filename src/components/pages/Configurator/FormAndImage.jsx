@@ -106,10 +106,7 @@ const FormAndImage = () => {
                                         <div className={`${showLeft ? 'flex flex-col gap-1 -ml-5 pt-6' : 'flex flex-col gap-1 '}`}>
                                             <p className='text-sm md:text-base'>{leftSideImage.post_code}</p>
                                             <p className='text-sm md:text-base'>Huisnummer: {leftSideImage.huisnummer}</p>
-                                            {!showLeft &&
-                                                <span className='text-xs flex md:hidden opacity-90'>
-                                                    € {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21)) * data.no_of_panels).toFixed(2)}</span>
-                                            }
+
                                         </div>
                                         {!showLeft &&
                                             <div className=" hidden  md:flex items-center gap-2">
@@ -366,11 +363,11 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                             <div className="flex flex-col text-right gap-2">
                                 <span className='text-sm opacity-90'>€ {(data.no_of_panels * 440).toFixed(2)}</span>
                                 <span className='text-sm opacity-90'>€ {((data.no_of_panels * 440) * 0.21).toFixed(2)}</span>
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21)) * data.no_of_panels).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 440).toFixed(2) - ((data.no_of_panels * 440) * 0.21))).toFixed(2)}</span>
                             </div>
                         </div>
                         <div className="flex w-full justify-center">
-                            <div onClick={() => setMobSum(!mobSum)} className={`${mobSum ? 'rotate-180' : 'rotate-0'} h-[70px] w-[70px] aspect-square transition-all duration-300 -mb-16 shadow-md aspect-square border-4 border-white cursor-pointer rounded-full from-themeDarkGreen flex items-center justify-center text-white text-3xl to-themeGreen bg-gradient-to-r`}>
+                            <div onClick={() => setMobSum(!mobSum)} className={`${mobSum ? 'rotate-180' : 'rotate-0'} h-[70px] w-[70px] aspect-square transition-all duration-300 -mb-16 shadow-md border-4 border-white cursor-pointer rounded-full from-themeDarkGreen flex items-center justify-center text-white text-3xl to-themeGreen bg-gradient-to-r`}>
                                 <BsChevronDown />
                             </div>
                         </div>

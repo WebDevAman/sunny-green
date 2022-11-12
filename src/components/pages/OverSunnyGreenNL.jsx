@@ -10,7 +10,7 @@ import Reasons from '../common/Reasons'
 
 const OverSunnyGreenNL = () => {
     return (
-        <Layout noHero img='https://www.enie.nl/wp-content/uploads/2020/10/200904-7-portret-werkveld-enie-web-bijsnijdenheader-e1603793694519.jpg'>
+        <Layout noHero img='https://upload.wikimedia.org/wikipedia/commons/6/6d/Installing_solar_panels_%283049032865%29.jpg'>
             <div className="flex px-3 flex-col items-center  pt-12 lg:pt-2 min-h-[50vh] lg:min-h-[30rem] justify-center z-10 relative gap-6">
                 <h2 className="text-3xl lg:text-6xl max-w-[50rem] mx-auto text-center text-white font-light">
                     Een missiegedreven organisatie
@@ -30,7 +30,7 @@ const OverSunnyGreenNL = () => {
                                 </p>
 
                                 <p className="text-base lg:text-lg font-light">
-                                    Zoals onze aarde om de zon draait, draait ook bij enie.nl alles om de zon.
+                                    Zoals onze aarde om de zon draait, draait ook bij sunnygreen.nl alles om de zon.
                                 </p>
                             </div>
                             <p className="text-base lg:text-lg font-light">
