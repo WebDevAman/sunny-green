@@ -20,6 +20,11 @@ import ScrollToTop from './components/common/ScrollToTop';
 import ZonnepanelenLeasen from './components/pages/zakelijk/ZonnepanelenLeasen';
 import CarportZonnepanelen from './components/pages/zakelijk/CarportZonnepanelen';
 import HomeScreen from './components/pages/HomePage/HomeScreen';
+import Contact from './components/pages/Contact';
+import OverSunnyGreenNL from './components/pages/OverSunnyGreenNL';
+import FAQ from './components/pages/FAQ';
+import Bcorp from './components/pages/Bcorp';
+import CO2 from './components/pages/CO2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -31,8 +36,13 @@ root.render(
           <Route path="/" element={<HomeScreen />}></Route>
           <Route path="/prijs-berekenen-zonnepanelen" element={<App />}></Route>
           <Route path="/configurator" element={<FormAndImage />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/over-sunnygreen-nl" element={<OverSunnyGreenNL />}></Route>
+          <Route path="/veelgestelde-vragen-over-zonnepanelen" element={<FAQ />}></Route>
           <Route path="/success" element={<Success />}></Route>
           <Route path="/Admin/Panel" element={<Panel />}></Route>
+          <Route path="/over-sunnygreen-nl/bcorp/" element={<Bcorp />}></Route>
+          <Route path="/nieuws/co2-compensatie/" element={<CO2 />}></Route>
           <Route path="/particulier/zonnepanelen-huren" element={<ZonnepanelenHuren />}></Route>
           <Route path="/particulier/zonnepanelen-kopen" element={<ZonnepanelenKopen />}></Route>
           <Route path="/particulier/zonnesparen" element={<Zonnesparen />}></Route>

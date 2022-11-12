@@ -22,7 +22,7 @@ html {
   }
 
   .carousel_themeButton .swiper-button-prev {
-    left: 80% !important;
+    left: calc(100% - 80px) !important;
   }
 
   .carousel_themeButton .swiper-button-prev::after,
@@ -34,7 +34,7 @@ html {
   }
 
   .carousel_themePagination {
-    padding-bottom: 40px !important;
+    padding-bottom: 60px !important;
   }
 
   .carousel_themePagination .swiper-pagination {

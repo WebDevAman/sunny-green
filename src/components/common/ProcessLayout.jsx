@@ -35,7 +35,7 @@ const ProcessLayout = ({ data, steps }) => {
                     ))}
                 </div>
             </div>
-            <ThemeButton text='Bereken prijs' />
+            {/* <ThemeButton text='Bereken prijs' /> */}
         </div>
     )
 }

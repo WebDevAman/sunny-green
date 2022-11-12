@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Navbar from '../../Navbar'
 import ThemeButton from '../../common/ThemeButton'
 import Footer from '../../Footer'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useRecoilState } from 'recoil'
 import { atomImageFromGoogle } from '../../atoms'
 import { BsChevronDown, BsChevronRight } from 'react-icons/bs'
@@ -491,25 +491,28 @@ const HomeScreen = () => {
     )
 }
 
-const CardItem = ({ img, title, isCarousel, btn, text }) => {
+const CardItem = ({ img, title, link, isCarousel, btn, text }) => {
     return (
         isCarousel ?
-            <div className={'flex min-h-[340px] group p-6 flex-col text-center items-center gap-4 border-2 shadow-card border-themeGreen pb-8 relative bg-white lg:hover:-translate-y-16 transition-all duration-700 rounded-3xl '}>
+            <div className={'flex min-h-[340px] group p-6 flex-col text-center items-center gap-4 border-2 shadow-card border-themeGreen pb-8 relative bg-white lg:hover:-translate-y-12 transition-all duration-700 rounded-3xl '}>
                 <img src={img} alt={title} />
                 <img src={`https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Icon_Check.svg`} alt={title} />
                 <p className="text-lg lg:text-xl">{text}</p>
                 <div className="mt-auto">
-                    <ThemeButton text={btn} />
-
+                    <Link to={link}>
+                        <ThemeButton text={btn} />
+                    </Link>
                 </div>
             </div>
             :
-            <div className={'flex group p-6 flex-col text-center items-center gap-4 border-2 hover:shadow-card hover:border-themeGreen pb-8 border-white relative bg-white lg:hover:-translate-y-16 transition-all duration-700 rounded-3xl '}>
+            <div className={'flex group p-6 flex-col text-center items-center gap-4 border-2 hover:shadow-card hover:border-themeGreen pb-8 border-white relative bg-white lg:hover:-translate-y-12 transition-all duration-700 rounded-3xl '}>
                 <img src={img} alt={title} />
                 <img src={`https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Icon_Check.svg`} alt={title} />
                 <p className="text-lg lg:text-xl">{text}</p>
                 <div className="absolute group-hover:flex hidden left-1/2 z-10 -bottom-6 -translate-x-1/2">
-                    <ThemeButton text={btn} />
+                    <Link to={link}>
+                        <ThemeButton text={btn} />
+                    </Link>
                 </div>
             </div>
     )
@@ -518,22 +521,26 @@ const secondData = [
     {
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_8jaar.svg`,
         text: `Al meer dan 8 jaar maken we zonne-energie voor iedereen toegankelijk.`,
-        btn: 'lees meer'
+        btn: 'lees meer',
+        link: '/over-sunnygreen-nl'
     },
     {
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_Milieu.svg`,
         text: `Wij werken aan een positieve impact voor mens en milieu.`,
-        btn: 'lees meer'
+        btn: 'lees meer',
+        link: '/over-sunnygreen-nl/bcorp/'
     },
     {
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_Enieaan.svg`,
         text: `Al meer dan 20.000 klanten gingen je voor.`,
-        btn: 'lees meer'
+        btn: 'lees meer',
+        link: 'https://www.feedbackcompany.com/nl-nl/reviews/enie-nl/?starter=30'
     },
     {
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_2030.svg`,
         text: `Onze missie: voor 2030 volledig CO2-neutraal zijn.`,
-        btn: 'lees meer'
+        btn: 'lees meer',
+        link: '/nieuws/co2-compensatie/'
     },
 ]
 const thirdData = [

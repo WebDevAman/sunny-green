@@ -62,7 +62,7 @@ const Contact = ({ onlyContact, form, content }) => {
                         Binnen drie minuten weten wat jij met zonnepanelen verdient?
                     </p>
                     <p className="text-xl lg:text-2xl">
-                        Ga naar de <Link to='/' className='text-themeGreen'>ZonneConfigurator</Link>.
+                        Ga naar de <Link to='/prijs-berekenen-zonnepanelen' className='text-themeGreen'>ZonneConfigurator</Link>.
                     </p>
                 </div>
                 <img src='https://www.enie.nl/wp-content/uploads/2022/02/03-portret-enie2021-niek-min-568x853.png' className='md:hidden flex  max-w-[15rem]' alt='img' />

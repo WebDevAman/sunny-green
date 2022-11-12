@@ -3,7 +3,7 @@ import Navbar from '../Navbar'
 import Footer from '../Footer'
 import Logo from '../common/Logo'
 
-const index = ({ children, noHero, noNav, img }) => {
+const index = ({ children, customHeight, noHero, noNav, img }) => {
     return (
         <div className='flex flex-col'>
             {noNav ?
@@ -19,7 +19,7 @@ const index = ({ children, noHero, noNav, img }) => {
                 </div>
             }
             {img && noHero &&
-                <div style={{ background: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(${img})` }} className='w-full absolute inset-0 !bg-norepeat !bg-cover aspect-video min-h-[30rem] lg:min-h-[40rem] !bg-center max-h-[70vh]' alt='img' >
+                <div style={{ background: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(${img})` }} className={`w-full absolute inset-0 !bg-norepeat !bg-cover aspect-video min-h-[30rem] lg:min-h-[40rem] !bg-center max-h-[70vh] `} alt='img' >
 
                 </div>
             }

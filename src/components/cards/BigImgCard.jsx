@@ -8,7 +8,7 @@ const BigImgCard = ({ data, i }) => {
                 <div className={`${i % 2 === 0 ? 'right-0' : 'left-0'} absolute h-full  top-0 w-full max-w-[80%] rounded-3xl overflow-hidden`}>
                     <img src={data.img} alt={data.img} className='w-full object-cover h-full rounded-3xl overflow-hidden select-none transition-all duration-1000' />
                 </div>
-                <div className={`z-20 relative w-full max-w-[40rem] ${i % 2 === 1 ? 'ml-auto' : 'mr-auto'}`}>
+                <div className={`z-20 relative w-full max-w-[35rem] ${i % 2 === 1 ? 'ml-auto' : 'mr-auto'}`}>
                     <div className="h-full bg-white rounded-3xl shadow-2xl p-12 flex flex-col gap-6 lg:gap-10 ">
                         <h2 className='text-2xl lg:text-[40px] leading-[50px]'>
                             {data.title}

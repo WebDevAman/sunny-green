@@ -62,9 +62,11 @@ const Navbar = ({ isImg }) => {
                             Bereken voordeel
                         </button>
                     </Link>
-                    <button className={`h-14 hidden lg:flex items-center justify-center aspect-square text-3xl font-medium ${scrolled ? 'text-black' : 'text-white'} whitespace-nowrap border-2 hover:bg-themeGreen rounded-full border-themeGreen`}>
-                        <BsHeadset />
-                    </button>
+                    <Link to='/contact'>
+                        <button className={`h-14 hidden lg:flex items-center justify-center aspect-square text-3xl font-medium ${scrolled ? 'text-black' : 'text-white'} whitespace-nowrap border-2 hover:bg-themeGreen rounded-full border-themeGreen`}>
+                            <BsHeadset />
+                        </button>
+                    </Link>
                     <div onClick={() => setOpen(true)} >
                         <MdOutlineMenu className='text-2xl flex md:hidden' />
                     </div>
