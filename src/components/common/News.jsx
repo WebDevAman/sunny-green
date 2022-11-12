@@ -81,7 +81,7 @@ const newsData = [
     },
     {
         img: `https://www.enie.nl/wp-content/uploads/2022/10/bovenaanzicht-zuidhorn-opleverrapport-min-768x364.png`,
-        text: `Enie.nl en gemeente Westerkwartier openen carport met zonnepanelen in Zuidhorn`,
+        text: `SunnyGreen.nl en gemeente Westerkwartier openen carport met zonnepanelen in Zuidhorn`,
         btn: {
             text: `Lees meer`,
             link: '/'

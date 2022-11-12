@@ -90,7 +90,7 @@ const HomeScreen = () => {
 
                     <div style={{ background: 'linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255,0.2))' }} className="flex border-2 border-white ml-auto flex-col max-w-[400px] gap-4 p-8 rounded-3xl">
                         <h3 className="text-2xl lg:text-3xl font-medium">
-                            Bereken binnen 1 minuut jouw <br /> voordeel.
+                            Bereken binnen 1 minuut jouw voordeel.
                         </h3>
                         <p>
                             Vul je gegevens in en bereken direct je prijs én besparing.

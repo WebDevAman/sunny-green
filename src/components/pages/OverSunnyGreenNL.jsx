@@ -44,7 +44,7 @@ const OverSunnyGreenNL = () => {
                     {
                         title: `Zonne-energie voor iedereen beschikbaar.`,
                         content: [
-                            `Enie.nl is in 2013 opgericht met één doel: zonne-energie voor iedereen beschikbaar te maken. Wij grijpen de uitdagingen van de energietransitie met beide handen aan om met zijn allen zo snel mogelijk te kunnen genieten van goedkope, klimaatneutrale en decentrale energie.`,
+                            `SunnyGreen.nl is in 2013 opgericht met één doel: zonne-energie voor iedereen beschikbaar te maken. Wij grijpen de uitdagingen van de energietransitie met beide handen aan om met zijn allen zo snel mogelijk te kunnen genieten van goedkope, klimaatneutrale en decentrale energie.`,
                             ` Als enieaan ben je onderdeel van een betrokken community met meer dan 20.000 huishoudens en bedrijven, die zich net als jij inzetten voor een duurzame toekomst. Lees hier meer over wat onze klanten zeggen.`
                         ],
                         btns: [
