@@ -1,6 +1,6 @@
 export const navData = [
     {
-        title: "Particulier",
+        title: "PRIVATE-PERSON",
         slug: '/private-person',
         submenu: [
             {
