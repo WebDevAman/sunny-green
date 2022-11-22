@@ -666,12 +666,12 @@ const BigSection = () => {
                             <div className="flex flex-col w-full gap-2">
                                 <div className="flex items-center w-full justify-between">
                                     <h3 className='text-base font-medium'>
-                                        Zonnepanelen huren
+                                        Laadpaal thuis
                                     </h3>
                                     <BsChevronRight className='text-2xl' />
                                 </div>
                                 <p className='max-w-[20rem]'>
-                                    Stroom opwekken met een abonnement op de zon.
+                                    Stroom opwekken voor uw auto.
                                 </p>
                             </div>
                         </div>
