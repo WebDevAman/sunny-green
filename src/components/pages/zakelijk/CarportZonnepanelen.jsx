@@ -26,7 +26,7 @@ const Index = () => {
                 <h2 className="text-xl max-w-2xl text-center lg:text-3xl text-white font-light">
                     Rijden én werken op zonne-energie van je parkeerterrein. Het kan.
                 </h2>
-                <PostCodeInp />
+
             </div>
 
             <div className="container lg:pt-40 flex flex-col gap-6 lg:gap-12">

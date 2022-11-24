@@ -26,7 +26,7 @@ const Index = () => {
                 <h2 className="text-xl lg:text-3xl text-white font-light">
                     Zonnepanelen, laadpalen en accu's zonder investering.
                 </h2>
-                <PostCodeInp />
+
 
             </div>
 
@@ -160,9 +160,7 @@ const Index = () => {
                     <p className='text-base lg:text-lg'>
                         Zonnepanelen leasen voor het mkb, hier zie je de kosten en je besparing
                     </p>
-                    <Link to='/'>
-                        <ThemeButton grayBtn text='Download brochure' />
-                    </Link>,
+
                 </div>
                 <div className="flex gap-4 lg:gap-10">
                     <div className="min-h-full w-4 bg-gradient-to-b from-themeDarkGreen to-themeGreen"></div>

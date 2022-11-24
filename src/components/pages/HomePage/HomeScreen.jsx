@@ -295,9 +295,9 @@ const HomeScreen = () => {
                                 Zonnepanelen neem je voor de komende dertig jaar, dus je wilt zeker zijn van je zaak. Bekijk alle vragen die enieanen ons geregeld stellen. Hoef je het niet meer zelf te doen.
                             </p>
                             <div className="mt-auto">
-                                <button className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
+                                <Link to='/veelgestelde-vragen-over-zonnepanelen' className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
                                     Bekijk de veelgestelde vragen
-                                </button>
+                                </Link>
 
                             </div>
                         </div>

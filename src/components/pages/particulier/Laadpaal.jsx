@@ -27,7 +27,7 @@ const Index = () => {
                 <h2 className="text-xl lg:text-3xl text-white font-light">
                     Vol energie van en naar huis.
                 </h2>
-                <PostCodeInp />
+
 
             </div>
 
