@@ -1,21 +1,21 @@
 export const navData = [
     {
-        title: "PRIVATE PERSON",
-        slug: '/private-person',
+        title: "Particulier",
+        slug: '/particulier',
         submenu: [
-            {
-                title: `ZonneHuren`,
-                slug: `/particulier/zonnepanelen-huren`,
-            },
+            // {
+            //     title: `ZonneHuren`,
+            //     slug: `/particulier/zonnepanelen-huren`,
+            // },
 
             {
                 title: `ZonneKopen`,
                 slug: `/particulier/zonnepanelen-kopen`,
             },
-            {
-                title: `ZonneSparen`,
-                slug: `/particulier/zonnesparen`,
-            },
+            // {
+            //     title: `ZonneSparen`,
+            //     slug: `/particulier/zonnesparen`,
+            // },
             {
                 title: `Laadpaal thuis`,
                 slug: `/particulier/laadpaal-thuis`,
@@ -30,18 +30,18 @@ export const navData = [
                 title: `ZonneLeasen MKB`,
                 slug: `/zakelijk/zonnepanelen-leasen`,
             },
-            {
-                title: `ZonneCarport`,
-                slug: `/zakelijk/carport-zonnepanelen`,
-            },
+            // {
+            //     title: `ZonneCarport`,
+            //     slug: `/zakelijk/carport-zonnepanelen`,
+            // },
             {
                 title: `ZonneKopen Zakelijk`,
                 slug: `/zakelijk/zonnepanelen-kopen`,
             },
-            {
-                title: `De Groene WKR`,
-                slug: `/zakelijk/de-groene-wkr-werkgever`,
-            },
+            // {
+            //     title: `De Groene WKR`,
+            //     slug: `/zakelijk/de-groene-wkr-werkgever`,
+            // },
 
 
 
@@ -50,7 +50,7 @@ export const navData = [
     },
     {
         title: "OVER ONS",
-        slug: '/over-ons',
+        slug: '/over-sunnygreen-nl/',
         submenu: [
             {
                 title: `Veelgestelde vragen`,
@@ -58,11 +58,11 @@ export const navData = [
             },
             {
                 title: `Privacy statement`,
-                slug: `/privacy-statement`,
+                slug: `/privacy-statement-sunnygreen-nl`,
             },
             {
                 title: `Cookie statement`,
-                slug: `/cookie-statement`,
+                slug: `/cookie-statement-sunnygreen-nl`,
             },
             {
                 title: `Contact`,

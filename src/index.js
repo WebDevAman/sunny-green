@@ -25,6 +25,9 @@ import OverSunnyGreenNL from './components/pages/OverSunnyGreenNL';
 import FAQ from './components/pages/FAQ';
 import Bcorp from './components/pages/Bcorp';
 import CO2 from './components/pages/CO2';
+import Privacy from './components/pages/statements/Privacy';
+import Cookie from './components/pages/statements/Cookie';
+import StatementsPage from './components/pages/statements/StatementsPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -49,6 +52,9 @@ root.render(
           <Route path="/particulier/laadpaal-thuis" element={<Laadpaal />}></Route>
           <Route path="/zakelijk/zonnepanelen-leasen" element={<ZonnepanelenLeasen />}></Route>
           <Route path="/zakelijk/carport-zonnepanelen" element={<CarportZonnepanelen />}></Route>
+          <Route path="/privacy-statement-sunnygreen-nl" element={<Privacy />}></Route>
+          <Route path="/cookie-statement-sunnygreen-nl" element={<Cookie />}></Route>
+          <Route path="/algemene-voorwaarden" element={<StatementsPage />}></Route>
         </Routes>
       </BrowserRouter>
     </RecoilRoot>

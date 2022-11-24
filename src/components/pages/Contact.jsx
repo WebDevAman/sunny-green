@@ -1,6 +1,7 @@
 import Layout from '../Layout'
 import React from 'react'
 import { BsMessenger, BsWhatsapp } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
 
 const Contact = () => {
     return (
@@ -22,10 +23,10 @@ const Contact = () => {
                     <p className='text-base lg:text-lg tracking-wide font-light'>
                         Kom je ergens niet uit of werkt iets volgens jou niet helemaal naar behoren?Geen wolkje aan de lucht, we zoeken het voor je uit.We kunnen je het snelst helpen via onze directe chat (rechtsonder op deze pagina), Facebook Messenger of via WhatsApp op ons algemene telefoonnummer +31 (0)642237360.
                     </p>
-                    <button className='flex  text-white bg-green-500 px-5 rounded-md max-w-[14rem] justify-center hover:opacity-90 p-3 items-center gap-3'>
+                    <a href='https://wa.me/0642237360' target={'_blank'} rel='noreferrer' className='flex  text-white bg-green-500 px-5 rounded-md max-w-[14rem] justify-center hover:opacity-90 p-3 items-center gap-3'>
                         <BsWhatsapp className='text-2xl' />
                         <p>WhatsApp</p>
-                    </button>
+                    </a>
                     <button className='flex  text-white bg-blue-600 px-5 rounded-md max-w-[14rem] justify-center hover:opacity-90 p-3 items-center gap-3'>
                         <BsMessenger className='text-2xl' />
                         <p>Messenger</p>

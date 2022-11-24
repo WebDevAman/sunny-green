@@ -43,15 +43,15 @@ const data = [
     {
         title: 'Particulier',
         content: [
-            `ZonneHuren`,
+            // `ZonneHuren`,
             `ZonneKopen`,
-            `ZonneSparen`,
+            // `ZonneSparen`,
             `Laadpaal thuis`,
         ],
         slugs: [
-            `/particulier/zonnepanelen-huren`,
+            // `/particulier/zonnepanelen-huren`,
             `/particulier/zonnepanelen-kopen`,
-            `/particulier/zonnesparen`,
+            // `/particulier/zonnesparen`,
             `/particulier/laadpaal-thuis`,
         ]
     },
@@ -59,15 +59,15 @@ const data = [
         title: 'Zakelijk',
         content: [
             `ZonneLeasen MKB`,
-            `ZonneCarport`,
+            // `ZonneCarport`,
             `ZonneKopen Zakelijk`,
-            `De Groene WKR`,
+            // `De Groene WKR`,
         ],
         slugs: [
             `/zakelijk/zonnepanelen-leasen`,
-            `/zakelijk/carport-zonnepanelen`,
+            // `/zakelijk/carport-zonnepanelen`,
             `/zakelijk/zonnepanelen-kopen`,
-            `/zakelijk/de-groene-wkr-werkgever`,
+            // `/zakelijk/de-groene-wkr-werkgever`,
         ]
     },
     {
@@ -82,8 +82,8 @@ const data = [
         ],
         slugs: [
             `/veelgestelde-vragen-over-zonnepanelen`,
-            `/privacy-statement`,
-            `/cookie-statement`,
+            `/privacy-statement-sunnygreen-nl`,
+            `/cookie-statement-sunnygreen-nl`,
             `/contact`,
             `/algemene-voorwaarden`,
             `/over-sunnygreen-nl/onze-producten`,
