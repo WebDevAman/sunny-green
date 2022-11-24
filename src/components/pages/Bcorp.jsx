@@ -25,9 +25,6 @@ const Bcorp = () => {
                     <div className="flex flex-col  py-6 gap-8">
                         <h2 className="text-2xl lg:text-4xl max-w-[50rem] font-medium">
                             Wij zijn een B Corp
-
-
-
                         </h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="flex flex-col gap-4">
@@ -66,27 +63,13 @@ const Bcorp = () => {
                         ],
                         img: `https://www.enie.nl/wp-content/uploads/2020/02/ac01cf44-ff80-43ce-a007-d2e96af049d1.jpg`,
                     },
-                    {
-                        title: `Ons nieuwe Sustainability Report`,
-                        content: [
-                            `Editie 2021`,
-                            `Om voor 2030 CO₂-neutraal te zijn, moeten we aan de bak. We zijn begonnen door de uitstoot van onze hele keten in kaart te brengen: van de busreis van onze collega’s naar kantoor tot de overzeese tocht van onze zonnepanelen van Shanghai naar Rotterdam.`,
-                            `Lees in dit uitgebreide rapport precies wat we uitstoten, waar die uitstoot vandaan komt en – nog belangrijker – hoe we deze uitstoot terugbrengen en compenseren.`,
-                            `Benieuwd naar onze voortgang op #projectnetzero? Blijf up-to-date via onze Instagram-, Linkedin– en Facebook-pagina’s.`,
 
-                        ],
-                        btns: [
-                            <Link href='/'>
-                                <ThemeButton text='Bekijk het rapport' grayBtn />
-                            </Link>
-                        ],
-                        img: `https://www.enie.nl/wp-content/uploads/2022/03/sustainability-report-enienl-enie-south-africa-min.png`,
-                    },
 
                 ].map((x, y) => (
                     <BigImgCard data={x} i={y} />
                 ))}
                 <div className="py-4 lg:py-10"></div>
+                <img src='https://www.enie.nl/wp-content/uploads/2022/03/sustainability-report-enienl-enie-south-africa-min.png' alt='img' className='w-full object-cover h-full rounded-3xl overflow-hidden select-none transition-all duration-1000' />
 
 
             </div>
@@ -150,27 +133,7 @@ Grondstoffen van over de hele wereld worden in verschillende fabrieken in het oo
                     <BigImgCard data={x} i={y} />
                 ))}
                 <div className="py-4 lg:py-10"></div>
-                <div className="flex gap-4 lg:gap-12">
-                    <div className="min-h-full px-1 bg-gradient-to-b from-themeGreen to-themeDarkGreen"></div>
-                    <div className="flex flex-col  py-6 gap-8">
-                        <h2 className="text-2xl lg:text-4xl max-w-[50rem] font-medium">
-                            Beleidsdocumenten
-                        </h2>
-                        <p className="text-base lg:text-lg font-light">
-                            Binnen sunnygreen.nl vinden we het belangrijk onze cultuur en waarden goed onder alle enieanen te waarborgen. Daarom hebben we een aantal documenten waarin staat opgeschreven wat we van onszelf en onze collega’s verwachten.
 
-
-                        </p>
-                        <List data={[
-                            `Je leest in onze Purchasing Code of Conduct over onze afspraken rond inkopen;`,
-                            `in onze Code of Ethics lees je hoe we omgaan met klanten, collega’s en partners;`,
-                            `in onze Virtual Office Stewardship Policy hoe we zorgen dat alle enieanen op een verantwoorde manier buiten het kantoor kunnen werken;`,
-                            `en in het Hiring Code of Conduct lees je alles over ons aannamebeleid.`,
-                        ]} />
-                    </div>
-                </div>
-                <div className="py-4 lg:py-10"></div>
-                <News />
             </div>
         </Layout >
     )

@@ -40,81 +40,8 @@ const OverSunnyGreenNL = () => {
                         </div>
                     </div>
                 </div>
-                {[
-                    {
-                        title: `Zonne-energie voor iedereen beschikbaar.`,
-                        content: [
-                            `SunnyGreen.nl is in 2013 opgericht met één doel: zonne-energie voor iedereen beschikbaar te maken. Wij grijpen de uitdagingen van de energietransitie met beide handen aan om met zijn allen zo snel mogelijk te kunnen genieten van goedkope, klimaatneutrale en decentrale energie.`,
-                            ` Als enieaan ben je onderdeel van een betrokken community met meer dan 20.000 huishoudens en bedrijven, die zich net als jij inzetten voor een duurzame toekomst. Lees hier meer over wat onze klanten zeggen.`
-                        ],
-                        btns: [
-
-                        ],
-                        img: `https://www.enie.nl/wp-content/uploads/2020/04/dsc_0642_bart-lindenhovius-1-e1603725827977-1200x1027.jpg`,
-                    },
-
-                ].map((x, y) => (
-                    <BigImgCard data={x} i={y} />
-                ))}
-                <div className="py-4 lg:py-10"></div>
-                <div className="flex flex-col gap-6 items-center text-center">
-                    <h2 className="text-2xl lg:text-4xl max-w-[50rem] font-medium">
-                        Onze impact blijft niet onopgemerkt
-                    </h2>
-                    <img src="https://www.enie.nl/wp-content/uploads/2021/11/logos-568x373.jpg" alt="img" />
-                </div>
-                <div className="flex flex-col py-12 w-full max-w-[55rem] gap-6 mx-auto">
-                    <div className="flex mr-auto gap-6">
-                        <div className="min-h-full w-1 bg-themeDarkGreen"></div>
-                        <div className="flex flex-col gap-3">
-                            <h2 className='text-2xl py-4 lg:text-4xl '>
-                                TED Talks: Solar energy for everyone
-                            </h2>
-                            <p className='text-base lg:text-lg font-light'>Bekijk de Ted Talk van Patrick van der Meulen: ‘Solar energy for everyone.’
-                            </p>
-                        </div>
-                    </div>
-                    <div className="w-full aspect-video rounded-2xl overflow-hidden">
-                        <iframe className='w-full h-full' src="https://www.youtube.com/embed/L1dOAgfcZk8" title="Solar energy for everyone | Patrick van der Meulen | TEDxWageningenUniversity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                </div>
-
-                {[
-                    {
-                        title: `Niet alleen de beste van de wereld, maar ook de beste voor de wereld`,
-                        content: [
-                            `Wij zijn een B Corp-gecertificeerde onderneming. Dat zie je niet alleen aan het B Corp-certificaat op onze uitingen, dat merk je aan alles wat we doen. We zetten extra stappen voor het milieu, sociale gelijkheid, onze medewerkers en zijn transparant in ons beleid. Hierdoor brengen we onze missie en winst met elkaar in evenwicht. Lees op onze B Corp pagina alles over wat B Corp zijn voor ons betekent.`
-                        ],
-                        btns: [
-                            <Link to='/'>
-                                <ThemeButton grayBtn text=' Onze B Corp pagina' />
-                            </Link>
-                        ],
-                        img: `https://www.enie.nl/wp-content/uploads/2021/02/b-corp-forest-sun-enienl-1-1200x800.jpg`,
-                    },
-                    {
-                        title: `Wij zijn CO2-neutraal voor 2030`,
-                        content: [
-                            ` Wij hebben een doel: voor 2030 CO2-neutraal. Samen met 500 andere B Corps hebben we op het podium van de VN Klimaattop in Madrid gecommitteerd om onze CO2-uitstoot voor 2030 tot nul te brengen. Om dit waar te maken, timmeren we de komende jaren hard aan de weg.`,
-
-                            `We brengen de totale uitstoot van onze keten in kaart en zorgen dat we zo weinig mogelijk broeikasgassen uitstoten. Alle overblijvende uitstoot, compenseren we. Hierin nemen we al onze leveranciers en partners mee en zorgen we ervoor dat we onze duurzame missie delen met hogescholen en universiteiten.`,
-
-                            ` Met het bedrijfsleven écht het verschil maken. Het kan.`
-                        ],
-                        btns: [
-                        ],
-                        img: `https://www.enie.nl/wp-content/uploads/2020/02/ac01cf44-ff80-43ce-a007-d2e96af049d1.jpg`,
-                    },
-
-                ].map((x, y) => (
-                    <BigImgCard data={x} i={y} />
-                ))}
-
-                <div className="py-4 lg:py-8"></div>
-                <News />
             </div>
-            <div className="py-4 lg:py-8"></div>
-            <Reasons />
+
         </Layout >
     )
 }
