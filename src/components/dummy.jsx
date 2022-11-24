@@ -1,7 +1,7 @@
 export const navData = [
     {
-        title: "Particulier",
-        slug: '/particulier',
+        title: "PARTICULIER",
+        slug: '/prijs-berekenen-zonnepanelen',
         submenu: [
             // {
             //     title: `ZonneHuren`,
@@ -24,7 +24,7 @@ export const navData = [
     },
     {
         title: "ZAKELIJK",
-        slug: '/zakelijk',
+        slug: '/prijs-berekenen-zonnepanelen',
         submenu: [
             {
                 title: `ZonneLeasen MKB`,

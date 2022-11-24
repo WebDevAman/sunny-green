@@ -474,9 +474,10 @@ const HomeScreen = () => {
                         </p>
                         <div className="py-[3px] max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
                         <div className="mt-auto">
-                            <button className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
+
+                            <Link to='/contact' className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
                                 neem contact op
-                            </button>
+                            </Link>
 
                         </div>
                     </div>
