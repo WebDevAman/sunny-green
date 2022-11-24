@@ -531,7 +531,7 @@ const secondData = [
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_Enieaan.svg`,
         text: `Al meer dan 20.000 klanten gingen je voor.`,
         btn: 'lees meer',
-        link: 'https://www.feedbackcompany.com/nl-nl/reviews/enie-nl/?starter=30'
+        link: '/particulier/zonnepanelen-kopen'
     },
     {
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_2030.svg`,
