@@ -292,7 +292,7 @@ const HomeScreen = () => {
                                 Alles wat je moet weten over zonnepanelen
                             </h3>
                             <p className="font-light">
-                                Zonnepanelen neem je voor de komende dertig jaar, dus je wilt zeker zijn van je zaak. Bekijk alle vragen die enieanen ons geregeld stellen. Hoef je het niet meer zelf te doen.
+                                Zonnepanelen neem je voor de komende dertig jaar, dus je wilt zeker zijn van je zaak. Bekijk alle vragen die klanten ons geregeld stellen. Hoef je het niet meer zelf te doen.
                             </p>
                             <div className="mt-auto">
                                 <Link to='/veelgestelde-vragen-over-zonnepanelen' className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
@@ -317,7 +317,7 @@ const HomeScreen = () => {
                                 Alles wat je moet weten over zonnepanelen
                             </h3>
                             <p className="font-light">
-                                Zonnepanelen neem je voor de komende dertig jaar, dus je wilt zeker zijn van je zaak. Bekijk alle vragen die enieanen ons geregeld stellen. Hoef je het niet meer zelf te doen.
+                                Zonnepanelen neem je voor de komende dertig jaar, dus je wilt zeker zijn van je zaak. Bekijk alle vragen die klanten ons geregeld stellen. Hoef je het niet meer zelf te doen.
                             </p>
                             <div className="mt-auto">
                                 <Link to='/veelgestelde-vragen-over-zonnepanelen' className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>

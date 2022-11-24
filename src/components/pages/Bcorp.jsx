@@ -29,7 +29,7 @@ const Bcorp = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div className="flex flex-col gap-4">
                                 <p className="text-base lg:text-lg font-light">
-                                    Duizenden nieuwe enieanen stappen jaarlijks met ons over op zonne-energie. Daarmee is niet alleen onze duurzame impact groot, maar hebben we ook een keten die grote impact heeft op de aarde en talloze (direct of indirecte) betrokkenen. Als B Corp doen we alles om te zorgen dat deze impact voor onze klanten, medewerkers, fabrieksarbeiders, het milieu en alles waar we verder invloed op hebben, positief is.
+                                    Duizenden nieuwe klanten stappen jaarlijks met ons over op zonne-energie. Daarmee is niet alleen onze duurzame impact groot, maar hebben we ook een keten die grote impact heeft op de aarde en talloze (direct of indirecte) betrokkenen. Als B Corp doen we alles om te zorgen dat deze impact voor onze klanten, medewerkers, fabrieksarbeiders, het milieu en alles waar we verder invloed op hebben, positief is.
                                 </p>
                                 <p className="text-base lg:text-lg font-light">
                                     B Corp zijn is hard werken, maar zorgt ervoor dat we altijd kritisch zijn op onszelf en het beste in sunnygreen.nl naar boven halen. Wij stellen hoge eisen aan onszelf, zoals je bijvoorbeeld op deze pagina leest in ons nieuwe Sustainability Report. Maar juist van die uitdagingen krijgen wij energie.
@@ -83,7 +83,7 @@ const Bcorp = () => {
                             Hier komen onze producten vandaan
                         </h2>
                         <p className="text-base lg:text-lg font-light">
-                            Als B Corp staan we voor volledige transparantie. In het Impact Report heb je kunnen lezen met welke fabrikanten we samenwerken. Hieronder zie je waar onze producten vandaan komen en welke reis ze afleggen tot de daken van de enieanen.
+                            Als B Corp staan we voor volledige transparantie. In het Impact Report heb je kunnen lezen met welke fabrikanten we samenwerken. Hieronder zie je waar onze producten vandaan komen en welke reis ze afleggen tot de daken van de klanten.
                         </p>
                         <img src='https://www.enie.nl/wp-content/uploads/2021/01/source-map-supply-chain-1-992x511.jpg' alt='img' />
                     </div>
@@ -118,7 +118,7 @@ Grondstoffen van over de hele wereld worden in verschillende fabrieken in het oo
                         title: `Zonne-energie opwekken met een goed gevoel`,
                         content: [
                             `Alleen de meest duurzame producten`,
-                            `De partners en fabrikanten waar we mee samenwerken hebben een grote impact op de maatschappij en het klimaat. Daarom zijn we kritisch in elke productkeuze. We kiezen producten die het langst bruikbaar blijven, recyclebaar zijn en in eerlijke en veilige werkomstandigheden zijn geproduceerd. Zo zijn enieanen niet alleen zeker van de beste kwaliteit, maar ook van producten die het milieu minimaal belasten.`,
+                            `De partners en fabrikanten waar we mee samenwerken hebben een grote impact op de maatschappij en het klimaat. Daarom zijn we kritisch in elke productkeuze. We kiezen producten die het langst bruikbaar blijven, recyclebaar zijn en in eerlijke en veilige werkomstandigheden zijn geproduceerd. Zo zijn klanten niet alleen zeker van de beste kwaliteit, maar ook van producten die het milieu minimaal belasten.`,
 
                         ],
                         btns: [

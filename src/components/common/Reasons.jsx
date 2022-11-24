@@ -17,8 +17,8 @@ const Reasons = () => {
                         <AiFillStar />
                         <AiFillStar />
                     </div>
-                    <p className='px-5'><b>Meer dan 20.000 enieanen</b></p>
-                    <p className='text-base font-light px-5'>We streven naar een wereld zonder fossiele brandstoffen. Daarom zijn we trots op al die duizenden enieanen die samen met ons de stap al hebben gezet naar een duurzaam Nederland. Zet jij samen met ons ook deze stap?</p>
+                    <p className='px-5'><b>Meer dan 20.000 klanten</b></p>
+                    <p className='text-base font-light px-5'>We streven naar een wereld zonder fossiele brandstoffen.Daarom zijn we trots op al die duizenden klanten die samen met ons de stap al hebben gezet naar een duurzaam Nederland. Zet jij samen met ons ook deze stap?</p>
                     <div className="mt-auto">
                         <div className="w-full text-right hover:text-themeGreen hover:bg-gray-50 cursor-pointer p-3 bg-gray-100">
                             Vraag een gratis voorstel aan
