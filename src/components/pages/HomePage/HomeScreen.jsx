@@ -159,7 +159,7 @@ const HomeScreen = () => {
                         <div className="flex flex-col gap-3 text-left items-start">
                             <p className='text-themeGreen font-medium'>ONS VERHAAL</p>
                             <h3 className="text-2xl pb-1 lg:pb-3 md:text-4xl font-medium">
-                                Waarom al meer dan 20.000 <span className='leading-normal'>huishoudens</span> en bedrijven Voor sunnygreen.nl kozen.
+                                Waarom al meer dan 20.000 <span className='leading-normal'>huishoudens</span> en bedrijven voor sunnygreen.nl kozen.
                             </h3>
                             <p>Wij maken zonne-energie toegankelijk voor iedereen die vandaag wil besparen en mee wil bouwen aan de duurzame wereld van morgen. Daarom geven wij je advies dat helemaal afgestemd is op jouw situatie én leveren we duurzame zonnepanelen met het hoogste rendement. En ook nog eens heel betaalbaar!</p>
                             <div className="py-[3px] w-full max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
