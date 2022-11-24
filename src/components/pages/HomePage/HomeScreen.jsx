@@ -342,9 +342,9 @@ const HomeScreen = () => {
                                 Iedereen moet kunnen genieten van goedkope, klimaatneutrale en decentrale energie. Elk jaar voorzien we duizenden mensen van advies over zonnepanelen en stappen ook duizenden mensen met ons over.
                             </p>
                             <div className="mt-auto">
-                                <button className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
+                                <Link to='/veelgestelde-vragen-over-zonnepanelen' className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
                                     Bekijk de veelgestelde vragen
-                                </button>
+                                </Link>
 
                             </div>
                         </div>
