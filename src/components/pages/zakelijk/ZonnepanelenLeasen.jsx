@@ -143,19 +143,7 @@ const Index = () => {
                         ],
                         img: `https://www.enie.nl/wp-content/uploads/2021/09/2108-enie-surhuisterveen-klant-in-zicht-bart-lindenhovius-7-web-2000x1124.jpg`,
                     },
-                    {
-                        title: `Interzorg Assen`,
-                        content: [
-                            `100% focus op eigen bedrijfsprocessen`,
-                            `Zorginstelling Interzorg wil al hun middelen inzetten om zich te richten op de eigen processen. Het bedrijf besloot de financiering en alle andere zaken rond de zonnepanelen aansunnygreen.nl over te laten. Dankzij de 550 geleasete zonnepanelen is het bedrijfspand ‘Nul op de meter’ en klaar voor de toekomst.`
-                        ],
-                        btns: [
-                            <Link to='/'>
-                                <ThemeButton grayBtn text='Offerte aanvragen' />
-                            </Link>,
-                        ],
-                        img: `https://www.enie.nl/wp-content/uploads/2020/10/2009_showcase_assen_enie_2_web.jpg`,
-                    },
+
 
                 ].map((x, y) => (
                     <BigImgCard data={x} i={y} />

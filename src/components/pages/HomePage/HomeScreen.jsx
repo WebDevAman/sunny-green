@@ -231,11 +231,7 @@ const HomeScreen = () => {
                                     slidesPerGroup: 4,
                                     spaceBetween: 10,
                                 },
-                                1508: {
-                                    slidesPerView: 5,
-                                    slidesPerGroup: 5,
-                                    spaceBetween: 10,
-                                },
+
                             }}
                             modules={[Pagination, Navigation]}
                             className="mySwiper !overflow-y-visible carousel_themePagination carousel_themeButton !py-12"
@@ -609,12 +605,6 @@ const reviews = [
     },
 
     {
-        type: 'full',
-        img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Afbeelding_Klantcase.jpg`,
-        title: `Volledig het roer om`,
-        text: `“In de samenwerking wassunnygreen.nl zeer flexibel en behulpzaam. Speciale wensen waren geen probleem en ook over kleine details werd meegedacht.”`
-    },
-    {
         title: `Het ziet er goed uit`,
         text: `“De service van deze mensen was fantastisch. Het personeel dat het heeft geplaatst was klantvriendelijk en het was snel gelegd.”`,
         name: `Bert`,
@@ -710,34 +700,7 @@ const BigSection = () => {
                                 </p>
                             </div>
                         </div>
-
-                        <div className="flex border-b-2 w-full pb-4 gap-4">
-                            <img src='https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Icon_Product_ZakelijkCarport.svg' alt='img' className='aspect-square w-10 h-10' />
-                            <div className="flex flex-col w-full gap-2">
-                                <div className="flex items-center w-full justify-between">
-                                    <h3 className='text-base font-medium'> Carport zonnepanelen</h3>
-                                    <BsChevronRight className='text-2xl' />
-                                </div>
-                                <p className='max-w-[20rem]'>
-                                    Rijden én werken op zonne-energie van je parkeerterrein.
-                                </p>
-                            </div>
-                        </div>
-                        <div className="flex border-b-2 w-full pb-4 gap-4">
-                            <img src='https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Icon_Product_ZakelijkWKR.svg' alt='img' className='aspect-square w-10 h-10' />
-                            <div className="flex flex-col w-full gap-2">
-                                <div className="flex items-center w-full justify-between">
-                                    <h3 className='text-base font-medium'>Groene werkkostenregeling</h3>
-                                    <BsChevronRight className='text-2xl' />
-                                </div>
-                                <p className='max-w-[20rem]'>
-
-                                    Duurzaam ondernemen, zonder extra kosten.
-                                </p>
-                            </div>
-                        </div>
                     </div>
-
                 </div>
             </div>
             <div className="flex lg:hidden flex-col gap-8">
@@ -802,32 +765,6 @@ const BigSection = () => {
                             <p className='max-w-[20rem]'>
 
                                 Zonnepanelen, laadpalen en accu's zonder investering.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div className="flex border-b-2 w-full pb-4 gap-4">
-                        <img src='https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Icon_Product_ZakelijkCarport.svg' alt='img' className='aspect-square w-10 h-10' />
-                        <div className="flex flex-col w-full gap-2">
-                            <div className="flex items-center w-full justify-between">
-                                <h3 className='text-base font-medium'> Carport zonnepanelen</h3>
-                                <BsChevronRight className='text-2xl' />
-                            </div>
-                            <p className='max-w-[20rem]'>
-                                Rijden én werken op zonne-energie van je parkeerterrein.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="flex border-b-2 w-full pb-4 gap-4">
-                        <img src='https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Icon_Product_ZakelijkWKR.svg' alt='img' className='aspect-square w-10 h-10' />
-                        <div className="flex flex-col w-full gap-2">
-                            <div className="flex items-center w-full justify-between">
-                                <h3 className='text-base font-medium'>Groene werkkostenregeling</h3>
-                                <BsChevronRight className='text-2xl' />
-                            </div>
-                            <p className='max-w-[20rem]'>
-
-                                Duurzaam ondernemen, zonder extra kosten.
                             </p>
                         </div>
                     </div>

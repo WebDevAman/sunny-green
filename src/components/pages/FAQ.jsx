@@ -424,59 +424,7 @@ const accordionData = [
 
         ]
     },
-    {
-        title: `ZonneSparen (werknemer)`,
-        text: `Zonnepanelen via je loonstrook, werknemers.`,
-        content: [
-            {
-                ques: `Is ZonneSparen voor iedereen mogelijk?`,
-                content: [
-                    {
-                        type: 'p',
-                        text: `ZonneSparen is beschikbaar voor iedere werknemer in Nederland met een eigen koopwoning. In sommige gevallen is het mogelijk om de Groene WKR te gebruiken in een huurwoning, de eigenaar van het pand moet dan wel akkoord gaan met zonnepanelen op het dak. Kort gezegd is ZonneSparen toegankelijk voor iedere Nederlander in loondienst.`
-                    },
 
-
-                ]
-            },
-            {
-                ques: `Kan ik via ZonneSparen ook zonnepanelen kopen of financieren?`,
-                content: [
-                    {
-                        type: 'p',
-                        text: `ZonneSparen gaat uit van het huren van zonnepanelen en/of een laadpaal. Het is ook mogelijk om zonnepanelen zelf te kopen en te verrekenen via je loonstrook. Echter, het budget is dan beperkt tot maximaal 2.400 euro en de werkgever heeft een eenmalige kostenpost te betalen. Bij huur worden de zonnepanelen maandelijks betaald. Het is tegenwoordig ook mogelijk om een lening via de bank of gemeente af te sluiten voor de aankoop van een zonnepanelen-installatie. Omdat het hier gaat om een persoonlijke lening is het op dit moment niet mogelijk om deze via loonstrook te betalen.`
-                    },
-
-
-                ]
-            },
-            {
-                ques: `Is zonnepanelen huren niet duurder dan kopen?`,
-                content: [
-                    {
-                        type: 'p',
-                        text: `Normaal gesproken is het financieel gezien het meest aantrekkelijk om te kopen. Een investering van circa 3.500 euro excl. btw (de btw kun je terugkrijgen) wordt in zo’n 5-7 jaar terugverdiend. Met huren heb je geen investering maar bespaar je wel zo’n 10% op je stroomkosten. Na tien jaar kun je de zonnepanelen overnemen van sunnygreen.nl.`
-                    },
-                    {
-                        type: 'p',
-                        text: `Met ZonneSparen heb je een extra fiscaal voordeel op de maandelijkse huur. Hiermee is huren veelal voordeliger dan zelf zonnepanelen kopen. De maandelijkse huur minus het fiscale voordeel x de looptijd is in totaal lager dan zelf de zonnepanelen kopen.`
-                    },
-
-
-                ]
-            },
-            {
-                ques: `Wat gebeurt er als ik uit dienst ga bij mijn werkgever?`,
-                content: [
-                    {
-                        type: 'p',
-                        text: `Het extra financiële voordeel van het huren van zonnepanelen en betalen via de loonstrook is gekoppeld aan jouw werkgever. Op het moment dat je uit dienst gaat vervalt dit fiscale voordeel tijdelijk tot het moment dat je weer in dienst treedt bij een nieuwe werkgever. Jouw nieuwe werkgever kan ZonneSparen ook weer aanbieden. In die tussentijd betaal je de huursom exclusief het fiscale voordeel vanuit ZonneSparen. Dit is over het algemeen nog steeds goedkoper dan energie van het energiebedrijf kopen`
-                    },
-                ]
-            },
-
-        ]
-    },
 ]
 
 export default FAQ
