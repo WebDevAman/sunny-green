@@ -76,7 +76,7 @@ const HomeScreen = () => {
                         <h3 className="text-4xl pb-1 lg:pb-8 lg:text-6xl font-medium">
                             Het kan..
                         </h3>
-                        <div className="py-[3px] max-w-[6rem] md:max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                        <div className="py-[3px] max-w-[6rem] md:max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                         <div className="hidden md:flex max-w-lg 2xl:pr-12 flex-col gap-4">
                             <p className="text-base">
                                 Binnen tien jaar kunnen we de zon als energiebron weer op 1 hebben. Een sprong vooruit voor onze aarde, met de slimste, mooiste, sterkste energiebron die er is.
@@ -162,7 +162,7 @@ const HomeScreen = () => {
                                 Waarom al meer dan 20.000 <span className='leading-normal'>huishoudens</span> en bedrijven voorsunnygreen.nl kozen.
                             </h3>
                             <p>Wij maken zonne-energie toegankelijk voor iedereen die vandaag wil besparen en mee wil bouwen aan de duurzame wereld van morgen. Daarom geven wij je advies dat helemaal afgestemd is op jouw situatie én leveren we duurzame zonnepanelen met het hoogste rendement. En ook nog eens heel betaalbaar!</p>
-                            <div className="py-[3px] w-full max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                            <div className="py-[3px] w-full max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                         </div>
                         <div></div>
                     </div>
@@ -204,7 +204,7 @@ const HomeScreen = () => {
                         <h2 className='text-2xl md:text-3xl lg:text-4xl font-medium'>
                             Onze klanten aan het woord
                         </h2>
-                        <div className="py-[3px] max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                        <div className="py-[3px] max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
 
                     </div>
                     <div className="w-full px-2">
@@ -468,7 +468,7 @@ const HomeScreen = () => {
                         <p className="font-light">
                             Kom je er toch niet helemaal uit of heb je een aanvullende vraag? Geen wolkje aan de lucht! Kom in contact met een van onze collega’s via de mail of de telefoon. Ook kan je ons een chatbericht sturen.
                         </p>
-                        <div className="py-[3px] max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                        <div className="py-[3px] max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                         <div className="mt-auto">
 
                             <Link to='/contact' className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>

@@ -64,7 +64,7 @@ const FormAndImage = () => {
                                 <h2 className="text-2xl lg:text-3xl font-semibold">
                                     Hoe kunnen we je bereiken?
                                 </h2>
-                                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                             </div>
                             <div className="border lg:hidden flex flex-col p-6 relative rounded-3xl border-themeGreen">
                                 <p className="text-lg font-medium">
@@ -120,7 +120,7 @@ const FormAndImage = () => {
                                     </div>
                                     {showLeft &&
                                         <div className='-ml-5'>
-                                            <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                                            <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                                             <p className="text-medium">
                                                 ZonneKopen
                                             </p>
@@ -227,7 +227,7 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                     <p>{leftSideImage.post_code}</p>
                     <p>Huisnummer: {leftSideImage.huisnummer}</p>
                     <>
-                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                         <p className="text-medium">
                             ZonneKopen
                         </p>
@@ -304,7 +304,7 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                     <p>{leftSideImage.post_code}</p>
                     <p>Huisnummer: {leftSideImage.huisnummer}</p>
                     <>
-                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                        <div className="h-[4px] my-2 max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                         <p className={`${mobSum ? 'h-fit py-2  text-base' : 'h-0 py-0 overflow-hidden  text-[1px]'} transition-all duration-300`}>
                             ZonneKopen
                         </p>

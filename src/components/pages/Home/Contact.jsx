@@ -13,7 +13,7 @@ const Contact = ({ onlyContact, form, content }) => {
                         <h2 className='text-2xl lg:text-4xl'>
                             Zie het licht.
                         </h2>
-                        <div className="h-1 py-[3px] min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                        <div className="h-1 py-[3px] min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                         <p className="text-base lg:text-lg font-light">
                             Fossiele brandstoffen hebben ons veel gebracht, maar tegen een prijs. Ze hebben hun tijd gehad.
                         </p>
@@ -57,7 +57,7 @@ const Contact = ({ onlyContact, form, content }) => {
                     <h2 className='text-2xl lg:text-4xl'>
                         Bereken direct je prijs
                     </h2>
-                    <div className="h-1 py-[3px] min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                    <div className="h-1 py-[3px] min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                     <p className="text-xl lg:text-2xl">
                         Binnen drie minuten weten wat jij met zonnepanelen verdient?
                     </p>

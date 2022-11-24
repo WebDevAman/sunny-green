@@ -66,7 +66,7 @@ const data = [
         slugs: [
             `/zakelijk/zonnepanelen-leasen`,
             // `/zakelijk/carport-zonnepanelen`,
-            `/zakelijk/zonnepanelen-kopen`,
+            `/prijs-berekenen-zonnepanelen`,
             // `/zakelijk/de-groene-wkr-werkgever`,
         ]
     },

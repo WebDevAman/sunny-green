@@ -36,7 +36,7 @@ export const navData = [
             // },
             {
                 title: `ZonneKopen Zakelijk`,
-                slug: `/zakelijk/zonnepanelen-kopen`,
+                slug: `/prijs-berekenen-zonnepanelen`,
             },
             // {
             //     title: `De Groene WKR`,

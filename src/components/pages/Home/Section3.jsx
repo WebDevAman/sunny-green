@@ -38,7 +38,7 @@ const Component = ({ data, i }) => {
                         <h2 className='text-2xl lg:text-4xl'>
                             {data.title}
                         </h2>
-                        <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                        <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                         <p className="text-base lg:text-lg font-light">
                             {data.text}
                         </p>
@@ -51,7 +51,7 @@ const Component = ({ data, i }) => {
                     <h2 className='text-2xl lg:text-4xl'>
                         {data.title}
                     </h2>
-                    <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                    <div className="h-1 py-1 min-h-full max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                     <p className="text-base lg:text-lg font-light">
                         {data.text}
                     </p>

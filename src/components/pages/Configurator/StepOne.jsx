@@ -39,7 +39,7 @@ const StepOne = ({ data, setData, handleNext }) => {
                 <h2 className="text-2xl lg:text-3xl font-semibold">
                     Jouw stroombehoefte
                 </h2>
-                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                <div className="h-[5px] max-w-[6rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
             </div>
             <div className="flex flex-col gap-2">
                 <p className="text-lg font-medium">

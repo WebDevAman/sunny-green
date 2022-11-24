@@ -171,7 +171,7 @@ const Index = () => {
                                 Een duurzamer bedrijf én gelukkige werknemers
 
                             </h2>
-                            <div className="h-[4px] max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen"></div>
+                            <div className="h-[4px] max-w-[10rem] rounded-sm bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                             <p className="text-base lg:text-lg font-light">
                                 Benieuwd hoe ZonneSparen in de praktijk wordt ervaren? Bij logistiek dienstverlener GD-iTS besparen werknemers al honderden euro’s per jaar door zonnepanelen te huren via hun loonstrook.
                             </p>
