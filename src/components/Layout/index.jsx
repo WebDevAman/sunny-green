@@ -19,7 +19,7 @@ const index = ({ children, customHeight, noHero, noNav, img }) => {
                 </div>
             }
             {img && noHero &&
-                <div style={{ background: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(${img})` }} className={`w-full max-w-[100vw] absolute inset-0 !bg-norepeat !bg-cover aspect-video min-h-[30rem] lg:min-h-[40rem] !bg-center max-h-[70vh] `} alt='img' >
+                <div style={{ background: `linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(${img})` }} className={`w-full max-w-[100vw] absolute inset-0 !bg-norepeat !bg-cover md:aspect-video min-h-[30rem] lg:min-h-[40rem] !bg-center max-h-[70vh] `} alt='img' >
 
                 </div>
             }
