@@ -74,7 +74,7 @@ export const navData = [
             },
             {
                 title: `Onze producten`,
-                slug: `/over-sunnygreen-nl/onze-producten`,
+                slug: `/prijs-berekenen-zonnepanelen`,
             },
         ]
     },

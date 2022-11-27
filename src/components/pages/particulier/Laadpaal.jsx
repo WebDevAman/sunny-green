@@ -64,9 +64,6 @@ const Index = () => {
                             `Iedereen een duurzaam privé tankstation, dát is pas 21e-eeuws. En ben je wel een keer lang onderweg en wil je toch publiek laden? Geen probleem. Met de ZonneLaden-pas geef jij je rit op meer dan 70.000 laadpunten in Europa energie.`,
                         ],
                         btns: [
-                            <Link to='/'>
-                                <ThemeButton grayBtn text='Offerte aanvragen ' />
-                            </Link>
                         ],
                         img: `https://www.enie.nl/wp-content/uploads/2020/11/shutterstock-1812967378-1-e1604502543944.jpg`,
                     },
@@ -95,7 +92,6 @@ const Index = () => {
                         Kies net als bijna 2 miljoen Nederlandse huishoudens voor duurzame zonne-energie. Naast de laadpaal aan huis kan je bij ons kiezen voor zonnepanelen huren of kopen. Dat biedt volop mogelijkheden voor iedereen. Het kan. Schone energie van de zon!
                     </p>
                 </div>
-                <Faq />
                 <Contact onlyContact form content={{
                     title: `Een offerte voor een laadpaal thuis`, text: `Vervuilend rijden is bijna verleden tijd. Ben je net als wij klaar voor een duurzame toekomst? Schrijf je nu alvast in. Zodra we starten met het plaatsen van de eigen laadpaal aan huis nemen we direct contact met je op.`
                 }} />

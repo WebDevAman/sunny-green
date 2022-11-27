@@ -86,7 +86,7 @@ const data = [
             `/cookie-statement-sunnygreen-nl`,
             `/contact`,
             `/algemene-voorwaarden`,
-            `/over-sunnygreen-nl/onze-producten`,
+            `/prijs-berekenen-zonnepanelen`,
         ]
     },
 
