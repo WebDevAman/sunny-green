@@ -114,7 +114,7 @@ const FormAndImage = () => {
                                                     Koopbedrag na btw-teruggave:
                                                 </span>
                                                 <span className='text-base font-medium opacity-90'>
-                                                    € {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) * 0.21))).toFixed(2)}</span>
+                                                    € {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) / 121 * 21))).toFixed(2)}</span>
                                             </div>
                                         }
                                     </div>
@@ -178,8 +178,8 @@ const FormAndImage = () => {
                                                 </div>
                                                 <div className="flex flex-col text-right gap-2">
                                                     <span className='text-xs opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
-                                                    <span className='text-xs opacity-90'>€ {((data.no_of_panels * 549) * 0.21).toFixed(2)}</span>
-                                                    <span className='text-xs font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) * 0.21))).toFixed(2)}</span>
+                                                    <span className='text-xs opacity-90'>€ {((data.no_of_panels * 549) / 121 * 21).toFixed(2)}</span>
+                                                    <span className='text-xs font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) / 121 * 21))).toFixed(2)}</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -285,8 +285,8 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                             </div>
                             <div className="flex flex-col text-right gap-2">
                                 <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
-                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) * 0.21).toFixed(2)}</span>
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) * 0.21))).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) / 121 * 21).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) / 121 * 21))).toFixed(2)}</span>
                             </div>
                         </div>
                     </>
@@ -362,8 +362,8 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                             </div>
                             <div className="flex flex-col text-right gap-2">
                                 <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
-                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) * 0.21).toFixed(2)}</span>
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) * 0.21))).toFixed(2)}</span>
+                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) / 121 * 21).toFixed(2)}</span>
+                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) / 121 * 21))).toFixed(2)}</span>
                             </div>
                         </div>
                         <div className="flex w-full justify-center">

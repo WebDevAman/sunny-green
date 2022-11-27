@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const Contact = () => {
     return (
-        <Layout noHero img='https://www.enie.nl/wp-content/uploads/2021/01/dsc-9183-1600x1065-1-e1610359287623.jpg'>
+        <Layout noHero img='https://www.enie.nl/wp-content/uploads/2020/10/2009_showcase_assen_enie_6_web.jpg'>
             <div className="flex px-3 flex-col items-center  pt-12 lg:pt-2 min-h-[30rem] justify-center z-10 relative gap-6">
                 <h2 className="text-3xl lg:text-6xl max-w-[50rem] mx-auto text-center text-white font-light">
                     Neem contact met ons op
