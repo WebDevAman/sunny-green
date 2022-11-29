@@ -74,12 +74,7 @@ const Index = () => {
                             `Tegelijk geniet je natuurlijk van de hoogste opbrengst uit zonnepanelen. Wij vertellen je graag meer over de mogelijkheden van zonne-energie voor bedrijven. Door zonnepanelen te leasen profiteer je zonder initiële kosten van alle voordelen van zonne-energie.`
                         ],
                         btns: [
-                            <Link to='/'>
-                                <ThemeButton grayBtn text='Offerte aanvragen' />
-                            </Link>,
-                            <Link to='/'>
-                                <ThemeButton grayBtn text='Download brochure' />
-                            </Link>,
+
                         ],
                         img: `https://www.enie.nl/wp-content/uploads/2020/10/2009_showcase_assen_enie_7_web.jpg`,
                     },
@@ -118,12 +113,7 @@ const Index = () => {
                             `Met MKB ZonneLeasen kies je voor een moderne, duurzame energievoorziening. Daar hoef je geen cent voor te investeren. Je bent altijd zeker van service, onderhoud, garanties, verzekering en financiering.`, `Met de combinatie van zonnepanelen, een laadpaal en accu’s ben je gegarandeerd goedkoper of kostenneutraal uit. Een win-win. Het is één van de concepten waarmee we zonnepanelen zakelijk aantrekkelijk maken.`
                         ],
                         btns: [
-                            <Link to='/'>
-                                <ThemeButton grayBtn text='Offerte aanvragen' />
-                            </Link>,
-                            <Link to='/'>
-                                <ThemeButton grayBtn text='Download brochure' />
-                            </Link>,
+
                         ],
                         img: `https://www.enie.nl/wp-content/uploads/2020/11/zonneladen-3.jpg`,
                     },
@@ -134,12 +124,7 @@ const Index = () => {
                             `Daarnaast geniet je van alle voordelen van lease:sunnygreen.nl blijft gedurende de lease overeenkomst verantwoordelijk voor reparaties, onderhoud en garanties. Wel zo prettig.`
                         ],
                         btns: [
-                            <Link to='/'>
-                                <ThemeButton grayBtn text='Offerte aanvragen' />
-                            </Link>,
-                            <Link to='/'>
-                                <ThemeButton grayBtn text='Download brochure' />
-                            </Link>,
+
                         ],
                         img: `https://www.enie.nl/wp-content/uploads/2021/09/2108-enie-surhuisterveen-klant-in-zicht-bart-lindenhovius-7-web-2000x1124.jpg`,
                     },
