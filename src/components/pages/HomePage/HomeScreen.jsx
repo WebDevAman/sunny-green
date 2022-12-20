@@ -302,14 +302,14 @@ const HomeScreen = () => {
                             </div>
                         </div>
                         <div className="w-full max-w-[40rem] mx-auto h-full aspect-square">
-                            <img src="https://content3.jdmagicbox.com/comp/def_content/solar-panel-dealers/shutterstock-630302630-solar-panel-dealers-2-i44i3.jpg?clr=4d590d" alt="img" className='w-full h-full object-cover object-center select-none' />
+                            <img src="https://lh3.googleusercontent.com/p/AF1QipNVlahz___NT1w3-20bHbp5Gi1_wDg13UNvbcVw=s1360-w1360-h1020" alt="img" className='w-full h-full object-cover object-center select-none' />
                         </div>
 
                     </div>
                     <div className="lg:hidden grid border border-b-0 grid-cols-1 lg:grid-cols-2">
 
                         <div className="w-full max-w-[40rem] mx-auto h-full aspect-square">
-                            <img src="https://content3.jdmagicbox.com/comp/def_content/solar-panel-dealers/shutterstock-630302630-solar-panel-dealers-2-i44i3.jpg?clr=4d590d" alt="img" className='w-full h-full object-cover object-center select-none' />
+                            <img src="" alt="img" className='w-full h-full object-cover object-center select-none' />
                         </div>
                         <div className="flex max-w-[40rem] mx-auto p-4 lg:p-16 flex-col gap-6">
                             <p className='text-lg lg:text-xl font-medium text-themeGreen'>VEELGESTELDE VRAGEN</p>
