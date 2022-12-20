@@ -15,7 +15,8 @@ const index = () => {
                         Bel ons: 0685463322<br />
                     </p>
                     <img src="https://www.retailinsiders.nl/images/optimized/760117d8-3879-4a90-a6b4-260f6fd5e547.png&h=350&w=500&mode=fill&bg=ffffff&v=1565958322" alt="icon" className='-ml-2 w-20' />
-                </div>
+                <img src="https://www.zelfstroom.nl/assets/uploads/2019/10/logo-holland-solar-01-e1616747647985.png" alt="icon" className='-ml-2 w-20' />
+        </div>
                 {data.map(({ title, content, slugs }, i) => (
                     <div className="flex flex-col gap-3 md:pl-8">
                         <h3 className='text-lg font-medium'>{title}</h3>
