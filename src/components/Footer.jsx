@@ -14,7 +14,7 @@ const index = () => {
                         2288EW Rijswijk<br />
                         Bel ons: 0685463322<br />
                     </p>
-                    <img src="" alt="icon" className='-ml-2 w-20' />
+                    <img src="https://images.squarespace-cdn.com/content/v1/57a8787c2994ca6cbb9e1436/1593691023135-9HKCQWIIFWAZ7O2LYZPT/Techniek-nederland-installq?format=1500w" alt="icon" className='-ml-2 w-20' />
         </div>
                 {data.map(({ title, content, slugs }, i) => (
                     <div className="flex flex-col gap-3 md:pl-8">
