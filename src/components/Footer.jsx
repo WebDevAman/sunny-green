@@ -12,9 +12,9 @@ const index = () => {
                     <p>
                         Diepenhorstlaan 2Z006<br />
                         2288EW Rijswijk<br />
-                        Bel ons: 0642237360<br />
+                        Bel ons: 0685463322<br />
                     </p>
-                    <img src="https://www.enie.nl/wp-content/uploads/2021/01/2018-b-corp-logo-black-s-137x200.png" alt="icon" className='-ml-2 w-20' />
+                    <img src="" alt="icon" className='-ml-2 w-20' />
                 </div>
                 {data.map(({ title, content, slugs }, i) => (
                     <div className="flex flex-col gap-3 md:pl-8">
