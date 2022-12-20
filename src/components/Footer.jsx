@@ -14,8 +14,7 @@ const index = () => {
                         2288EW Rijswijk<br />
                         Bel ons: 0685463322<br />
                     </p>
-                    <img src="https://www.retailinsiders.nl/images/optimized/760117d8-3879-4a90-a6b4-260f6fd5e547.png&h=350&w=500&mode=fill&bg=ffffff&v=1565958322" alt="icon" className='-ml-2 w-20' />
-                <img src="https://www.zelfstroom.nl/assets/uploads/2019/10/logo-holland-solar-01-e1616747647985.png" alt="icon" className='-ml-2 w-20' />
+                    <img src="" alt="icon" className='-ml-2 w-20' />
         </div>
                 {data.map(({ title, content, slugs }, i) => (
                     <div className="flex flex-col gap-3 md:pl-8">
@@ -35,8 +34,6 @@ const index = () => {
             </div>
             <div className="border-t container flex justify-between items-center w-full py-6">
                 <p className="text-sm">Copyright &copy; 2022 Sunny Green</p>
-<img src="https://www.retailinsiders.nl/images/optimized/760117d8-3879-4a90-a6b4-260f6fd5e547.png&h=350&w=500&mode=fill&bg=ffffff&v=1565958322" alt="icon" className='-ml-2 w-20' />
-    <img src="https://www.zelfstroom.nl/assets/uploads/2019/10/logo-holland-solar-01-e1616747647985.png" alt="icon" className='-ml-2 w-20' />
             </div>
         </div>
     )
