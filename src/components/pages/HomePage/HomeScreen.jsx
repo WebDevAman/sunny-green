@@ -329,7 +329,7 @@ const HomeScreen = () => {
                     </div>
                     <div className="grid border border-t-0 grid-cols-1 lg:grid-cols-2">
                         <div className="w-full max-w-[40rem] mx-auto h-full aspect-square">
-                            <img src="https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Afbeelding_BlokVisie.jpg" alt="img" className='w-full h-full object-cover object-center select-none' />
+                            <img src="https://lh3.googleusercontent.com/p/AF1QipOO8tSY1UjH7MF6n-sPagLCLzmpvrrAY0fUHufb=s1360-w1360-h1020" alt="img" className='w-full h-full object-cover object-center select-none' />
                         </div>
                         <div className="flex max-w-[40rem] mx-auto p-4 lg:p-16 flex-col gap-6">
                             <p className='text-lg lg:text-xl font-medium text-themeGreen'>
