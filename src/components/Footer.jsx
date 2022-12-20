@@ -14,7 +14,7 @@ const index = () => {
                         2288EW Rijswijk<br />
                         Bel ons: 0685463322<br />
                     </p>
-                    <img src="" alt="icon" className='-ml-2 w-20' />
+                    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.degeschillencommissie.nl%2Fover-ons%2Fbranches%2Fbranches-overzicht%2Ftechniek-nederland%2F&psig=AOvVaw32B44FwK9vxZGtaRb5BqDR&ust=1671628308753000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPj0v--iiPwCFQAAAAAdAAAAABAP" alt="icon" className='-ml-2 w-20' />
                 </div>
                 {data.map(({ title, content, slugs }, i) => (
                     <div className="flex flex-col gap-3 md:pl-8">
