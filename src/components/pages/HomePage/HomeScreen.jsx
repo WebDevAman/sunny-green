@@ -74,7 +74,7 @@ const HomeScreen = () => {
                     <div className="flex flex-col gap-3">
                         <h1 className='text-4xl lg:text-6xl font-light'>Zonne-energie <br /> <span className='leading-normal'>voor iedereen.</span></h1>
                         <h3 className="text-4xl pb-1 lg:pb-8 lg:text-6xl font-medium">
-                            Het kan..
+                            Het kan.
                         </h3>
                         <div className="py-[3px] max-w-[6rem] md:max-w-[10rem] bg-gradient-to-r from-themeDarkGreen to-themeGreen lg:flex hidden"></div>
                         <div className="hidden md:flex max-w-lg 2xl:pr-12 flex-col gap-4">
