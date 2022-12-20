@@ -14,7 +14,7 @@ const index = () => {
                         2288EW Rijswijk<br />
                         Bel ons: 0685463322<br />
                     </p>
-                    <img src="https://www.degeschillencommissie.nl/wp-content/uploads/logo-techniek-nederland.jpg" alt="icon" className='-ml-2 w-20' />
+                    <img src="https://www.retailinsiders.nl/images/optimized/760117d8-3879-4a90-a6b4-260f6fd5e547.png&h=350&w=500&mode=fill&bg=ffffff&v=1565958322" alt="icon" className='-ml-2 w-20' />
                 </div>
                 {data.map(({ title, content, slugs }, i) => (
                     <div className="flex flex-col gap-3 md:pl-8">
