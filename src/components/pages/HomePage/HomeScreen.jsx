@@ -278,7 +278,7 @@ const HomeScreen = () => {
                 </div>
                 <div className="pt-6 justify-center w-full flex">
                     <button className='font-medium text-base  hover:bg-themeGreen border-2 border-themeGreen hover:text-white px-3 md:px-6 transition-all duration-500 rounded-full py-3'>
-                        Meer ervaringen oversunnygreen.nl lezen
+                        Meer ervaringen over Sunnygreen lezen
 
                     </button>
 
@@ -554,7 +554,7 @@ const thirdData = [
     {
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_Prijs.svg`,
         title: `De scherpste prijzen.`,
-        text: `Dat we zo open zijn met onze prijzen heeft een reden. Bijsunnygreen.nl kies je voor kwaliteit én een scherpe prijs.`
+        text: `Dat we zo open zijn met onze prijzen heeft een reden. Bij Sunnygreen kies je voor kwaliteit én een scherpe prijs.`
     },
 ]
 
