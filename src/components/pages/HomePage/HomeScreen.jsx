@@ -548,7 +548,7 @@ const thirdData = [
     },
     {
         img: `https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/USP_4Weken.svg`,
-        title: `Binnen 12 tot 16 weken zonnepanelen op je dak.`,
+        title: `Binnen 4 tot 6 weken zonnepanelen op je dak.`,
         text: `Met installatieteams door het hele land garanderen we dat je binnen no-time geniet van je eigen zonne-energie.`
     },
     {
