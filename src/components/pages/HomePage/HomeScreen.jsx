@@ -68,7 +68,7 @@ const HomeScreen = () => {
             <Navbar isImg={true} />
 
             <div
-                style={{ background: `linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://insolationenergy.in/wp-content/uploads/2021/10/Solar-Panels-in-India-Cost-Installation-Requirements-1-scaled.jpg)` }}
+                style={{ background: `linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(https://thumbnails.production.thenounproject.com/GjqEKscvg1-oJj8fAsYF3v8gLIU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/wind_turbine_under_orange_sky_during_sunset-scopio-9b1f7703-edcb-4d44-8896-07069e310726.jpg)` }}
                 className="w-full -mt-16 md:-mt-20 flex items-center inset-0 !bg-cover !bg-center py-20 min-h-screen bg-black">
                 <div className="container items-center grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
                     <div className="flex flex-col gap-3">
