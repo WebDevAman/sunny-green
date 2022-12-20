@@ -444,7 +444,7 @@ const HomeScreen = () => {
 
                                     </p>
                                     <p className='text-white text-base lg:text-lg'>
-                                        Je ontvangt een vrijblijvende offerte na het adviesgesprek.Akkoord?Dan installeren we binnen 12 tot 16 weken je zonnepanelen.
+                                        Je ontvangt een vrijblijvende offerte na het adviesgesprek. Akkoord? Dan installeren we binnen 4 tot 6 weken je zonnepanelen.
                                     </p>
                                 </div>
                             </div>
