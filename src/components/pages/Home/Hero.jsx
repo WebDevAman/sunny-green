@@ -10,6 +10,7 @@ import { Button } from '@material-ui/core'
 import { useRecoilState } from 'recoil'
 import { useNavigate } from 'react-router-dom'
 import { atomImageFromGoogle } from '../../atoms'
+import axios from 'axios';
 
 const Hero = ({
     content = {
@@ -28,6 +29,9 @@ const Hero = ({
     const handleChange = (e) => {
         setData({ ...data, [e.target.id]: e.target.value })
     }
+
+   
+
     const handleSubmit = () => {
         setRequested(true)
         if (data.post_code.length > 1) {
