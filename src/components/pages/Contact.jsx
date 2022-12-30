@@ -24,10 +24,10 @@ const Contact = () => {
                         Kom je ergens niet uit of werkt iets volgens jou niet helemaal naar behoren?Geen wolkje aan de lucht, we zoeken het voor je uit.We kunnen je het snelst helpen via onze directe chat (rechtsonder op deze pagina)
                     </p>
                     
-                    <button className='flex  text-white bg-blue-600 px-5 rounded-md max-w-[14rem] justify-center hover:opacity-90 p-3 items-center gap-3'>
+                    {/* <button className='flex  text-white bg-blue-600 px-5 rounded-md max-w-[14rem] justify-center hover:opacity-90 p-3 items-center gap-3'>
                         <BsMessenger className='text-2xl' />
                         <p>Messenger</p>
-                    </button>
+                    </button> */}
                 </div>
                 <div className="flex gap-6 pb-20  lg:gap-12">
                     <div className="min-h-full bg-gradient-to-b from-themeGreen to-themeDarkGreen w-4">
