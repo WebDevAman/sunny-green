@@ -5,6 +5,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import 'swiper/css/navigation'
 import { Link } from 'react-router-dom'
+
 const News = () => {
     return (
         <div className='flex flex-col gap-8'>

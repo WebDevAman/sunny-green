@@ -66,3 +66,7 @@ html {
   height: 15px !important;
   font-family: 'Rubik', sans-serif !important;
 }
+
+.btn-bg{
+  background: linear-gradient(92.26deg,#f9e346 -51.43%,#ff7907 98.76%);
+}

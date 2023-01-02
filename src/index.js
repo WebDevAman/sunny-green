@@ -28,6 +28,7 @@ import CO2 from './components/pages/CO2';
 import Privacy from './components/pages/statements/Privacy';
 import Cookie from './components/pages/statements/Cookie';
 import StatementsPage from './components/pages/statements/StatementsPage';
+import Producten from './components/pages/over-enie/producten';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -40,26 +41,60 @@ root.render(
           <Route path="/prijs-berekenen-zonnepanelen" element={<App />}></Route>
           <Route path="/configurator" element={<FormAndImage />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/over-sunnygreen-nl" element={<OverSunnyGreenNL />}></Route>
-          <Route path="/veelgestelde-vragen-over-zonnepanelen" element={<FAQ />}></Route>
+          <Route
+            path="/over-sunnygreen-nl"
+            element={<OverSunnyGreenNL />}
+          ></Route>
+          <Route
+            path="/veelgestelde-vragen-over-zonnepanelen"
+            element={<FAQ />}
+          ></Route>
           <Route path="/success" element={<Success />}></Route>
           <Route path="/Admin/Panel" element={<Panel />}></Route>
           <Route path="/over-sunnygreen-nl/bcorp/" element={<Bcorp />}></Route>
           <Route path="/nieuws/co2-compensatie/" element={<CO2 />}></Route>
-          <Route path="/particulier/zonnepanelen-huren" element={<ZonnepanelenHuren />}></Route>
-          <Route path="/particulier/zonnepanelen-kopen" element={<ZonnepanelenKopen />}></Route>
-          <Route path="/particulier/zonnesparen" element={<Zonnesparen />}></Route>
-          <Route path="/particulier/laadpaal-thuis" element={<Laadpaal />}></Route>
-          <Route path="/zakelijk/zonnepanelen-leasen" element={<ZonnepanelenLeasen />}></Route>
-          <Route path="/zakelijk/carport-zonnepanelen" element={<CarportZonnepanelen />}></Route>
-          <Route path="/privacy-statement-sunnygreen-nl" element={<Privacy />}></Route>
-          <Route path="/cookie-statement-sunnygreen-nl" element={<Cookie />}></Route>
-          <Route path="/algemene-voorwaarden" element={<StatementsPage />}></Route>
+          <Route
+            path="/particulier/zonnepanelen-huren"
+            element={<ZonnepanelenHuren />}
+          ></Route>
+          <Route
+            path="/particulier/zonnepanelen-kopen"
+            element={<ZonnepanelenKopen />}
+          ></Route>
+          <Route
+            path="/particulier/zonnesparen"
+            element={<Zonnesparen />}
+          ></Route>
+          <Route
+            path="/particulier/laadpaal-thuis"
+            element={<Laadpaal />}
+          ></Route>
+          <Route
+            path="/zakelijk/zonnepanelen-leasen"
+            element={<ZonnepanelenLeasen />}
+          ></Route>
+          <Route
+            path="/zakelijk/carport-zonnepanelen"
+            element={<CarportZonnepanelen />}
+          ></Route>
+          <Route
+            path="/privacy-statement-sunnygreen-nl"
+            element={<Privacy />}
+          ></Route>
+          <Route
+            path="/cookie-statement-sunnygreen-nl"
+            element={<Cookie />}
+          ></Route>
+          <Route
+            path="/algemene-voorwaarden"
+            element={<StatementsPage />}
+          ></Route>
+          <Route path="/over-enie-nl/onze-producten/" element={<Producten/>} />
         </Routes>
       </BrowserRouter>
     </RecoilRoot>
   </React.StrictMode>
-);
+)
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
