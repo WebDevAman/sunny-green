@@ -19,7 +19,7 @@ import Hero from '../Home/Hero'
 const Index = () => {
     return (
         <Layout noHero img='https://www.volkswagen.nl/-/media/vwpkw/images/elektrisch-rijden/kosten/kosten-tab-2.ashx'>
-            <div className="flex px-3 flex-col items-center  pt-12 lg:pt-2 min-h-[30rem] justify-center z-30 relative gap-6">
+            <div className="flex px-3 flex-col items-center  pt-12 lg:pt-2 min-h-[30rem] justify-center z-10 relative gap-6">
                 <h2 className="text-2xl lg:text-5xl max-w-xl mx-auto text-center text-white font-medium text-shadow">
                     Laadpaal thuis
                 </h2>
