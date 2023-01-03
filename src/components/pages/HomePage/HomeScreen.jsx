@@ -79,8 +79,6 @@ const HomeScreen = () => {
           }}
           className="w-full -mt-16 md:-mt-20 flex items-center inset-0 !bg-cover !bg-center py-20 min-h-screen bg-black"
         >
-      
-
           <div className="container items-center grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
             <div className="flex flex-col gap-3">
               <h1 className="text-4xl lg:text-6xl font-light">
@@ -376,7 +374,8 @@ const HomeScreen = () => {
               </div>
               <div className="w-full max-w-[40rem] mx-auto h-full aspect-square">
                 <img
-                  src="https://lh3.googleusercontent.com/p/AF1QipNVlahz___NT1w3-20bHbp5Gi1_wDg13UNvbcVw=s1360-w1360-h1020"
+                  src="	https://www.enie.nl/wp-content/themes/enie/enie-2/style/dist/assets/Afbeelding_BlokFAQ.jpg"
+                  // src="https://lh3.googleusercontent.com/p/AF1QipNVlahz___NT1w3-20bHbp5Gi1_wDg13UNvbcVw=s1360-w1360-h1020"
                   alt="img"
                   className="w-full h-full object-cover object-center select-none"
                 />
