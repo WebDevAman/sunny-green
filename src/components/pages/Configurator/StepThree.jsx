@@ -130,7 +130,7 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
                                     <div className="grid grid-cols-3 gap-4">
                                         <TextField id="post_code" required label="Post Code" defaultValue={data.post_code} onChange={handleChange} variant="outlined" />
                                         <TextField id="huisnummer" required label="Huisnummer" type={'text'} defaultValue={data.huisnummer} onChange={handleChange} variant="outlined" />
-                                        <TextField id="toev" required label="toev" type={'text'} defaultValue={data.toev} onChange={handleChange} variant="outlined" />
+                                        <TextField id="toev"  label="toev" type={'text'} defaultValue={data.toev} onChange={handleChange} variant="outlined" />
                                     </div>
                                     <textarea name="comments" id="comments" className='border p-3 rounded-lg outline-none focus:border-[#999] border-[#c4c4c4]' cols="30" rows="4" placeholder='Opmerkingen'></textarea>
                                     <div className="flex gap-2 items-center">
