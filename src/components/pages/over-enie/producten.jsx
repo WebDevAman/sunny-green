@@ -20,7 +20,7 @@ const Producten = () => {
     >
       <div className="flex items-center justify-center min-h-[16rem] z-[999]">
         <h1 className="text-white z-[9999] text-[5vw] md:text-[4vw] font-[300]">
-          De producten van enie.nl
+          De producten van Sunnygreen
         </h1>
       </div>
       <div className="container mt-[8rem] sm:mt-20 md:mt-[12rem] flex flex-col ">
@@ -33,7 +33,7 @@ const Producten = () => {
             <p className="font-[100] text-lg">
               De partners en fabrikanten waar we mee samenwerken hebben een
               grote impact op de maatschappij en het klimaat. Daarom zijn we in
-              elke productkeuze uiterst selectief. Zo geniet je bij enie.nl,
+              elke productkeuze uiterst selectief. Zo geniet je bij Sunnygreen,
               naast natuurlijk de beste garanties, opbrengst en levensduur,
               áltijd van producten van leveranciers met{' '}
               <strong className="font-semibold">B Corp DNA</strong>. Dus;
