@@ -70,7 +70,7 @@ const Producten = () => {
                 `Met de combinatie van zonnepanelen, een laadpaal en accu’s ben je gegarandeerd goedkoper of kostenneutraal uit. Een win-win. Het is één van de concepten waarmee we zonnepanelen zakelijk aantrekkelijk maken.`,
               ], 
               btns: [],
-              img: `	https://www.enie.nl/wp-content/uploads/2020/09/200904_4_portret_werkveld_enie_web.jpg`,
+              img: `	https://images.unsplash.com/photo-1617269778723-73a40cf299bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80`,
             },
             {
               title: `Slim en onafhankelijk`,
