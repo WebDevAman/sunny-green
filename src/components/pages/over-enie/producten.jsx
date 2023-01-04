@@ -11,16 +11,16 @@ import News from '../../common/News'
 
 const Producten = () => {
   const img =
-    'https://www.enie.nl/wp-content/uploads/2020/10/200904-6-portret-werkveld-enie-web-headhubo-e1604044960463.jpg'
+    'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2916&q=80'
   return (
     <Layout
       customHeight={'min-h-[20rem]  lg:min-h-[28rem]  max-h-[50vh]'}
       noHero
-      img="https://www.enie.nl/wp-content/uploads/2020/10/200904-6-portret-werkveld-enie-web-headhubo-e1604044960463.jpg"
+      img="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2916&q=80"
     >
       <div className="flex items-center justify-center min-h-[16rem] z-[999]">
         <h1 className="text-white z-[9999] text-[5vw] md:text-[4vw] font-[300]">
-          De producten van enie.nl
+          De producten van Sunnygreen
         </h1>
       </div>
       <div className="container mt-[8rem] sm:mt-20 md:mt-[12rem] flex flex-col ">
@@ -33,7 +33,7 @@ const Producten = () => {
             <p className="font-[100] text-lg">
               De partners en fabrikanten waar we mee samenwerken hebben een
               grote impact op de maatschappij en het klimaat. Daarom zijn we in
-              elke productkeuze uiterst selectief. Zo geniet je bij enie.nl,
+              elke productkeuze uiterst selectief. Zo geniet je bij Sunnygreen,
               naast natuurlijk de beste garanties, opbrengst en levensduur,
               áltijd van producten van leveranciers met{' '}
               <strong className="font-semibold">B Corp DNA</strong>. Dus;
@@ -70,7 +70,7 @@ const Producten = () => {
                 `Met de combinatie van zonnepanelen, een laadpaal en accu’s ben je gegarandeerd goedkoper of kostenneutraal uit. Een win-win. Het is één van de concepten waarmee we zonnepanelen zakelijk aantrekkelijk maken.`,
               ], 
               btns: [],
-              img: `	https://www.enie.nl/wp-content/uploads/2020/09/200904_4_portret_werkveld_enie_web.jpg`,
+              img: `	https://images.unsplash.com/photo-1617269778723-73a40cf299bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80`,
             },
             {
               title: `Slim en onafhankelijk`,
@@ -96,7 +96,7 @@ const Producten = () => {
               Als B Corp staan we voor volledige transparantie. In ons Climate
               Action Report lees je met welke fabrikanten we samenwerken.
               Hieronder zie je waar onze producten vandaan komen en welke reis
-              ze afleggen tot de daken van de enieanen.
+              ze afleggen tot de daken van de klanten.
             </p>
             <img
               className="max-w-[400px] sm:max-w-[600px] lg:max-w-[900px]"
@@ -223,7 +223,7 @@ const Producten = () => {
               {[
                 {
                   img: 'https://www.enie.nl/wp-content/uploads/2021/01/2018-b-corp-logo-black-l-205x300.png',
-                  desc: 'Enie.nl is B Corp gecertificeerd. Een internationaal certificaat voor sociale ondernemingen die niet alleen de beste van de wereld willen zijn maar vooral ook voor de wereld. Lees meer over B Corp op onze B Corp pagina.',
+                  desc: 'Sunnygreen is B Corp gecertificeerd. Een internationaal certificaat voor sociale ondernemingen die niet alleen de beste van de wereld willen zijn maar vooral ook voor de wereld. Lees meer over B Corp op onze B Corp pagina.',
                 },
                 {
                   img: 'https://www.enie.nl/wp-content/uploads/2021/01/logo-holland-solar-juni-2018-290x300.png',
@@ -255,11 +255,11 @@ const Producten = () => {
               <AiOutlineStar className="text-[#f4a81d] font-bold" />
             </div>
             <p>
-              <strong>Meer dan 20.000 enieanen</strong>
+              <strong>Meer dan 20.000 huishoudens/strong>
             </p>
             <p className="font-[100] text-sm">
               We streven naar een wereld zonder fossiele brandstoffen. Daarom
-              zijn we trots op al die duizenden enieanen die samen met ons de
+              zijn we trots op al die duizenden huishoudens die samen met ons de
               stap al hebben gezet naar een duurzaam Nederland. Zet jij samen
               met ons ook deze stap?
             </p>
@@ -275,7 +275,7 @@ const Producten = () => {
           <div className="flex bg-white relative flex-col px-5 py-5 gap-y-3 shadow-xl rounded-lg max-w-[330px] min-h-[430px] col-span-1  w-full">
             <h2 className="text-3xl">Het beste voorstel</h2>
             <p className="font-[100] text-sm">
-              Er zijn veel aanbieders van zonnepanelen. Wat maakt enie.nl zo
+              Er zijn veel aanbieders van zonnepanelen. Wat maakt Sunnygreen zo
               uniek?
             </p>
 

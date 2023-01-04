@@ -47,7 +47,7 @@ const Contact = () => {
                                 </p>
                                 <p className="text-base lg:text-lg tracking-normal font-light">
                                     Diepenhorstlaan 2Z006<br />
-                                    2288ew Rijswijk
+                                    2288EW Rijswijk
                                 </p>
 
                                 <p className="text-base lg:text-lg tracking-normal">
@@ -55,7 +55,7 @@ const Contact = () => {
                                 </p>
                                 <p className="text-base lg:text-lg tracking-normal font-light">
                                     Diepenhorstlaan 2Z006<br />
-                                    2288ew Rijswijk
+                                    2288EW Rijswijk
                                 </p>
                             </div>
                             <div className="flex flex-col gap-6">
@@ -70,9 +70,9 @@ const Contact = () => {
 
 
                                 <p className="text-base lg:text-lg tracking-normal font-light">
-                                    Bel ons: 0642237360<br />
+                                    Bel ons: 0685463322<br />
 
-                                    Of mail onze klantenservice: klantenservice@sunnygreen.nl<br />
+                                    Of mail onze klantenservice: info@sunnygreen.nl<br />
                                     Voor het snelste antwoord kies je hier rechts voor chat of stuur je ons een berichtje op WhatsApp of Facebook Messenger.<br />
                                 </p>
                             </div>

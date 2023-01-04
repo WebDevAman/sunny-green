@@ -17,10 +17,10 @@ const Index = () => {
                 <div className="min-h-full w-5 hidden md:flex bg-gradient-to-b from-themeGreen to-themeDarkGreen"> </div>
                 <div className="py-2 lg:py-16 flex flex-col gap-4 lg:gap-6">
                     <h3 className='text-xl lg:text-3xl font-medium'  >Amendments</h3>
-                    <p className='text-lg font-light'>This cookie statement can be changed by enie.nl without prior notice.&nbsp;The amended version is provided with the date on which the last amendment was made.&nbsp;enie.nl advises you to re-read the cookie statement regularly, so that you are aware of any changes.</p>
+                    <p className='text-lg font-light'>This cookie statement can be changed by Sunnygreen without prior notice.&nbsp;The amended version is provided with the date on which the last amendment was made.&nbsp;enie.nl advises you to re-read the cookie statement regularly, so that you are aware of any changes.</p>
                     <h3 className='text-xl lg:text-3xl font-medium' >To ask</h3>
-                    <p className='text-lg font-light'>Do you have questions about what enie.nl does with the collected cookies?&nbsp;Then call 085 401 7000 or contact us by e-mail at&nbsp;<a className='text-themeGreen text-lg hover:underline' href="mailto:klantenservice@sunnygreen.nl">klantenservice@sunnygreen.nl</a> .</p>
-                    <p className='text-lg font-light'>This cookie statement was last changed in October 2020.</p>
+                    <p className='text-lg font-light'>Do you have questions about what Sunnygreen does with the collected cookies?&nbsp;Then call 085 401 7000 or contact us by e-mail at&nbsp;<a className='text-themeGreen text-lg hover:underline' href="mailto:info@sunnygreen.nl">info@sunnygreen.nl</a> .</p>
+                    <p className='text-lg font-light'>This cookie statement was last changed in October 2022.</p>
                 </div >
             </div>
             <Reasons />
