@@ -131,3 +131,82 @@ export const navData = [
     ],
   },
 ]
+
+
+  // <div className={`${mobSum ? 'h-fit py-2 mt-2 pt-2 border-t' : 'h-0 py-0 overflow-hidden'} grid grid-cols-2 transition-all duration-300 w-full`}>
+  //                           <div className="flex flex-col gap-3">
+  //                               <div className='flex items-center gap-2'>
+  //                                   <span className='text-sm opacity-90'>Totaal incl.</span>
+  //                               </div>
+  //                               {/* right one  */}
+  //                               {/* <div className='flex items-center gap-2'>
+  //                                   <span className='text-sm opacity-90'>Btw-teruggave </span>
+  //                               </div> */}
+  //                               <div className='flex items-center gap-2'>
+  //                                   <span className='text-xs font-medium opacity-90'>Totaal na btw-teruggave </span>
+  //                               </div>
+  //                           </div>
+  //                           <div className="flex flex-col text-right gap-2">
+  //                               <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
+  //                               {/* <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) / 121 * 21).toFixed(2)}</span> */}
+  //                               <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) / 121 * 21))).toFixed(2)}</span>
+  //                           </div>
+  //                       </div>
+
+
+    // <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
+    //                     <div className="flex flex-col gap-2">
+    //                       <div className="flex items-center gap-2">
+    //                         <span className="text-xs opacity-90">
+    //                           Totaal incl. 
+    //                         </span>
+    //                       </div>
+    //                       {/* <div className="flex items-center gap-2">
+    //                         <span className="text-xs opacity-90">
+    //                           Btw-teruggave{' '}
+    //                         </span>
+    //                       </div> */}
+    //                       <div className="flex items-center gap-2">
+    //                         <span className="text-xs font-medium opacity-90">
+    //                           Totaal na btw-teruggave{' '}
+    //                         </span>
+    //                       </div>
+    //                     </div>
+    //                     <div className="flex flex-col text-right gap-2">
+    //                       <span className="text-xs opacity-90">
+    //                         € {(data.no_of_panels * 549).toFixed(2)}
+    //                       </span>
+    //                       {/* <span className="text-xs opacity-90">
+    //                         €{' '}
+    //                         {(((data.no_of_panels * 549) / 121) * 21).toFixed(
+    //                           2
+    //                         )}
+    //                       </span> */}
+    //                       <span className="text-xs font-medium opacity-90">
+    //                         €{' '}
+    //                         {(
+    //                           (data.no_of_panels * 549).toFixed(2) -
+    //                           ((data.no_of_panels * 549) / 121) * 21
+    //                         ).toFixed(2)}
+    //                       </span>
+    //                     </div>
+    //                   </div>
+
+    //  <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
+    //                         <div className="flex flex-col gap-3">
+    //                             <div className='flex items-center gap-2'>
+    //                                 <span className='text-sm opacity-90'>Totaal incl.</span>
+    //                             </div>
+    //                             {/* <div className='flex items-center gap-2'>
+    //                                 <span className='text-sm opacity-90'>Btw-teruggave </span>
+    //                             </div> */}
+    //                             <div className='flex items-center gap-2'>
+    //                                 <span className='text-xs font-medium opacity-90'>Totaal na btw-teruggave </span>
+    //                             </div>
+    //                         </div>
+    //                         <div className="flex flex-col text-right gap-2">
+    //                             <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
+    //                             <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) / 121 * 21).toFixed(2)}</span>
+    //                             <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) / 121 * 21))).toFixed(2)}</span>
+    //                         </div>
+    //                     </div>

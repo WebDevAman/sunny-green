@@ -10,17 +10,24 @@ const StepThree = ({ data, handleNext, setShow, energy, setData }) => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setState({ ...state, loading: true })
-        if (data.fname && data.email) {
+        try {
+          if (data.fname && data.email) {
             const res = await axios.post(url + `/api/users`, data)
             if (res.status === 201) {
-                setState({ error: false, loading: false, success: true })
-                navigate('/success')
+              setState({ error: false, loading: false, success: true })
+              navigate('/success')
             } else {
-                setState({ success: false, loading: false, error: true })
+              setState({ success: false, loading: false, error: true })
             }
-        } else {
+          } else {
+            setState({ success: false, loading: false, error: true })
             alert('Please fill the form!')
+          }
+        } catch (error) {
+            setState({ success: false, loading: false, error: true })
+
         }
+         
     }
     const handleChange = (e) => {
         setData({ ...data, [e.target.id]: e.target.value })

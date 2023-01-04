@@ -40,8 +40,6 @@ const FormAndImage = () => {
     }, [show]);
     return (
       <Layout noNav>
-     
-
         <div
           style={{ boxShadow: '1px -1px 21px -7px #999' }}
           className="grid  md:max-w-2xl lg:max-w-[1550px] my-6 shadow-lg border mx-3 rounded-3xl overflow-hidden sm:mx-auto lg:pl-4 grid-cols-1 lg:grid-cols-9 gap-6"
@@ -217,6 +215,7 @@ const FormAndImage = () => {
                           <span className="text-xs opacity-90">Inclusief</span>
                         </div>
                       </div>
+                      <PayBackTime data={data} />
                       <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
                         <div className="flex flex-col gap-2">
                           <div className="flex items-center gap-2">
@@ -231,45 +230,8 @@ const FormAndImage = () => {
                           </span>
                         </div>
                       </div>
-                      <PayBackTime data={data} />
 
-                      <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
-                        <div className="flex flex-col gap-2">
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs opacity-90">
-                              Totaal incl. 
-                            </span>
-                          </div>
-                          {/* <div className="flex items-center gap-2">
-                            <span className="text-xs opacity-90">
-                              Btw-teruggave{' '}
-                            </span>
-                          </div> */}
-                          <div className="flex items-center gap-2">
-                            <span className="text-xs font-medium opacity-90">
-                              Totaal na btw-teruggave{' '}
-                            </span>
-                          </div>
-                        </div>
-                        <div className="flex flex-col text-right gap-2">
-                          <span className="text-xs opacity-90">
-                            € {(data.no_of_panels * 549).toFixed(2)}
-                          </span>
-                          {/* <span className="text-xs opacity-90">
-                            €{' '}
-                            {(((data.no_of_panels * 549) / 121) * 21).toFixed(
-                              2
-                            )}
-                          </span> */}
-                          <span className="text-xs font-medium opacity-90">
-                            €{' '}
-                            {(
-                              (data.no_of_panels * 549).toFixed(2) -
-                              ((data.no_of_panels * 549) / 121) * 21
-                            ).toFixed(2)}
-                          </span>
-                        </div>
-                      </div>
+                    {/* here  */}
                     </div>
                   )}
                 </div>
@@ -354,6 +316,9 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                                 <span className='text-sm opacity-90'>Inclusief</span>
                             </div>
                         </div>
+
+                        <PayBackTime data={data} />
+
                         <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
                             <div className="flex flex-col gap-3">
                                 <div className='flex items-center gap-2'>
@@ -365,26 +330,8 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                                 <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
                             </div>
                         </div>
-                        <PayBackTime data={data} />
 
-                        <div className="grid py-2 mt-2 border-t pt-2 grid-cols-2 w-full">
-                            <div className="flex flex-col gap-3">
-                                <div className='flex items-center gap-2'>
-                                    <span className='text-sm opacity-90'>Totaal incl.</span>
-                                </div>
-                                {/* <div className='flex items-center gap-2'>
-                                    <span className='text-sm opacity-90'>Btw-teruggave </span>
-                                </div> */}
-                                <div className='flex items-center gap-2'>
-                                    <span className='text-xs font-medium opacity-90'>Totaal na btw-teruggave </span>
-                                </div>
-                            </div>
-                            <div className="flex flex-col text-right gap-2">
-                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
-                                <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) / 121 * 21).toFixed(2)}</span>
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) / 121 * 21))).toFixed(2)}</span>
-                            </div>
-                        </div>
+                       {/* here also total  */}
                     </>
                 </div>
             </div>
@@ -444,25 +391,11 @@ const ThirdPageTotalChart = ({ leftSideImage, data }) => {
                                 <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
                             </div>
                         </div>
-                        <div className={`${mobSum ? 'h-fit py-2 mt-2 pt-2 border-t' : 'h-0 py-0 overflow-hidden'} grid grid-cols-2 transition-all duration-300 w-full`}>
-                            <div className="flex flex-col gap-3">
-                                <div className='flex items-center gap-2'>
-                                    <span className='text-sm opacity-90'>Totaal incl.</span>
-                                </div>
-                                {/* right one  */}
-                                {/* <div className='flex items-center gap-2'>
-                                    <span className='text-sm opacity-90'>Btw-teruggave </span>
-                                </div> */}
-                                <div className='flex items-center gap-2'>
-                                    <span className='text-xs font-medium opacity-90'>Totaal na btw-teruggave </span>
-                                </div>
-                            </div>
-                            <div className="flex flex-col text-right gap-2">
-                                <span className='text-sm opacity-90'>€ {(data.no_of_panels * 549).toFixed(2)}</span>
-                                {/* <span className='text-sm opacity-90'>€ {((data.no_of_panels * 549) / 121 * 21).toFixed(2)}</span> */}
-                                <span className='text-sm font-medium opacity-90'>€ {(((data.no_of_panels * 549).toFixed(2) - ((data.no_of_panels * 549) / 121 * 21))).toFixed(2)}</span>
-                            </div>
-                        </div>
+                      
+
+{/* removed here  */}
+
+
                         <div className="flex w-full justify-center">
                             <div onClick={() => setMobSum(!mobSum)} className={`${mobSum ? 'rotate-180' : 'rotate-0'} h-[70px] w-[70px] aspect-square transition-all duration-300 -mb-16 shadow-md border-4 border-white cursor-pointer rounded-full from-themeDarkGreen flex items-center justify-center text-white text-3xl to-themeGreen bg-gradient-to-r`}>
                                 <BsChevronDown />
