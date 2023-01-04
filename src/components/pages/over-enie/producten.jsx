@@ -11,12 +11,12 @@ import News from '../../common/News'
 
 const Producten = () => {
   const img =
-    'https://www.enie.nl/wp-content/uploads/2020/10/200904-6-portret-werkveld-enie-web-headhubo-e1604044960463.jpg'
+    'https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2916&q=80'
   return (
     <Layout
       customHeight={'min-h-[20rem]  lg:min-h-[28rem]  max-h-[50vh]'}
       noHero
-      img="https://www.enie.nl/wp-content/uploads/2020/10/200904-6-portret-werkveld-enie-web-headhubo-e1604044960463.jpg"
+      img="https://images.unsplash.com/photo-1613665813446-82a78c468a1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2916&q=80"
     >
       <div className="flex items-center justify-center min-h-[16rem] z-[999]">
         <h1 className="text-white z-[9999] text-[5vw] md:text-[4vw] font-[300]">
