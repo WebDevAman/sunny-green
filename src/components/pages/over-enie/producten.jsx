@@ -96,7 +96,7 @@ const Producten = () => {
               Als B Corp staan we voor volledige transparantie. In ons Climate
               Action Report lees je met welke fabrikanten we samenwerken.
               Hieronder zie je waar onze producten vandaan komen en welke reis
-              ze afleggen tot de daken van de enieanen.
+              ze afleggen tot de daken van de klanten.
             </p>
             <img
               className="max-w-[400px] sm:max-w-[600px] lg:max-w-[900px]"
@@ -223,7 +223,7 @@ const Producten = () => {
               {[
                 {
                   img: 'https://www.enie.nl/wp-content/uploads/2021/01/2018-b-corp-logo-black-l-205x300.png',
-                  desc: 'Enie.nl is B Corp gecertificeerd. Een internationaal certificaat voor sociale ondernemingen die niet alleen de beste van de wereld willen zijn maar vooral ook voor de wereld. Lees meer over B Corp op onze B Corp pagina.',
+                  desc: 'Sunnygreen is B Corp gecertificeerd. Een internationaal certificaat voor sociale ondernemingen die niet alleen de beste van de wereld willen zijn maar vooral ook voor de wereld. Lees meer over B Corp op onze B Corp pagina.',
                 },
                 {
                   img: 'https://www.enie.nl/wp-content/uploads/2021/01/logo-holland-solar-juni-2018-290x300.png',
@@ -255,11 +255,11 @@ const Producten = () => {
               <AiOutlineStar className="text-[#f4a81d] font-bold" />
             </div>
             <p>
-              <strong>Meer dan 20.000 enieanen</strong>
+              <strong>Meer dan 20.000 huishoudens/strong>
             </p>
             <p className="font-[100] text-sm">
               We streven naar een wereld zonder fossiele brandstoffen. Daarom
-              zijn we trots op al die duizenden enieanen die samen met ons de
+              zijn we trots op al die duizenden huishoudens die samen met ons de
               stap al hebben gezet naar een duurzaam Nederland. Zet jij samen
               met ons ook deze stap?
             </p>
@@ -275,7 +275,7 @@ const Producten = () => {
           <div className="flex bg-white relative flex-col px-5 py-5 gap-y-3 shadow-xl rounded-lg max-w-[330px] min-h-[430px] col-span-1  w-full">
             <h2 className="text-3xl">Het beste voorstel</h2>
             <p className="font-[100] text-sm">
-              Er zijn veel aanbieders van zonnepanelen. Wat maakt enie.nl zo
+              Er zijn veel aanbieders van zonnepanelen. Wat maakt Sunnygreen zo
               uniek?
             </p>
 
