@@ -255,7 +255,7 @@ const Producten = () => {
               <AiOutlineStar className="text-[#f4a81d] font-bold" />
             </div>
             <p>
-              <strong>Meer dan 20.000 huishoudens/strong>
+              <strong>Meer dan 20.000 huishoudens </strong>
             </p>
             <p className="font-[100] text-sm">
               We streven naar een wereld zonder fossiele brandstoffen. Daarom
